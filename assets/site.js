@@ -183,12 +183,6 @@
             '<span><b>' + BRAND + '</b><span>Trusted store</span></span></div>' +
           '<p class="foot-desc">Genuine gadgets and lifestyle products at the best price — ' +
             'delivered all over Bangladesh.</p>' +
-          '<div class="socials">' +
-            '<a href="#" aria-label="Facebook">' + ICON('fb') + '</a>' +
-            '<a href="#" aria-label="Instagram">' + ICON('ig') + '</a>' +
-            '<a href="#" aria-label="YouTube">' + ICON('yt') + '</a>' +
-            '<a href="#" aria-label="Telegram">' + ICON('tg') + '</a>' +
-          '</div>' +
         '</div>' +
         '<div class="foot-cols">' +
           '<div class="foot-col"><h3>Contact</h3><ul>' +
@@ -216,6 +210,13 @@
             '<li><a href="' + BASE + 'account.html#help">Privacy</a></li>' +
           '</ul></div>' +
         '</div>' +
+      '</div>' +
+      '<div class="foot-socials">' +
+        '<a class="fsoc" href="https://www.facebook.com/trendychoicexyz" target="_blank" rel="noopener" aria-label="Facebook">' + ICON('fb') + '</a>' +
+        '<a class="fsoc wa" href="https://wa.me/8801826459122" target="_blank" rel="noopener" aria-label="WhatsApp">' + ICON('wa') + '</a>' +
+        '<span class="fsoc soon" aria-label="Instagram (link coming soon)" title="Instagram \u2014 link coming soon">' + ICON('ig') + '</span>' +
+        '<span class="fsoc soon" aria-label="YouTube (link coming soon)" title="YouTube \u2014 link coming soon">' + ICON('yt') + '</span>' +
+        '<span class="fsoc soon" aria-label="Telegram (link coming soon)" title="Telegram \u2014 link coming soon">' + ICON('tg') + '</span>' +
       '</div>' +
       '<div class="pay-strip"><h3>We accept</h3><div class="pays">' +
         '<div class="pay bkash"><span>bKash</span></div>' +

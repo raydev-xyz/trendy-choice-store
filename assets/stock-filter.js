@@ -1,4 +1,4 @@
-/* Trendy Choice — hide stock-out products everywhere
+/* Trendy Choice — hide anything that cannot be sold, everywhere
    ------------------------------------------------------------------
    Stock comes ONLY from the real BusinessKoro API (via the Worker):
      GET https://trendy.r4ydevbd.workers.dev/products
@@ -6,9 +6,16 @@
      -> data[].inStock        (boolean)
      -> data[].variants[].stockQuantity   (per size/colour, informational)
 
-   A product is hidden from the storefront when the backend says it is out
-   of stock:  stockQuantity <= 0  OR  inStock === false.
-   When stock returns, the next page load shows it again.
+   A product is HIDDEN from the storefront when either is true:
+
+     1. the backend says it is out of stock
+          stockQuantity <= 0  OR  inStock === false
+     2. the backend does not list it at all
+          -> there is no stock record and no productId, so it cannot be
+             ordered; showing it would advertise something unbuyable.
+
+   When stock returns (or the product is added back in BusinessKoro) the
+   next page load shows it again. Nothing is cached.
 
    Where it hides them:
      - home page product grid
@@ -19,7 +26,7 @@
 
    Honesty rules:
      - No invented stock numbers. Only the API's own values.
-     - If the API cannot be reached we cannot know what is in stock, so we
+     - If the API cannot be reached we cannot know what is sellable, so we
        show a visible banner instead of silently guessing either way.
 */
 (function () {
@@ -30,20 +37,23 @@
       .replace(/\s+/g, ' ').trim();
   }
 
-  /* Pure: returns the local product ids that are out of stock.
+  /* Pure: returns { hidden: [localIds], outOfStock: [localIds], missing: [localIds] }
      bkProducts = array from GET /products ; localProducts = window.PRODUCTS */
   function computeHidden(bkProducts, localProducts) {
     var byName = {};
     (bkProducts || []).forEach(function (p) { byName[norm(p.name)] = p; });
-    var out = [];
+    var hidden = [], outOfStock = [], missing = [];
     (localProducts || []).forEach(function (lp) {
+      var id = String(lp.id);
       var b = byName[norm(lp.t)];
-      if (!b) return;                       /* unknown to backend: not a stock-out case */
+      if (!b) {                       /* not in the backend: cannot be ordered */
+        missing.push(id); hidden.push(id); return;
+      }
       var q = Number(b.stockQuantity);
       if (!isFinite(q)) q = 0;
-      if (q <= 0 || b.inStock === false) out.push(String(lp.id));
+      if (q <= 0 || b.inStock === false) { outOfStock.push(id); hidden.push(id); }
     });
-    return out;
+    return { hidden: hidden, outOfStock: outOfStock, missing: missing };
   }
   window.BKSTOCK = { computeHidden: computeHidden };
 
@@ -72,6 +82,15 @@
   function apply(hidden) {
     var set = {};
     hidden.forEach(function (id) { set[id] = true; });
+
+    /* The static HTML carries "Out of stock" badges baked in from an old
+       CSV export. The backend is the only truth, so drop any badge on a
+       product the backend says IS in stock. */
+    [].slice.call(document.querySelectorAll('.p-card[data-id] .oos')).forEach(function (b) {
+      var card = b.closest('.p-card');
+      if (card && !set[card.getAttribute('data-id')]) b.parentNode.removeChild(b);
+    });
+
     if (!hidden.length) return 0;
 
     var removed = 0;
@@ -92,7 +111,7 @@
       });
     }
 
-    /* product detail page: make an out-of-stock item unbuyable */
+    /* product detail page: make an unsellable item unbuyable */
     var pid = pagePid();
     if (pid && set[pid]) {
       var add = document.getElementById('add'), buy = document.getElementById('buy');
@@ -116,20 +135,25 @@
     fetch(WORKER + '/products', { headers: { 'Accept': 'application/json' }, cache: 'no-store' })
       .then(function (res) {
         return res.text().then(function (t) {
-          if (!res.ok) throw new Error('HTTP ' + res.status + ' — ' + t.slice(0, 200));
+          if (!res.ok) throw new Error('HTTP ' + res.status + ' \u2014 ' + t.slice(0, 200));
           var d = JSON.parse(t);
           return (d && d.data) ? d.data : (Array.isArray(d) ? d : []);
         });
       })
       .then(function (list) {
-        var hidden = computeHidden(list, window.PRODUCTS || []);
-        window.BKSTOCK.hiddenIds = hidden;
+        var r = computeHidden(list, window.PRODUCTS || []);
+        window.BKSTOCK.hiddenIds = r.hidden;
+        window.BKSTOCK.outOfStockIds = r.outOfStock;
+        window.BKSTOCK.missingIds = r.missing;
         window.BKSTOCK.liveCount = list.length;
-        var n = apply(hidden);
-        if (n || hidden.length) {
-          try { console.info('[stock] live products: ' + list.length +
-            ', out of stock: ' + hidden.length + ', removed from page: ' + n); } catch (e) {}
-        }
+        var n = apply(r.hidden);
+        try {
+          console.info('[stock] backend products: ' + list.length +
+            ', out of stock: ' + r.outOfStock.length +
+            ', not in backend: ' + r.missing.length +
+            ', hidden: ' + r.hidden.length +
+            ', removed from page: ' + n);
+        } catch (e) {}
       }, function (err) {
         /* Cannot know stock -> say so, do not silently guess. */
         banner('Live stock could not be read (' + (err && err.message ? err.message : 'API unreachable') +

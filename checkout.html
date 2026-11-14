@@ -51,6 +51,24 @@
   overflow:auto;max-height:190px;font-size:11px;line-height:1.5;color:#ffc9d3;white-space:pre-wrap;word-break:break-word}
 .co-fail summary{cursor:pointer;font-weight:700;color:#fff;font-size:11.5px;letter-spacing:.3px}
 .btn[disabled]{opacity:.62;cursor:progress}
+
+/* payment number block */
+.co-paynum{margin:12px 0 0;padding:12px 14px;border-radius:14px;
+  background:rgba(139,107,255,.1);border:1px solid rgba(139,107,255,.34)}
+.co-paynum-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.co-paynum-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.62);font-weight:700}
+.co-paynum-num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:17px;font-weight:800;letter-spacing:.6px;color:#fff;
+  user-select:all;-webkit-user-select:all}
+.co-copy{margin-left:auto;padding:5px 11px;border-radius:9px;cursor:pointer;
+  font-size:10.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
+  color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);
+  transition:.15s;font-family:inherit}
+.co-copy:hover{background:rgba(139,107,255,.34);border-color:rgba(139,107,255,.7)}
+.co-copy.done{background:rgba(37,211,102,.24);border-color:rgba(37,211,102,.6)}
+.co-paynum-note{margin:8px 0 0;font-size:11.2px;line-height:1.6;color:rgba(255,255,255,.72)}
+.co-paynum-note b{color:#fff;font-weight:700}
 .co-spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.35);
   border-top-color:#fff;border-radius:50%;animation:cos .7s linear infinite;vertical-align:-2px;margin-right:7px}
 @keyframes cos{to{transform:rotate(360deg)}}
@@ -155,6 +173,15 @@
               <label class="co-pay"><input type="radio" name="pay" value="COD">
                 <span class="co-pay-in"><span class="pay cod"><span>COD</span></span><i>Pay the courier on delivery</i></span></label>
             </div>
+            <div class="co-paynum">
+              <div class="co-paynum-head">
+                <span class="co-paynum-label">Send money to</span>
+                <span class="co-paynum-num" id="coPayNum">01893197649</span>
+                <button type="button" class="co-copy" id="coCopy" aria-label="Copy payment number">Copy</button>
+              </div>
+              <p class="co-paynum-note">Same number for <b>bKash</b>, <b>Nagad</b>, <b>Rocket</b> and <b>Upay</b>.
+                Send the total, then keep the transaction ID — we confirm your order by phone.</p>
+            </div>
             <p class="co-hint">Your order is sent straight to our order system the moment you press
               <b>Place order</b>. Delivery charge is set by the store and shown on your receipt.</p>
           </section>
@@ -194,6 +221,31 @@
     }
 
     var WA='8809642922922', TEL='+8809642922922';
+
+    /* payment number: one number for bKash / Nagad / Rocket / Upay */
+    var PAY_NUM='01893197649';
+    (function(){
+      var btn=document.getElementById('coCopy'), num=document.getElementById('coPayNum');
+      if(!btn||!num) return;
+      btn.addEventListener('click',function(){
+        var txt=num.textContent.trim();
+        function ok(){
+          btn.textContent='Copied'; btn.classList.add('done');
+          setTimeout(function(){btn.textContent='Copy'; btn.classList.remove('done');},1600);
+        }
+        function fallback(){
+          try{
+            var r=document.createRange(); r.selectNodeContents(num);
+            var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+            document.execCommand('copy'); sel.removeAllRanges(); ok();
+          }catch(e){ btn.textContent='Select & copy'; }
+        }
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(txt).then(ok,fallback);
+        } else fallback();
+      });
+    })();
+
     var body=document.getElementById('coBody'), empty=document.getElementById('coEmpty'),
         done=document.getElementById('coDone'), sub=document.getElementById('coSub'),
         itemsEl=document.getElementById('coItems'), form=document.getElementById('coForm'),
