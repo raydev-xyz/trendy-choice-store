@@ -188,8 +188,8 @@
           '<div class="foot-col"><h3>Contact</h3><ul>' +
             '<li><a href="' + BASE + 'account.html#contact">Help Center</a></li>' +
             '<li><a href="' + BASE + 'account.html#contact">Live Chat</a></li>' +
-            '<li><a href="tel:+8809642922922">Call us</a></li>' +
-            '<li><a href="https://wa.me/8809642922922" target="_blank" rel="noopener">WhatsApp</a></li>' +
+            '<li><a href="tel:+8801826459122">Call us</a></li>' +
+            '<li><a href="https://wa.me/8801826459122" target="_blank" rel="noopener">WhatsApp</a></li>' +
           '</ul></div>' +
           '<div class="foot-col"><h3>Services</h3><ul>' +
             '<li><a href="' + BASE + 'account.html#help">Shipping</a></li>' +
