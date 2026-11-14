@@ -1,0 +1,8 @@
+name = "trendy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# BK_API_KEY is a Cloudflare SECRET — never put it here.
+#   npx wrangler secret put BK_API_KEY
+[vars]
+BK_API_BASE_URL = "https://api.businesskoro.com/api/v1/storefront"
