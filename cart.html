@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Your Trendy Choice cart.</title>
+<meta name="description" content="Review the products in your cart.">
+<meta name="theme-color" content="#06030f">
+<meta property="og:title" content="Your Trendy Choice cart.">
+<meta property="og:description" content="Review the products in your cart.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://static.teamily.ai/sites/7415fa18-c253-4b8e-abf9-860390206312/webpages/glass-shop_v6/images/p03.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-base="">
+<header id="siteHeader"></header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <div><h1>Your Cart</h1><p id="csub">Loading…</p></div>
+      <button class="see-all" id="clear"><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M9 7V4.5h6V7"/><path d="M6.5 7l.9 12.5h9.2L17.5 7"/></svg> Clear</button>
+    </div>
+    <div id="cwrap"></div>
+    <div class="pay-strip" style="margin-top:18px">
+      <h3>Payment methods</h3>
+      <div class="pays">
+        <div class="pay bkash"><span>bKash</span></div>
+        <div class="pay nagad"><span>Nagad</span></div>
+        <div class="pay rocket"><span>Rocket</span></div>
+        <div class="pay upay"><span>Upay</span></div>
+        <div class="pay cod"><span>COD</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded',function(){
+    var wrap=document.getElementById('cwrap'), sub=document.getElementById('csub');
+    var P=window.PRODUCTS||[], byId={};
+    P.forEach(function(p){byId[p.id]=p;});
+    function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    function render(){
+      var c=window.CART.read(), ids=Object.keys(c), rows=[], total=0, count=0;
+      ids.forEach(function(id){
+        var p=byId[id]; if(!p){window.CART.remove(id);return;}
+        var q=c[id], line=p.p*q; total+=line; count+=q;
+        rows.push('<div class="citem" data-id="'+id+'">'+
+          '<img src="'+p.i+'" alt="" loading="lazy">'+
+          '<span class="cx"><b>'+esc(p.t)+'</b>'+
+          '<span class="cl"><span class="qty">'+
+          '<button data-a="-1" aria-label="Decrease"><svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button>'+
+          '<output>'+q+'</output>'+
+          '<button data-a="1" aria-label="Increase"><svg class="ico" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></span>'+
+          '<span class="price">'+window.money(line)+'</span></span></span>'+
+          '<button class="rm" data-rm aria-label="Remove">'+
+          '<svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M9 7V4.5h6V7"/><path d="M6.5 7l.9 12.5h9.2L17.5 7"/></svg></button></div>');
+      });
+      if(!rows.length){
+        wrap.innerHTML='<div class="empty">Your cart is empty.<br><br>'+
+          '<a class="see-all" href="products.html">Browse products</a></div>';
+        sub.textContent='No items yet'; return;
+      }
+      var msg='Hi Trendy Choice! I want to order: '+ids.map(function(i){
+        return (byId[i]?byId[i].t:'')+' x'+c[i];}).join(', ')+' | Total '+window.money(total);
+      wrap.innerHTML='<div class="cart-list">'+rows.join('')+'</div>'+
+        '<div class="sum glass"><div class="line"><span>Items</span><span>'+count+'</span></div>'+
+        '<div class="line"><span>Subtotal</span><span>'+window.money(total)+'</span></div>'+
+        '<div class="line"><span>Delivery</span><span>Calculated on call</span></div>'+
+        '<div class="line total"><span>Total</span><span>'+window.money(total)+'</span></div>'+
+        '<div class="cta"><a class="btn primary wide" href="checkout.html">Proceed to checkout</a>'+
+        '<a class="btn wa" href="https://wa.me/8809642922922?text='+encodeURIComponent(msg)+
+        '" target="_blank" rel="noopener">Order on WhatsApp</a>'+
+        '<a class="btn call" href="tel:+8809642922922">Call for order</a></div></div>'+
+        '<p class="note">This is a storefront demo: the cart is saved only in this browser on this device, '+
+        'and no payment is taken here. Checkout collects your delivery details and hands the order to us on '+
+        'WhatsApp or by phone for confirmation.</p>';
+      sub.textContent=count+' item'+(count===1?'':'s')+' \u00b7 '+window.money(total);
+    }
+    document.addEventListener('click',function(e){
+      var r=e.target.closest('[data-rm]');
+      if(r){var it=r.closest('.citem');window.CART.remove(it.dataset.id);render();return;}
+      var b=e.target.closest('[data-a]');
+      if(b){var row=b.closest('.citem'), id=row.dataset.id, cur=window.CART.read()[id]||0;
+        window.CART.set(id,cur+parseInt(b.dataset.a,10));render();}
+    });
+    document.getElementById('clear').addEventListener('click',function(){
+      if(window.CART.count()){window.CART.clear();render();}
+    });
+    render();
+  });
+  </script>
+</main>
+<footer data-footer></footer>
+<div id="siteDock" data-active="cart"></div>
+<script src="products.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/stock-filter.js"></script>
+
+</body>
+</html>

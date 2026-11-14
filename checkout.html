@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Checkout &middot; Trendy Choice</title>
+<meta name="description" content="Enter your delivery details and place your Trendy Choice order.">
+<meta name="theme-color" content="#06030f">
+<meta property="og:title" content="Checkout &middot; Trendy Choice">
+<meta property="og:description" content="Enter your delivery details and place your Trendy Choice order.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://static.teamily.ai/sites/7415fa18-c253-4b8e-abf9-860390206312/webpages/glass-shop_v6/images/p03.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* checkout-only additions, built from the same glass tokens */
+.co-api-status{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-radius:14px;
+  font-size:12.5px;line-height:1.55;margin:0 0 16px;border:1px solid rgba(255,255,255,.14)}
+.co-api-status .ico{flex:0 0 auto;width:17px;height:17px;margin-top:1px}
+.co-api-status.bad{background:rgba(255,80,110,.12);border-color:rgba(255,80,110,.42);color:#ffd4dc}
+.co-api-status.warn{background:rgba(255,190,80,.11);border-color:rgba(255,190,80,.38);color:#ffe6bd}
+.co-api-status.info{background:rgba(255,255,255,.06);color:rgba(255,255,255,.8)}
+.co-api-status b{color:#fff;font-weight:700}
+.co-api-status code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;
+  background:rgba(0,0,0,.34);padding:1px 5px;border-radius:5px;word-break:break-all}
+
+/* real receipt */
+.co-receipt{margin:18px 0 0;display:grid;gap:10px}
+.co-rcpt-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.co-rcpt-head h2{margin:0;font-size:19px}
+.co-rcpt-list{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.co-rcpt-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:11px 13px;border-radius:12px;background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.12);font-size:12.5px;flex-wrap:wrap}
+.co-rcpt-list .num{font-weight:800;font-size:14px;color:#fff;letter-spacing:.3px}
+.co-rcpt-list .oid{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
+  color:rgba(255,255,255,.62);word-break:break-all}
+.co-rcpt-list .st{font-size:10.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;
+  padding:3px 9px;border-radius:20px;background:rgba(255,190,80,.18);
+  border:1px solid rgba(255,190,80,.45);color:#ffd98a;white-space:nowrap}
+.co-rcpt-list li.bad{background:rgba(255,80,110,.1);border-color:rgba(255,80,110,.4)}
+.co-rcpt-list li.bad .num{color:#ffb9c6}
+.co-fail{margin:14px 0 0;padding:13px 15px;border-radius:14px;font-size:12.5px;line-height:1.6;
+  background:rgba(255,80,110,.1);border:1px solid rgba(255,80,110,.42);color:#ffd4dc}
+.co-fail h3{margin:0 0 7px;font-size:13px;color:#fff;letter-spacing:.2px}
+.co-fail ul{margin:0 0 10px;padding-left:17px}
+.co-fail li{margin:3px 0}
+.co-fail pre{margin:8px 0 0;padding:10px;border-radius:9px;background:rgba(0,0,0,.42);
+  overflow:auto;max-height:190px;font-size:11px;line-height:1.5;color:#ffc9d3;white-space:pre-wrap;word-break:break-word}
+.co-fail summary{cursor:pointer;font-weight:700;color:#fff;font-size:11.5px;letter-spacing:.3px}
+.btn[disabled]{opacity:.62;cursor:progress}
+.co-spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.35);
+  border-top-color:#fff;border-radius:50%;animation:cos .7s linear infinite;vertical-align:-2px;margin-right:7px}
+@keyframes cos{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body data-base="">
+<header id="siteHeader"></header>
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <div><h1>Checkout</h1><p id="coSub">Loading&hellip;</p></div>
+      <a class="see-all" href="cart.html">Back to cart</a>
+    </div>
+
+    <div id="coEmpty" hidden>
+      <div class="empty">Your cart is empty.<br><br>
+        <a class="see-all" href="products.html">Browse products</a></div>
+    </div>
+
+    <div id="coBody" hidden>
+      <div id="coApiStatus" class="co-api-status info" hidden></div>
+      <form id="coForm" class="co-grid" novalidate>
+        <div class="co-main">
+
+          <section class="card-block glass">
+            <h2><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.8 6h10v9.5H2.8z"/><path d="M12.8 9.5h4l3.4 3V15.5h-7.4z"/><circle cx="6.6" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></svg> Delivery details</h2>
+            <div class="co-fields">
+              <label class="co-field co-wide"><span>Full name</span>
+                <input id="fName" name="name" type="text" autocomplete="name" placeholder="Your full name">
+                <em class="co-err" hidden></em></label>
+              <label class="co-field"><span>Mobile number</span>
+                <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX">
+                <em class="co-err" hidden></em></label>
+              <label class="co-field"><span>District</span>
+                <select id="fDist" name="district" autocomplete="address-level2">
+                  <option value="">Select district</option>
+                  <optgroup label="Dhaka">
+                    <option>Dhaka</option><option>Gazipur</option><option>Kishoreganj</option>
+                    <option>Manikganj</option><option>Munshiganj</option><option>Narayanganj</option>
+                    <option>Narsingdi</option><option>Tangail</option><option>Faridpur</option>
+                    <option>Gopalganj</option><option>Madaripur</option><option>Rajbari</option>
+                    <option>Shariatpur</option>
+                  </optgroup>
+                  <optgroup label="Chattogram">
+                    <option>Chattogram</option><option>Cox's Bazar</option><option>Cumilla</option>
+                    <option>Brahmanbaria</option><option>Chandpur</option><option>Feni</option>
+                    <option>Noakhali</option><option>Lakshmipur</option><option>Khagrachhari</option>
+                    <option>Rangamati</option><option>Bandarban</option>
+                  </optgroup>
+                  <optgroup label="Rajshahi">
+                    <option>Rajshahi</option><option>Bogura</option><option>Joypurhat</option>
+                    <option>Naogaon</option><option>Natore</option><option>Chapainawabganj</option>
+                    <option>Pabna</option><option>Sirajganj</option>
+                  </optgroup>
+                  <optgroup label="Khulna">
+                    <option>Khulna</option><option>Bagerhat</option><option>Chuadanga</option>
+                    <option>Jashore</option><option>Jhenaidah</option><option>Kushtia</option>
+                    <option>Magura</option><option>Meherpur</option><option>Narail</option>
+                    <option>Satkhira</option>
+                  </optgroup>
+                  <optgroup label="Barishal">
+                    <option>Barishal</option><option>Barguna</option><option>Bhola</option>
+                    <option>Jhalokati</option><option>Patuakhali</option><option>Pirojpur</option>
+                  </optgroup>
+                  <optgroup label="Sylhet">
+                    <option>Sylhet</option><option>Habiganj</option><option>Moulvibazar</option>
+                    <option>Sunamganj</option>
+                  </optgroup>
+                  <optgroup label="Rangpur">
+                    <option>Rangpur</option><option>Dinajpur</option><option>Gaibandha</option>
+                    <option>Kurigram</option><option>Lalmonirhat</option><option>Nilphamari</option>
+                    <option>Panchagarh</option><option>Thakurgaon</option>
+                  </optgroup>
+                  <optgroup label="Mymensingh">
+                    <option>Mymensingh</option><option>Jamalpur</option><option>Netrokona</option>
+                    <option>Sherpur</option>
+                  </optgroup>
+                </select>
+                <em class="co-err" hidden></em></label>
+              <label class="co-field"><span>Area / Thana</span>
+                <input id="fArea" name="area" type="text" autocomplete="address-level3" placeholder="e.g. Dhanmondi">
+                <em class="co-err" hidden></em></label>
+              <label class="co-field co-wide"><span>Full delivery address</span>
+                <textarea id="fAddr" name="address" autocomplete="street-address" placeholder="House / road / area, nearest landmark"></textarea>
+                <em class="co-err" hidden></em></label>
+              <label class="co-field co-wide"><span>Order note (optional)</span>
+                <textarea id="fNote" name="note" placeholder="Colour, size or delivery preference"></textarea></label>
+            </div>
+          </section>
+
+          <section class="card-block glass">
+            <h2><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.6" y="5" width="18.8" height="14" rx="3"/><path d="M2.6 10h18.8"/><path d="M6 15h3"/></svg> Payment method</h2>
+            <div class="co-pays">
+              <label class="co-pay"><input type="radio" name="pay" value="bKash" checked>
+                <span class="co-pay-in"><span class="pay bkash"><span>bKash</span></span><i>Pay on confirmation</i></span></label>
+              <label class="co-pay"><input type="radio" name="pay" value="Nagad">
+                <span class="co-pay-in"><span class="pay nagad"><span>Nagad</span></span><i>Pay on confirmation</i></span></label>
+              <label class="co-pay"><input type="radio" name="pay" value="Rocket">
+                <span class="co-pay-in"><span class="pay rocket"><span>Rocket</span></span><i>Pay on confirmation</i></span></label>
+              <label class="co-pay"><input type="radio" name="pay" value="Upay">
+                <span class="co-pay-in"><span class="pay upay"><span>Upay</span></span><i>Pay on confirmation</i></span></label>
+              <label class="co-pay"><input type="radio" name="pay" value="COD">
+                <span class="co-pay-in"><span class="pay cod"><span>COD</span></span><i>Pay the courier on delivery</i></span></label>
+            </div>
+            <p class="co-hint">Your order is sent straight to our order system the moment you press
+              <b>Place order</b>. Delivery charge is set by the store and shown on your receipt.</p>
+          </section>
+
+        </div>
+
+        <aside class="co-side">
+          <div class="sum glass">
+            <h3>Order summary</h3>
+            <div class="co-items" id="coItems"></div>
+            <div class="line"><span>Items</span><span id="coCount">0</span></div>
+            <div class="line"><span>Subtotal</span><span id="coSub2">&#2547;0</span></div>
+            <div class="line"><span>Delivery</span><span id="coShip">Confirmed by store</span></div>
+            <div class="line total"><span>Total</span><span id="coTotal">&#2547;0</span></div>
+            <div class="cta">
+              <button class="btn primary wide" type="submit" id="coPlace">Place order</button>
+            </div>
+          </div>
+        </aside>
+      </form>
+    </div>
+
+    <div id="coDone" hidden></div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded',function(){
+    var P=window.PRODUCTS||[], byId={};
+    P.forEach(function(p){byId[p.id]=p;});
+    function esc(s){return String(s).replace(/[&<>"]/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    /* the client prefixes messages with their own "HTTP nnn — "; the receipt
+       already prints the status separately, so avoid saying it twice */
+    function stripHttp(m){
+      m=String(m==null?'request failed':m);
+      return m.replace(/^HTTP\s+\d{3}\s*(?:\u2014|-)?\s*/,'')||'request failed';
+    }
+
+    var WA='8809642922922', TEL='+8809642922922';
+    var body=document.getElementById('coBody'), empty=document.getElementById('coEmpty'),
+        done=document.getElementById('coDone'), sub=document.getElementById('coSub'),
+        itemsEl=document.getElementById('coItems'), form=document.getElementById('coForm'),
+        placeBtn=document.getElementById('coPlace'), apiBox=document.getElementById('coApiStatus');
+
+    var lines=[], total=0, count=0, submitting=false;
+    var SHIP={insideDhaka:70,outsideDhaka:130};  /* real values from GET /products */
+    var DISTRICT_DIVISION={};
+
+    /* district -> division, derived from the grouped <select> above */
+    (function(){
+      var sel=document.getElementById('fDist');
+      [].slice.call(sel.querySelectorAll('optgroup')).forEach(function(g){
+        [].slice.call(g.querySelectorAll('option')).forEach(function(o){
+          DISTRICT_DIVISION[o.value]=g.getAttribute('label');
+        });
+      });
+    })();
+
+    function collect(){
+      var c=window.CART.read(), ids=Object.keys(c);
+      lines=[]; total=0; count=0;
+      ids.forEach(function(id){
+        var p=byId[id]; if(!p){window.CART.remove(id);return;}
+        var q=c[id], line=p.p*q; total+=line; count+=q;
+        lines.push({id:id,p:p,q:q,line:line,v:(window.VARIANTS?window.VARIANTS.text(id):''),
+                    vv:(window.VARIANTS?window.VARIANTS.get(id):{})});
+      });
+    }
+
+    function renderSummary(){
+      itemsEl.innerHTML=lines.map(function(l){
+        return '<div class="co-item"><img src="'+l.p.i+'" alt="" loading="lazy">'+
+          '<span class="tx"><b>'+esc(l.p.t)+'</b><span>'+(l.v?esc(l.v)+' \u00b7 ':'')+'Qty '+l.q+'</span></span>'+
+          '<span class="pr">'+window.money(l.line)+'</span></div>';
+      }).join('');
+      document.getElementById('coCount').textContent=count;
+      document.getElementById('coSub2').textContent=window.money(total);
+      document.getElementById('coTotal').textContent=window.money(total);
+      sub.textContent=count+' item'+(count===1?'':'s')+' \u00b7 '+window.money(total);
+    }
+
+    function setApiStatus(kind,html){
+      if(!apiBox) return;
+      if(!html){ apiBox.hidden=true; apiBox.innerHTML=''; return; }
+      apiBox.className='co-api-status '+kind;
+      apiBox.innerHTML=html;
+      apiBox.hidden=false;
+    }
+
+    /* ---- real catalogue first: prices, stock and variants come from the API ---- */
+    function loadLive(){
+      if(!window.BKCAT||!window.BK){
+        setApiStatus('bad','<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 17H3z"/><path d="M12 9v5M12 17h.01"/></svg>'+
+          '<span><b>Order service not loaded.</b> The API client failed to load, so orders cannot be placed from this page.</span>');
+        return Promise.resolve(false);
+      }
+      return window.BKCAT.load().then(function(){
+        var d=window.BKCAT.lastCharges;
+        if(d&&d.insideDhaka) SHIP=d;
+        /* re-price every line from the real backend catalogue */
+        lines.forEach(function(l){
+          var b=window.BKCAT.backend(l.id);
+          if(b){
+            var real=b.suggestedPrice;
+            l.p=Object.assign({},l.p,{p:real,s:b.stockQuantity});
+            l.line=real*l.q;
+          }
+        });
+        total=lines.reduce(function(a,l){return a+l.line;},0);
+        renderSummary();
+        setApiStatus('info','<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 2.5v6c0 4.4-3 7.6-7 9.5-4-1.9-7-5.1-7-9.5v-6z"/><path d="m9 12 2 2 4-4"/></svg>'+
+          '<span><b>Connected to the live store.</b> Prices and stock below come from the store backend.</span>');
+        return true;
+      },function(err){
+        setApiStatus('bad','<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 17H3z"/><path d="M12 9v5M12 17h.01"/></svg>'+
+          '<span><b>The store backend could not be reached.</b> Orders cannot be placed until it responds.<br>'+
+          'Real error: <code>'+esc(err&&err.message?err.message:String(err))+'</code></span>');
+        return false;
+      });
+    }
+
+    /* ---- receipt: only what the API actually returned ---- */
+    function showReceipt(ok, failed, meta){
+      var rows=ok.map(function(r,i){
+        var src=meta[i]||{};
+        return '<li><span><span class="num">Order #'+esc(r.orderNumber)+'</span><br>'+
+          '<span class="oid">'+esc(r.id)+'</span><br>'+
+          '<span class="oid">'+esc(src.name||'')+(src.variant?' \u00b7 '+esc(src.variant):'')+'</span></span>'+
+          '<span class="st">'+esc(r.status||'RECEIVED')+'</span></li>';
+      }).join('');
+
+      var failRows=failed.map(function(f){
+        return '<li class="bad"><span><span class="num">Not placed</span><br>'+
+          '<span class="oid">'+esc(f.name||'')+(f.variant?' \u00b7 '+esc(f.variant):'')+'</span></span>'+
+          '<span class="st" style="background:rgba(255,80,110,.2);border-color:rgba(255,80,110,.5);color:#ffb9c6">'+
+          'HTTP '+esc(String(f.status||'ERR'))+'</span></li>';
+      }).join('');
+
+      var allOk=ok.length>0&&failed.length===0;
+      var head=allOk?'Order placed':(ok.length?'Order partly placed':'Order NOT placed');
+      var tone='tick';
+
+      var failBox='';
+      if(failed.length){
+        /* group identical failures so one reason with 3 units reads as
+           "3 units" instead of repeating the same line three times */
+        var groups=[], seen={};
+        failed.forEach(function(f){
+          var k=(f.status||0)+'|'+(f.message||'');
+          if(!seen[k]){ seen[k]=1; groups.push({status:f.status,message:f.message,n:0,names:[],raw:f.raw}); }
+          var g=null;
+          groups.forEach(function(x){ if((x.status||0)+'|'+(x.message||'')===k) g=x; });
+          g.n++; if(g.names.indexOf(f.name||'')===-1) g.names.push(f.name||'');
+        });
+        failBox='<div class="co-fail"><h3>'+
+          (ok.length?'Some items could not be sent to the store':'Your order was NOT placed')+'</h3>'+
+          '<ul>'+groups.map(function(g){
+            return '<li><b>'+esc(g.n>1?g.n+' units':'1 unit')+'</b> of '+esc(g.names.join(', '))+
+              ': <b>HTTP '+esc(String(g.status||'0'))+'</b> \u2014 '+esc(stripHttp(g.message))+'</li>';
+          }).join('')+'</ul>'+
+          (failed[0]&&failed[0].raw?'<details><summary>Show the raw API response</summary><pre>'+
+            esc(failed[0].raw)+'</pre></details>':'')+
+          '</div>';
+      }
+
+      var last=ok[ok.length-1];
+      var waTxt='Order confirmation\n\n'+ok.map(function(r){
+        return 'Order #'+r.orderNumber+' ('+r.id+')';
+      }).join('\n')+'\n\nName: '+(document.getElementById('fName').value.trim());
+
+      done.innerHTML='<div class="co-done glass">'+
+        '<span class="'+tone+'">'+window.ICON(allOk?'shield':'close')+'</span>'+
+        '<h2>'+head+'</h2>'+
+        (allOk&&last?'<span class="oid">#'+esc(last.orderNumber)+'</span>':'')+
+        '<p class="note" style="margin:0">'+
+          (allOk
+            ? 'Your order was received by the store ordering system. Keep the order number above \u2014 quote it on WhatsApp or when we call to confirm.'
+            : ok.length
+              ? 'These items were received by the store. The items marked below were NOT placed and still need to be ordered.'
+              : 'Nothing was saved. The store rejected the request \u2014 the exact error is shown below.')+
+        '</p>'+
+        '<ul class="co-rcpt-list">'+rows+failRows+'</ul>'+
+        failBox+
+        '<div class="co-recap">'+
+          '<div class="line"><span>Items sent</span><b>'+ok.length+' of '+(ok.length+failed.length)+'</b></div>'+
+          (ok.length?'<div class="line"><span>Goods total</span><b>'+
+            window.money(ok.reduce(function(a,r){return a+(r.sellingPrice||0);},0))+'</b></div>':'')+
+          (allOk&&last?'<div class="line"><span>Delivery charge</span><b>'+window.money(last.courierCharge||0)+'</b></div>':'')+
+          '<div class="line"><span>Name</span><b>'+esc(document.getElementById('fName').value.trim())+'</b></div>'+
+          '<div class="line"><span>Mobile</span><b>'+esc(document.getElementById('fPhone').value.trim())+'</b></div>'+
+          '<div class="line"><span>District</span><b>'+esc(document.getElementById('fDist').value)+'</b></div>'+
+          '<div class="line"><span>Address</span><b>'+esc(document.getElementById('fAddr').value.trim())+'</b></div>'+
+        '</div>'+
+        '<div class="cta">'+
+          (ok.length?'<a class="btn wa wide" href="https://wa.me/'+WA+'?text='+encodeURIComponent(waTxt)+'" target="_blank" rel="noopener">'+window.ICON('wa')+' Send order number on WhatsApp</a>':'')+
+          '<a class="btn call" href="tel:'+TEL+'">'+window.ICON('phone')+' Call to confirm</a>'+
+          '<a class="btn ghost" href="products.html">Continue shopping</a>'+
+        '</div></div>';
+      body.hidden=true; empty.hidden=true; done.hidden=false;
+      try{ window.scrollTo({top:0,behavior:'smooth'}); }catch(e){ window.scrollTo(0,0); }
+    }
+
+    function setErr(input,msg){
+      var f=input.closest('.co-field'); if(!f) return;
+      var e=f.querySelector('.co-err');
+      if(msg){ f.classList.add('err'); if(e){e.textContent=msg; e.hidden=false;} }
+      else { f.classList.remove('err'); if(e){e.textContent=''; e.hidden=true;} }
+    }
+
+    function validate(){
+      var ok=true, first=null;
+      var name=document.getElementById('fName'), phone=document.getElementById('fPhone'),
+          dist=document.getElementById('fDist'), area=document.getElementById('fArea'),
+          addr=document.getElementById('fAddr');
+      if(!name.value.trim()){ setErr(name,'Please enter your name.'); ok=false; first=first||name; }
+      else setErr(name,'');
+      var digits=phone.value.replace(/[^0-9]/g,'');
+      if(!digits){ setErr(phone,'Please enter your mobile number.'); ok=false; first=first||phone; }
+      else if(!/^01[3-9][0-9]{8}$/.test(digits)){ setErr(phone,'Enter an 11-digit number starting 01, e.g. 01712345678.'); ok=false; first=first||phone; }
+      else setErr(phone,'');
+      if(!dist.value){ setErr(dist,'Please choose your district.'); ok=false; first=first||dist; }
+      else setErr(dist,'');
+      if(!area.value.trim()){ setErr(area,'Please enter your area or thana.'); ok=false; first=first||area; }
+      else setErr(area,'');
+      if(addr.value.trim().length<6){ setErr(addr,'Please enter your full delivery address.'); ok=false; first=first||addr; }
+      else setErr(addr,'');
+      if(first){ try{ first.focus(); }catch(e){} }
+      return ok;
+    }
+
+    function setBusy(on){
+      placeBtn.disabled=on;
+      placeBtn.innerHTML=on?'<span class="co-spin"></span>Placing order\u2026':(window.__savedBtn||'Place order');
+    }
+
+    /* Build the exact payload the API validated. One order = one unit, so a
+       cart line with quantity 2 becomes two separate POSTs. */
+    function payloadFor(l,b){
+      var v=l.vv||{};
+      var p={
+        productId:b.id,
+        customerName:document.getElementById('fName').value.trim(),
+        customerPhone:document.getElementById('fPhone').value.replace(/[^0-9]/g,''),
+        customerAddress:document.getElementById('fAddr').value.trim(),
+        customerDivision:DISTRICT_DIVISION[document.getElementById('fDist').value]||'',
+        customerDistrict:document.getElementById('fDist').value,
+        customerArea:document.getElementById('fArea').value.trim(),
+        sellingPrice:b.suggestedPrice
+      };
+      if(b.size||v.Size) p.size=(v.Size||'');
+      if(b.color||v.Color) p.color=(v.Color||'');
+      if(!p.size&&window.BKCAT.sizes(l.id).length) p.size=window.BKCAT.sizes(l.id)[0];
+      if(!p.color&&window.BKCAT.colors(l.id).length) p.color=window.BKCAT.colors(l.id)[0];
+      return p;
+    }
+
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!lines.length) return;
+      if(!validate()){ window.toast('Please check the highlighted fields'); return; }
+      if(submitting) return;
+      submitting=true; setBusy(true);
+
+      var ok=[], failed=[], meta=[];
+
+      loadLive().then(function(live){
+        if(!live||!window.BKCAT) throw new Error('store backend unavailable');
+
+        /* run the POSTs in sequence so each real response can be reported */
+        var jobs=[];
+        lines.forEach(function(l){
+          var b=window.BKCAT.backend(l.id);
+          if(!b){
+            failed.push({name:l.p.t,variant:l.v,status:0,
+              message:'this product is not in the store catalogue (no matching backend id)'});
+            return;
+          }
+          for(var u=0;u<l.q;u++){ jobs.push({l:l,b:b}); }
+        });
+
+        return jobs.reduce(function(chain,job){
+          return chain.then(function(){
+            var payload=payloadFor(job.l,job.b);
+            return window.BK.placeOrder(payload).then(function(res){
+              ok.push(res); meta.push({name:job.l.p.t,variant:job.l.v});
+            },function(err){
+              failed.push({
+                name:job.l.p.t, variant:job.l.v,
+                status:err.status||0,
+                message:err.message||String(err),
+                raw:err.body?JSON.stringify(err.body,null,2):''
+              });
+            });
+          });
+        },Promise.resolve());
+      }).then(function(){
+        submitting=false; setBusy(false);
+        if(ok.length){ window.CART.clear(); }
+        showReceipt(ok,failed,meta);
+      },function(err){
+        submitting=false; setBusy(false);
+        showReceipt([],[{name:'Whole order',status:err.status||0,
+          message:err.message||String(err),
+          raw:err.body?JSON.stringify(err.body,null,2):''}],[]);
+      });
+    });
+
+    /* ---- boot ---- */
+    placeBtn.innerHTML=placeBtn.innerHTML; window.__savedBtn='Place order';
+    collect();
+    if(!lines.length){ empty.hidden=false; body.hidden=true; sub.textContent='No items yet'; return; }
+    body.hidden=false;
+    renderSummary();
+    loadLive().then(function(){
+      /* show the real delivery estimate once the charges are known */
+      var d=document.getElementById('fDist');
+      function ship(){
+        if(!d.value) return;
+        var div=DISTRICT_DIVISION[d.value]||'';
+        var fee=(div==='Dhaka')?SHIP.insideDhaka:SHIP.outsideDhaka;
+        document.getElementById('coShip').textContent=window.money(fee);
+        document.getElementById('coTotal').textContent=window.money(total+fee);
+      }
+      d.addEventListener('change',ship); ship();
+    });
+  });
+  </script>
+</main>
+<footer data-footer></footer>
+<div id="siteDock" data-active="cart"></div>
+<script src="products.js"></script>
+<script src="assets/bk-api.js"></script>
+<script src="assets/bk-catalog.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/stock-filter.js"></script>
+
+</body>
+</html>
