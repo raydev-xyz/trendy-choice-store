@@ -24,38 +24,8 @@
       <span class="crumb">Home &amp; Living</span>
     </div>
 
-    <div class="pdp-grid">
-      <div class="pdp-media-wrap">
-        <div class="pdp-media">
-          <img src="../images/p66.jpg" alt="LED Lemon Slice String Light" width="700" height="700">
-          <span class="stock-flag"><span class="badge no">Out of stock</span></span>
-        </div>
-      </div>
 
-      <div>
-        <div class="pdp-info glass">
-          <h1>LED Lemon Slice String Light</h1>
-          <div class="pdp-meta">
-            <span>Home &amp; Living</span><span class="dot"></span><span>0 in stock</span>
-          </div>
-
-          <div class="price-row">
-            <span class="now">৳950</span>
-          </div>
-
-          <div class="cta">
-            <button class="btn cart" id="add" disabled><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/></svg> Add to cart</button>
-            <button class="btn buy" id="buy" disabled><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> Buy now</button>
-          </div>
-
-          <div class="desc-block">
-            <h2>Product details</h2>
-            <p>Short Description:
-Bright lemon-shaped LED string light with warm yellow glow and clear flexible wire—perfect for room decor, party decoration, festivals, balcony, café, and cozy lighting setup</p>
-          </div>
-        </div>
-
-        <div class="chat-card">
+        <div class="chat-card" id="pdpChat">
           <div class="chat-head">
             <span class="wa-ava"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" stroke="none"><path d="M12.04 2.2a9.7 9.7 0 0 0-8.3 14.7L2.2 21.8l5-1.5a9.7 9.7 0 1 0 4.84-18.1Zm0 1.8a7.9 7.9 0 1 1-4 14.7l-.3-.18-3 .9.9-2.9-.2-.3A7.9 7.9 0 0 1 12.04 4Zm-3.2 3.9c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2s.8 2.2 1 2.4c.1.1 1.6 2.7 4 3.6 1.9.8 2.3.7 2.8.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.2.2-1.3 0-.1-.2-.2-.4-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.7.8c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.3.1-.4l.5-.6c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.3-.4-.5-.4h-.4Z"/></svg></span>
             <span class="who"><b>Trendy Choice</b><span>online now</span></span>
@@ -74,53 +44,52 @@ Bright lemon-shaped LED string light with warm yellow glow and clear flexible wi
           </div>
         </div>
 
+    <div class="pdp-grid">
+      <div class="pdp-media-wrap">
+        <div class="pdp-media">
+          <img alt="" width="700" height="700" class="is-loading">
+          <span class="stock-flag"></span>
+        </div>
+      </div>
+
+      <div>
+        <div class="pdp-info glass">
+          <h1>LED Lemon Slice String Light</h1>
+          <div class="pdp-meta">
+            <span>Home &amp; Living</span><span class="dot"></span>
+          </div>
+
+          <div class="price-row">
+            <span class="now">৳950</span>
+          </div>
+
+          <div class="cta">
+            <button class="btn cart" id="add" disabled><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/></svg> Add to cart</button>
+            <button class="btn buy" id="buy" disabled><svg class="ico " viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> Buy now</button>
+          </div>
+
+          <div class="desc-block">
+            <h2>Product details</h2>
+            <p>Short Description:
+Bright lemon-shaped LED string light with warm yellow glow and clear flexible wire—perfect for room decor, party decoration, festivals, balcony, café, and cozy lighting setup</p>
+          </div>
+        </div>
         <p class="note">Payment: bKash · Nagad · Rocket · Upay · COD. This is a demo
           storefront — nothing is charged here; the order is confirmed on WhatsApp or by phone.</p>
       </div>
     </div>
   </div>
 
-  <script>
-  document.addEventListener('DOMContentLoaded',function(){
-    var pid=66, price=950, name="LED Lemon Slice String Light";
-    var add=document.getElementById('add'), buy=document.getElementById('buy'), wa=document.getElementById('wa');
-    var chips=[].slice.call(document.querySelectorAll('.opt-chip'));
-    var picked={};
-    chips.forEach(function(c){
-      c.addEventListener('click',function(){
-        var g=c.getAttribute('data-g');
-        picked[g]=c.getAttribute('data-v');
-        chips.forEach(function(o){ if(o.getAttribute('data-g')===g) o.setAttribute('aria-pressed', o===c?'true':'false'); });
-        syncWa();
-      });
-    });
-    function variant(){
-      var parts=[];
-      Object.keys(picked).forEach(function(k){ parts.push(k+': '+picked[k]); });
-      return parts.join(', ');
-    }
-    function syncWa(){
-      if(!wa) return;
-      var v=variant();
-      var txt='Hi! I want to order '+name+' for '+price+(v?' ('+v+')':'')+'.';
-      wa.href='https://wa.me/8809642922922?text='+encodeURIComponent(txt);
-    }
-    function go(cart){
-      if(add.disabled) return;
-      window.CART.add(pid,1); window.toast('Added to cart');
-      if(cart) setTimeout(function(){location.href='../cart.html';},260);
-    }
-    if(add) add.addEventListener('click',function(){go(false);});
-    if(buy) buy.addEventListener('click',function(){go(true);});
-    syncWa();
-  });
-  </script>
 </main>
 <footer data-footer></footer>
 <div id="siteDock" data-active=""></div>
 <script src="../products.js"></script>
+<script src="../assets/bk-store.js?v=202611161330"></script>
+<script src="../assets/bk-api.js?v=202611161330"></script>
+<script src="../assets/bk-catalog.js?v=202611161330"></script>
 <script src="../assets/site.js"></script>
-<script src="../assets/stock-filter.js?v=202611160859"></script>
+<script src="../assets/bk-pdp.js?v=202611161330"></script>
+<script src="../assets/stock-filter.js?v=202611161330"></script>
 
 </body>
 </html>

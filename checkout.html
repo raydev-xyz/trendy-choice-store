@@ -72,6 +72,19 @@
 .co-spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.35);
   border-top-color:#fff;border-radius:50%;animation:cos .7s linear infinite;vertical-align:-2px;margin-right:7px}
 @keyframes cos{to{transform:rotate(360deg)}}
+
+/* payment reference fields (bug 6) */
+.co-payfields{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0 0}
+@media(min-width:560px){.co-payfields{grid-template-columns:1fr 1fr}}
+.co-payfields .co-field:last-child{grid-column:1/-1}
+@media(min-width:560px){.co-payfields .co-field:last-child{grid-column:auto}}
+.co-payfields .co-field span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:rgba(255,255,255,.62);display:block;margin:0 0 5px}
+.co-payfields input{width:100%;padding:11px 13px;border-radius:11px;font:inherit;font-size:14px;
+  color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16)}
+.co-payfields input:focus{outline:none;border-color:#9d8bff;background:rgba(255,255,255,.1)}
+.co-payfields .co-field.err input{border-color:rgba(255,80,110,.75)}
+.co-payfields .co-err{display:block;margin:5px 0 0;font-size:11px;color:#ffb9c6;font-style:normal}
 </style>
 </head>
 <body data-base="">
@@ -173,7 +186,7 @@
               <label class="co-pay"><input type="radio" name="pay" value="COD">
                 <span class="co-pay-in"><span class="pay cod"><span>COD</span></span><i>Pay the courier on delivery</i></span></label>
             </div>
-            <div class="co-paynum">
+            <div class="co-paynum" id="coPayBox">
               <div class="co-paynum-head">
                 <span class="co-paynum-label">Send money to</span>
                 <span class="co-paynum-num" id="coPayNum">01893197649</span>
@@ -181,9 +194,35 @@
               </div>
               <p class="co-paynum-note">Same number for <b>bKash</b>, <b>Nagad</b>, <b>Rocket</b> and <b>Upay</b>.
                 Send the total, then keep the transaction ID — we confirm your order by phone.</p>
+
+              <!-- Without these three fields the shop cannot tell WHICH payment
+                   belongs to WHICH order. They are sent with the order. -->
+              <div class="co-payfields">
+                <label class="co-field">
+                  <span>Your payment number</span>
+                  <input id="fPayNum" name="paymentNumber" type="tel" inputmode="numeric"
+                         autocomplete="tel" placeholder="01XXXXXXXXX">
+                  <em class="co-err" hidden></em>
+                </label>
+                <label class="co-field">
+                  <span>Transaction ID</span>
+                  <input id="fTxn" name="transactionId" type="text" autocomplete="off"
+                         placeholder="e.g. 8H7X2K9Q1M" maxlength="40">
+                  <em class="co-err" hidden></em>
+                </label>
+                <label class="co-field">
+                  <span>Amount you sent (&#2547;)</span>
+                  <input id="fPayAmt" name="paymentAmount" type="number" inputmode="numeric"
+                         min="1" step="1" placeholder="0">
+                  <em class="co-err" hidden></em>
+                </label>
+              </div>
             </div>
+            <p class="co-hint" id="coCodHint" hidden>You will pay the courier in cash when the parcel arrives.
+              No advance payment and no transaction ID needed.</p>
             <p class="co-hint">Your order is sent straight to our order system the moment you press
-              <b>Place order</b>. Delivery charge is set by the store and shown on your receipt.</p>
+              <b>Place order</b>. Delivery charge is <b>&#2547;70 inside Dhaka</b> and
+              <b>&#2547;130 outside Dhaka</b>, added to the total below.</p>
           </section>
 
         </div>
@@ -194,7 +233,7 @@
             <div class="co-items" id="coItems"></div>
             <div class="line"><span>Items</span><span id="coCount">0</span></div>
             <div class="line"><span>Subtotal</span><span id="coSub2">&#2547;0</span></div>
-            <div class="line"><span>Delivery</span><span id="coShip">Confirmed by store</span></div>
+            <div class="line"><span>Delivery <em id="coShipNote" style="font-style:normal;opacity:.6;font-size:11px"></em></span><span id="coShip">&#2547;70</span></div>
             <div class="line total"><span>Total</span><span id="coTotal">&#2547;0</span></div>
             <div class="cta">
               <button class="btn primary wide" type="submit" id="coPlace">Place order</button>
@@ -289,9 +328,63 @@
       }).join('');
       document.getElementById('coCount').textContent=count;
       document.getElementById('coSub2').textContent=window.money(total);
-      document.getElementById('coTotal').textContent=window.money(total);
       sub.textContent=count+' item'+(count===1?'':'s')+' \u00b7 '+window.money(total);
+      paintTotals();
     }
+
+    /* ---- delivery charge -------------------------------------------------
+       70 inside Dhaka, 130 outside. The figure is taken from the store's own
+       GET /products response when it publishes one, and falls back to those
+       two published rates otherwise. It is added to the total the customer
+       sees AND to the amount the order is placed for. */
+    function shipFee(){
+      var d=document.getElementById('fDist');
+      if(!d||!d.value) return SHIP.insideDhaka;
+      var div=DISTRICT_DIVISION[d.value]||'';
+      return (div==='Dhaka')?SHIP.insideDhaka:SHIP.outsideDhaka;
+    }
+
+    function paintTotals(){
+      var fee=shipFee();
+      var shipEl=document.getElementById('coShip');
+      var noteEl=document.getElementById('coShipNote');
+      var totalEl=document.getElementById('coTotal');
+      if(shipEl) shipEl.textContent=window.money(fee);
+      if(noteEl){
+        var d=document.getElementById('fDist');
+        noteEl.textContent=d&&d.value
+          ? ((DISTRICT_DIVISION[d.value]==='Dhaka')?'inside Dhaka':'outside Dhaka')
+          : 'inside Dhaka';
+      }
+      if(totalEl) totalEl.textContent=window.money(total+fee);
+    }
+
+    /* ---- payment method --------------------------------------------------
+       COD means the courier collects the cash, so there is nothing to send
+       and no transaction to quote: the number block and the three payment
+       fields are hidden and cleared. Any other method needs them. */
+    function payMethod(){
+      var r=document.querySelector('input[name="pay"]:checked');
+      return r?r.value:'bKash';
+    }
+
+    function syncPayUI(){
+      var cod=payMethod()==='COD';
+      var box=document.getElementById('coPayBox');
+      var hint=document.getElementById('coCodHint');
+      if(box) box.hidden=cod;
+      if(hint) hint.hidden=!cod;
+      ['fPayNum','fTxn','fPayAmt'].forEach(function(id){
+        var el=document.getElementById(id);
+        if(!el) return;
+        if(cod){ el.value=''; setErr(el,''); }
+      });
+    }
+
+    [].slice.call(document.querySelectorAll('input[name="pay"]')).forEach(function(r){
+      r.addEventListener('change',syncPayUI);
+    });
+    syncPayUI();
 
     function setApiStatus(kind,html){
       if(!apiBox) return;
@@ -438,6 +531,26 @@
       else setErr(area,'');
       if(addr.value.trim().length<6){ setErr(addr,'Please enter your full delivery address.'); ok=false; first=first||addr; }
       else setErr(addr,'');
+
+      /* a mobile-wallet payment is only traceable if the customer tells us
+         which number paid, the transaction id, and how much was sent */
+      if(payMethod()!=='COD'){
+        var pn=document.getElementById('fPayNum'), tx=document.getElementById('fTxn'),
+            am=document.getElementById('fPayAmt');
+        var pd=(pn.value||'').replace(/[^0-9]/g,'');
+        if(!pd){ setErr(pn,'Enter the number you paid from.'); ok=false; first=first||pn; }
+        else if(!/^01[3-9][0-9]{8}$/.test(pd)){ setErr(pn,'Enter an 11-digit number starting 01.'); ok=false; first=first||pn; }
+        else setErr(pn,'');
+
+        if(!(tx.value||'').trim()){ setErr(tx,'Enter the transaction ID from your payment SMS.'); ok=false; first=first||tx; }
+        else if((tx.value||'').trim().length<4){ setErr(tx,'That transaction ID looks too short.'); ok=false; first=first||tx; }
+        else setErr(tx,'');
+
+        var amt=Number(am.value);
+        if(!amt||amt<=0){ setErr(am,'Enter the amount you sent.'); ok=false; first=first||am; }
+        else if(amt<total){ setErr(am,'You sent less than the goods total of '+window.money(total)+'.'); ok=false; first=first||am; }
+        else setErr(am,'');
+      }
       if(first){ try{ first.focus(); }catch(e){} }
       return ok;
     }
@@ -448,11 +561,18 @@
     }
 
     /* Build the exact payload the API validated. One order = one unit, so a
-       cart line with quantity 2 becomes two separate POSTs. */
+       cart line with quantity 2 becomes two separate POSTs.
+
+       The BusinessKoro order endpoint has no dedicated field for a payment
+       reference, so the payment details are packed into `customerNote` — the
+       one free-text field it does accept — in a fixed, readable form. The
+       admin panel reads them back out of the order board. */
     function payloadFor(l,b){
       var v=l.vv||{};
+      var method=payMethod();
       var p={
         productId:b.id,
+        productName:l.p.t,
         customerName:document.getElementById('fName').value.trim(),
         customerPhone:document.getElementById('fPhone').value.replace(/[^0-9]/g,''),
         customerAddress:document.getElementById('fAddr').value.trim(),
@@ -465,6 +585,21 @@
       if(b.color||v.Color) p.color=(v.Color||'');
       if(!p.size&&window.BKCAT.sizes(l.id).length) p.size=window.BKCAT.sizes(l.id)[0];
       if(!p.color&&window.BKCAT.colors(l.id).length) p.color=window.BKCAT.colors(l.id)[0];
+
+      if(method==='COD'){
+        p.paymentMethod='COD';
+        p.customerNote='Payment: Cash on delivery. Delivery charge: BDT '+shipFee()+'.';
+      }else{
+        var payNum=(document.getElementById('fPayNum').value||'').replace(/[^0-9]/g,'');
+        var txn=(document.getElementById('fTxn').value||'').trim();
+        var amt=Number(document.getElementById('fPayAmt').value)||0;
+        p.paymentMethod=method;
+        p.paymentNumber=payNum;
+        p.transactionId=txn;
+        p.paymentAmount=amt;
+        p.customerNote='Payment: '+method+' | From: '+payNum+' | TrxID: '+txn+
+          ' | Amount: BDT '+amt+' | Delivery: BDT '+shipFee();
+      }
       return p;
     }
 
@@ -497,6 +632,26 @@
             var payload=payloadFor(job.l,job.b);
             return window.BK.placeOrder(payload).then(function(res){
               ok.push(res); meta.push({name:job.l.p.t,variant:job.l.v});
+              /* put the order on the admin board too, with the payment details
+                 the API itself has nowhere to store */
+              if(window.STORE&&window.STORE.recordOrder){
+                window.STORE.recordOrder({
+                  id:res.id, orderNumber:res.orderNumber, status:res.status,
+                  paid:!!res.paid, sellingPrice:res.sellingPrice,
+                  courierCharge:res.courierCharge,
+                  productId:payload.productId, productName:payload.productName,
+                  size:payload.size, color:payload.color,
+                  customerName:payload.customerName, customerPhone:payload.customerPhone,
+                  customerDistrict:payload.customerDistrict, customerArea:payload.customerArea,
+                  customerAddress:payload.customerAddress,
+                  paymentMethod:payload.paymentMethod,
+                  paymentNumber:payload.paymentNumber,
+                  transactionId:payload.transactionId,
+                  paymentAmount:payload.paymentAmount,
+                  deliveryCharge:shipFee(),
+                  note:payload.customerNote
+                });
+              }
             },function(err){
               failed.push({
                 name:job.l.p.t, variant:job.l.v,
@@ -529,16 +684,11 @@
     body.hidden=false;
     renderSummary();
     loadLive().then(function(){
-      /* show the real delivery estimate once the charges are known */
+      /* the delivery charge is known now: paint it and keep it in step with
+         the district the customer picks */
       var d=document.getElementById('fDist');
-      function ship(){
-        if(!d.value) return;
-        var div=DISTRICT_DIVISION[d.value]||'';
-        var fee=(div==='Dhaka')?SHIP.insideDhaka:SHIP.outsideDhaka;
-        document.getElementById('coShip').textContent=window.money(fee);
-        document.getElementById('coTotal').textContent=window.money(total+fee);
-      }
-      d.addEventListener('change',ship); ship();
+      d.addEventListener('change',paintTotals);
+      paintTotals();
     });
   });
   </script>
@@ -546,10 +696,11 @@
 <footer data-footer></footer>
 <div id="siteDock" data-active="cart"></div>
 <script src="products.js"></script>
-<script src="assets/bk-api.js?v=202611160859"></script>
-<script src="assets/bk-catalog.js?v=202611160859"></script>
+<script src="assets/bk-store.js?v=202611161330"></script>
+<script src="assets/bk-api.js?v=202611161330"></script>
+<script src="assets/bk-catalog.js?v=202611161330"></script>
 <script src="assets/site.js"></script>
-<script src="assets/stock-filter.js?v=202611160859"></script>
+<script src="assets/stock-filter.js?v=202611161330"></script>
 
 </body>
 </html>

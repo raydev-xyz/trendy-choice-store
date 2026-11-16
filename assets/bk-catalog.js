@@ -140,8 +140,29 @@
   function sellable(list) {
     if (window.BKCAT && window.BKCAT.showUnavailable) return list;
     return list.filter(function (p) {
-      return !p.unavailable && Number(p.s) > 0;
+      if (p.unavailable || !(Number(p.s) > 0)) return false;
+      /* the owner's own decision, made in the admin panel, wins over the
+         backend: a product they hid is not shown even if it is in stock */
+      if (window.STORE && window.STORE.isHidden && window.STORE.isHidden(p.id)) return false;
+      return true;
     });
+  }
+
+  /* Apply the admin panel's decisions to the merged catalogue: price
+     overrides, then the pin order. Both are no-ops when the owner has not
+     touched anything, so the shop looks exactly as it did before. */
+  function applyStore(list) {
+    if (!window.STORE) return list;
+    var out = list.map(function (p) {
+      var override = window.STORE.priceOf ? window.STORE.priceOf(p.id) : null;
+      if (override === null || !isFinite(override)) return p;
+      var copy = {};
+      Object.keys(p).forEach(function (k) { copy[k] = p[k]; });
+      copy.p = override;
+      copy.priceOverridden = true;
+      return copy;
+    });
+    return window.STORE.order ? window.STORE.order(out) : out;
   }
 
   /* Build the list the storefront renders.
@@ -222,6 +243,8 @@
       RAW = res.products;
       MAP = build(res.products);
       MERGED = merge(res.products, MAP);
+      /* the owner's price overrides and pin order, from the admin panel */
+      MERGED = applyStore(MERGED);
       CHARGES = res.deliveryCharges || null;
       window.BKCAT.liveCount = res.products.length;
       window.BKCAT.matchedCount = Object.keys(MAP).length;
