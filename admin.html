@@ -343,9 +343,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 <div id="toast"></div>
 <div id="modalHost"></div>
 
-<script src="assets/bk-store.js?v=202611162330"></script>
-<script src="assets/bk-api.js?v=202611162330"></script>
-<script src="assets/bk-catalog.js?v=202611162330"></script>
+<script src="assets/bk-store.js?v=202611162400"></script>
+<script src="assets/bk-api.js?v=202611162400"></script>
+<script src="assets/bk-catalog.js?v=202611162400"></script>
 <script>
 (function(){
 'use strict';
@@ -650,8 +650,12 @@ function stats(){
   var outStock = STATE.products.filter(function(p){
     return !p.unavailable && !(Number(p.s) > 0);
   });
+  /* the catalogue arrives a moment after the panel does; until it is here the
+     stock figures would read as a confident zero, so say so instead */
+  var stockKnown = STATE.products.length > 0;
 
   return {
+    stockKnown: stockKnown,
     todayOrders: todayList.length,
     todayRevenue: rev(todayList),
     weekOrders: weekList.length,
@@ -682,11 +686,12 @@ function viewDash(){
     '<div class="stat '+(s.pending?'warn':'')+'"><div class="k">Pending</div><div class="v">'+s.pending+'</div><div class="d">waiting to be confirmed</div></div>'+
   '</div>';
 
+  var liveN = s.stockKnown ? window.BKCAT.sellable().length : null;
   h += '<div class="grid g4" style="margin-bottom:14px">'+
     '<div class="stat"><div class="k">Customers</div><div class="v">'+s.customers+'</div><div class="d">'+s.newCustomers+' new in 30 days</div></div>'+
-    '<div class="stat"><div class="k">Products live</div><div class="v">'+window.BKCAT.sellable().length+'</div><div class="d">of '+STATE.products.length+' in the catalogue</div></div>'+
-    '<div class="stat '+(s.lowStock?'warn':'')+'"><div class="k">Low stock</div><div class="v">'+s.lowStock+'</div><div class="d">5 or fewer left</div></div>'+
-    '<div class="stat '+(s.outStock?'bad':'')+'"><div class="k">Out of stock</div><div class="v">'+s.outStock+'</div><div class="d">hidden from the shop</div></div>'+
+    '<div class="stat"><div class="k">Products live</div><div class="v">'+(liveN===null?'\u2014':liveN)+'</div><div class="d">'+(s.stockKnown?'of '+STATE.products.length+' in the catalogue':'reading the catalogue\u2026')+'</div></div>'+
+    '<div class="stat '+(s.lowStock?'warn':'')+'"><div class="k">Low stock</div><div class="v">'+(s.stockKnown?s.lowStock:'\u2014')+'</div><div class="d">5 or fewer left</div></div>'+
+    '<div class="stat '+(s.outStock?'bad':'')+'"><div class="k">Out of stock</div><div class="v">'+(s.stockKnown?s.outStock:'\u2014')+'</div><div class="d">hidden from the shop</div></div>'+
   '</div>';
 
   h += '<div class="grid g2" style="margin-bottom:14px">';
@@ -696,7 +701,7 @@ function viewDash(){
 
   h += '<div class="grid g2">';
   h += '<div class="card"><h3>Recent orders</h3>'+recentOrders(s.recent)+'</div>';
-  h += '<div class="card"><h3>Low stock</h3>'+lowStockTable(s.lowStockList)+'</div>';
+  h += '<div class="card"><h3>Low stock</h3>'+lowStockTable(s.lowStockList, s.stockKnown)+'</div>';
   h += '</div>';
   return h;
 }
@@ -759,7 +764,8 @@ function recentOrders(list){
     }).join('')+'</tbody></table></div>';
 }
 
-function lowStockTable(list){
+function lowStockTable(list, known){
+  if(known === false) return '<div class="empty"><b>Reading the catalogue\u2026</b>Stock figures appear as soon as the live catalogue arrives.</div>';
   if(!list.length) return '<div class="empty"><b>Nothing running low</b>Every product has more than 5 in stock.</div>';
   return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl">'+
     '<thead><tr><th>Product</th><th class="right">Left</th></tr></thead><tbody>'+
