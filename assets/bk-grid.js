@@ -253,6 +253,44 @@
    on the same 4.5s beat as the New Arrival slider. Leaving the list empty
    keeps the built-in banners exactly as they were. */
 (function () {
+  /* ---- announcement bar + maintenance notice ------------------------------
+     Both are plain text the owner types in the admin panel. An empty
+     announcement removes the bar; the maintenance notice is a notice only —
+     it never takes the shop offline, and it says so. */
+  function paintNotice() {
+    var cfg = (window.STORE && window.STORE.config) ? window.STORE.config() : null;
+    if (!cfg) return;
+
+    var text = String(cfg.announcement || '').trim();
+    var bar = document.getElementById('tcAnnounce');
+    if (text) {
+      if (!bar) {
+        bar = document.createElement('div');
+        bar.id = 'tcAnnounce';
+        bar.style.cssText = 'position:relative;z-index:5;padding:9px 16px;text-align:center;' +
+          'font-size:12.5px;letter-spacing:.01em;background:linear-gradient(90deg,rgba(232,195,122,.16),rgba(232,195,122,.08));' +
+          'border-bottom:1px solid rgba(232,195,122,.28);color:#f0dcb4';
+        var host = document.querySelector('.wrap') || document.body;
+        host.insertBefore(bar, host.firstChild);
+      }
+      bar.textContent = text;
+    } else if (bar) {
+      bar.remove();
+    }
+
+    if (cfg.maintenance) {
+      if (!document.getElementById('tcMaint')) {
+        var d = document.createElement('div');
+        d.id = 'tcMaint';
+        d.style.cssText = 'margin:14px 0 18px;padding:11px 14px;border-radius:14px;font-size:12.5px;' +
+          'line-height:1.55;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);color:#f5dfa8';
+        d.textContent = 'The store is being restocked — some items may be unavailable. Orders are still being taken.';
+        var w = document.querySelector('.wrap') || document.body;
+        w.insertBefore(d, w.firstChild);
+      }
+    }
+  }
+
   function paintHero() {
     var cfg = (window.STORE && window.STORE.config) ? window.STORE.config() : null;
     var slides = (cfg && cfg.hero && cfg.hero.slides) || [];
@@ -275,11 +313,11 @@
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.STORE && window.STORE.ready) window.STORE.ready.then(paintHero);
-      else paintHero();
+      if (window.STORE && window.STORE.ready) window.STORE.ready.then(function () { paintNotice(); paintHero(); });
+      else { paintNotice(); paintHero(); }
     });
   } else {
-    if (window.STORE && window.STORE.ready) window.STORE.ready.then(paintHero);
-    else paintHero();
+    if (window.STORE && window.STORE.ready) window.STORE.ready.then(function () { paintNotice(); paintHero(); });
+    else { paintNotice(); paintHero(); }
   }
 })();

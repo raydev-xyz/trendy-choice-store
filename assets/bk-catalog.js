@@ -140,7 +140,7 @@
   function sellable(list) {
     if (window.BKCAT && window.BKCAT.showUnavailable) return list;
     return list.filter(function (p) {
-      if (p.unavailable || !(Number(p.s) > 0)) return false;
+      if (p.unavailable || p.inactive || !(Number(p.s) > 0)) return false;
       /* the owner's own decision, made in the admin panel, wins over the
          backend: a product they hid is not shown even if it is in stock */
       if (window.STORE && window.STORE.isHidden && window.STORE.isHidden(p.id)) return false;
@@ -163,6 +163,69 @@
       return copy;
     });
     return window.STORE.order ? window.STORE.order(out) : out;
+  }
+
+  /* ---- the owner's product edits ------------------------------------------
+     The admin panel can rename a product, change its price, set its stock,
+     swap its photos, mark it featured or take it off the shelf. Those edits
+     live in the settings service keyed by the same product id the shop uses,
+     and are applied here — after the backend merge, before the grid paints —
+     so the shop and the panel never disagree about a product.
+
+     An override never invents a product: it only edits one that the backend
+     already lists. A product the backend does not have stays unavailable no
+     matter what an override says, because there is nothing to sell. */
+  function applyOverrides(list, map) {
+    if (!map || typeof map !== 'object') return list;
+    return list.map(function (p) {
+      var o = map[String(p.id)];
+      if (!o || typeof o !== 'object') return p;
+      var c = {};
+      Object.keys(p).forEach(function (k) { c[k] = p[k]; });
+
+      if (typeof o.name === 'string' && o.name.trim()) c.t = o.name.trim();
+      if (typeof o.description === 'string' && o.description.trim()) c.d = o.description;
+      if (typeof o.category === 'string' && o.category.trim()) c.c = o.category;
+      if (typeof o.sku === 'string' && o.sku.trim()) c.sku = o.sku;
+      if (typeof o.brand === 'string' && o.brand.trim()) c.brand = o.brand;
+      if (typeof o.tags === 'string' && o.tags.trim()) c.tags = o.tags;
+
+      if (o.price !== undefined && isFinite(Number(o.price)) && Number(o.price) > 0) {
+        c.p = Math.round(Number(o.price));
+        c.priceOverridden = true;
+      }
+      if (o.discountPrice !== undefined && isFinite(Number(o.discountPrice)) && Number(o.discountPrice) > 0) {
+        c.was = c.p;
+        c.p = Math.round(Number(o.discountPrice));
+        c.priceOverridden = true;
+      }
+      if (o.stock !== undefined && isFinite(Number(o.stock))) {
+        c.s = Math.max(0, Math.round(Number(o.stock)));
+        c.stockOverridden = true;
+      }
+      if (Array.isArray(o.images) && o.images.length) {
+        c.i = o.images[0];
+        c.big = o.images[0];
+        c.images = o.images.slice();
+      }
+      if (Array.isArray(o.variants) && o.variants.length) {
+        var groups = {}, order = [];
+        o.variants.forEach(function (v) {
+          if (v.size) {
+            if (!groups.Size) { groups.Size = []; order.push('Size'); }
+            if (groups.Size.indexOf(v.size) === -1) groups.Size.push(v.size);
+          }
+          if (v.color) {
+            if (!groups.Color) { groups.Color = []; order.push('Color'); }
+            if (groups.Color.indexOf(v.color) === -1) groups.Color.push(v.color);
+          }
+        });
+        if (order.length) c.opts = order.map(function (k) { return { n: k, v: groups[k] }; });
+      }
+      if (o.featured === true) c.featured = true;
+      if (o.active === false || o.status === 'inactive') c.inactive = true;
+      return c;
+    });
   }
 
   /* Build the list the storefront renders.
@@ -243,7 +306,10 @@
       RAW = res.products;
       MAP = build(res.products);
       MERGED = merge(res.products, MAP);
-      /* the owner's price overrides and pin order, from the admin panel */
+      /* the owner's per-product edits, then price overrides and pin order */
+      if (window.STORE && window.STORE.overrides) {
+        MERGED = applyOverrides(MERGED, window.STORE.overrides());
+      }
       MERGED = applyStore(MERGED);
       CHARGES = res.deliveryCharges || null;
       window.BKCAT.liveCount = res.products.length;

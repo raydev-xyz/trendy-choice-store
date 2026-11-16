@@ -292,8 +292,31 @@
         placeBtn=document.getElementById('coPlace'), apiBox=document.getElementById('coApiStatus');
 
     var lines=[], total=0, count=0, submitting=false;
-    var SHIP={insideDhaka:70,outsideDhaka:130};  /* real values from GET /products */
+    /* The owner publishes these in the admin panel. They start at the shop's
+       own rates so the figure is never blank, and are replaced by whatever the
+       panel says (and by GET /products if it publishes its own) before the
+       customer can submit. */
+    var SHIP={insideDhaka:70,outsideDhaka:130,freeAbove:0};
     var DISTRICT_DIVISION={};
+
+    function applyShipping(){
+      /* 1. the owner's own settings, from the settings service */
+      if(window.STORE&&window.STORE.shipping){
+        var s=window.STORE.shipping();
+        if(s&&Number(s.insideDhaka)>0){
+          SHIP={insideDhaka:Number(s.insideDhaka),
+                outsideDhaka:Number(s.outsideDhaka)||Number(s.insideDhaka),
+                freeAbove:Number(s.freeAbove)||0};
+        }
+      }
+      /* 2. the catalogue service, if it publishes charges of its own */
+      var d=window.BKCAT&&window.BKCAT.lastCharges;
+      if(d&&Number(d.insideDhaka)>0){
+        SHIP={insideDhaka:Number(d.insideDhaka),
+              outsideDhaka:Number(d.outsideDhaka)||Number(d.insideDhaka),
+              freeAbove:Number(SHIP.freeAbove)||0};
+      }
+    }
 
     /* district -> division, derived from the grouped <select> above */
     (function(){
@@ -344,17 +367,28 @@
       return (div==='Dhaka')?SHIP.insideDhaka:SHIP.outsideDhaka;
     }
 
-    function paintTotals(){
+    /* a free-delivery threshold, when the owner sets one, is applied to the
+       goods subtotal only — never to the delivery line itself */
+    function shipFeeFor(sub){
       var fee=shipFee();
+      if(SHIP.freeAbove>0 && sub>=SHIP.freeAbove) return 0;
+      return fee;
+    }
+
+    function paintTotals(){
+      var fee=shipFeeFor(total);
       var shipEl=document.getElementById('coShip');
       var noteEl=document.getElementById('coShipNote');
       var totalEl=document.getElementById('coTotal');
       if(shipEl) shipEl.textContent=window.money(fee);
       if(noteEl){
         var d=document.getElementById('fDist');
-        noteEl.textContent=d&&d.value
+        var where=d&&d.value
           ? ((DISTRICT_DIVISION[d.value]==='Dhaka')?'inside Dhaka':'outside Dhaka')
           : 'inside Dhaka';
+        noteEl.textContent=(SHIP.freeAbove>0&&total>=SHIP.freeAbove)
+          ? 'free over '+window.money(SHIP.freeAbove)
+          : where;
       }
       if(totalEl) totalEl.textContent=window.money(total+fee);
     }
@@ -402,8 +436,7 @@
         return Promise.resolve(false);
       }
       return window.BKCAT.load().then(function(){
-        var d=window.BKCAT.lastCharges;
-        if(d&&d.insideDhaka) SHIP=d;
+        applyShipping();
         /* re-price every line from the real backend catalogue */
         lines.forEach(function(l){
           var b=window.BKCAT.backend(l.id);
@@ -588,7 +621,7 @@
 
       if(method==='COD'){
         p.paymentMethod='COD';
-        p.customerNote='Payment: Cash on delivery. Delivery charge: BDT '+shipFee()+'.';
+        p.customerNote='Payment: Cash on delivery. Delivery charge: BDT '+shipFeeFor(total)+'.';
       }else{
         var payNum=(document.getElementById('fPayNum').value||'').replace(/[^0-9]/g,'');
         var txn=(document.getElementById('fTxn').value||'').trim();
@@ -598,7 +631,7 @@
         p.transactionId=txn;
         p.paymentAmount=amt;
         p.customerNote='Payment: '+method+' | From: '+payNum+' | TrxID: '+txn+
-          ' | Amount: BDT '+amt+' | Delivery: BDT '+shipFee();
+          ' | Amount: BDT '+amt+' | Delivery: BDT '+shipFeeFor(total);
       }
       return p;
     }
@@ -648,7 +681,7 @@
                   paymentNumber:payload.paymentNumber,
                   transactionId:payload.transactionId,
                   paymentAmount:payload.paymentAmount,
-                  deliveryCharge:shipFee(),
+                  deliveryCharge:shipFeeFor(total),
                   note:payload.customerNote
                 });
               }
@@ -714,17 +747,27 @@
          knows what delivery will cost before they add anything */
       loadLive().then(paintTotals);
     }
+
+    /* the owner's settings arrive on their own request; when they land, the
+       published delivery rates replace the built-in ones and the total is
+       repainted, so a rate changed in the panel is the rate charged here */
+    if(window.STORE&&window.STORE.ready){
+      window.STORE.ready.then(function(){
+        applyShipping();
+        if(lines.length) paintTotals();
+      });
+    }
   });
   </script>
 </main>
 <footer data-footer></footer>
 <div id="siteDock" data-active="cart"></div>
 <script src="products.js"></script>
-<script src="assets/bk-store.js?v=202611161330"></script>
-<script src="assets/bk-api.js?v=202611161330"></script>
-<script src="assets/bk-catalog.js?v=202611161330"></script>
+<script src="assets/bk-store.js?v=202611162100"></script>
+<script src="assets/bk-api.js?v=202611162100"></script>
+<script src="assets/bk-catalog.js?v=202611162100"></script>
 <script src="assets/site.js"></script>
-<script src="assets/stock-filter.js?v=202611161330"></script>
+<script src="assets/stock-filter.js?v=202611162100"></script>
 
 </body>
 </html>

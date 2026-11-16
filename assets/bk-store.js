@@ -3,33 +3,47 @@
    ONE document, two readers. The admin panel writes it, the shop reads it,
    and both go to the same place:
 
-       GET  https://trendy-admin.r4ydevbd.workers.dev/   (public read)
-       PUT  ... same URL                                 (x-admin-token)
+       GET  https://trendy-admin.r4ydevbd.workers.dev/config   (public read)
+       PUT  ... same URL                                      (session token)
 
-   Nothing here is invented: every value displayed by the shop still comes
+   Nothing here is invented: every product, price and stock figure still comes
    from the BusinessKoro catalogue. This file only records the decisions the
-   owner makes about that catalogue — which products to show, in what order,
-   at what price, and which images to use as banners.
+   owner makes about that catalogue — which products to show, in what order, at
+   what price, which images act as banners, and what the delivery charge is.
 
-   If the settings service cannot be reached the shop behaves exactly as it
-   did before this file existed (nothing hidden, nothing pinned, backend
-   prices). It never silently applies a half-loaded document.
+   If the settings service cannot be reached the shop behaves exactly as it did
+   before this file existed (nothing hidden, nothing pinned, backend prices,
+   published delivery rates). It never silently applies a half-loaded document.
+
+   Session model: the panel exchanges username+password for a bearer token and
+   keeps it in localStorage under TOKEN_KEY. The token is sent as
+   `Authorization: Bearer …`; there is no shared password in this file.
 */
 (function () {
   var BASE = 'https://trendy-admin.r4ydevbd.workers.dev';
-  var CACHE_KEY = 'tc_store_cfg_v2';
-  var TOKEN_KEY = 'tc_admin_token_v2';
-  var STORE_KEY = 'tc-storefront-9f42c1';   /* write-only: can append an order, cannot read */
+  var CACHE_KEY = 'tc_store_cfg_v3';
+  var TOKEN_KEY = 'tc_admin_sess_v3';
+  var USER_KEY = 'tc_admin_user_v3';
+  var SESSION_MINUTES = 60;
+  var STORE_KEY = 'tc-storefront-9f42c1';   /* write-only: appends an order, reads nothing */
+
+  function defaultShipping() { return { insideDhaka: 70, outsideDhaka: 130, freeAbove: 0 }; }
 
   function empty() {
-    return { v: 2, updatedAt: null, hero: { slides: [] }, hidden: [], pinned: [], price: {}, newArrivals: [], copy: {} };
+    return {
+      v: 3, updatedAt: null,
+      hero: { slides: [] },
+      hidden: [], pinned: [], price: {}, newArrivals: [], copy: {},
+      shipping: defaultShipping(),
+      announcement: '', maintenance: false
+    };
   }
 
   function normalize(raw) {
     var out = empty();
     if (!raw || typeof raw !== 'object') return out;
     Object.keys(out).forEach(function (k) {
-      if (k === 'hero') return;
+      if (k === 'hero' || k === 'shipping') return;
       if (raw[k] !== undefined && raw[k] !== null) out[k] = raw[k];
     });
     if (raw.hero && typeof raw.hero === 'object') {
@@ -41,7 +55,46 @@
     });
     if (!out.price || typeof out.price !== 'object' || Array.isArray(out.price)) out.price = {};
     if (!out.copy || typeof out.copy !== 'object') out.copy = {};
+    var sh = raw.shipping || {};
+    out.shipping = {
+      insideDhaka: Number(sh.insideDhaka) > 0 ? Math.round(Number(sh.insideDhaka)) : 70,
+      outsideDhaka: Number(sh.outsideDhaka) > 0 ? Math.round(Number(sh.outsideDhaka)) : 130,
+      freeAbove: Number(sh.freeAbove) > 0 ? Math.round(Number(sh.freeAbove)) : 0
+    };
+    out.announcement = typeof out.announcement === 'string' ? out.announcement : '';
+    out.maintenance = !!out.maintenance;
     return out;
+  }
+
+  /* ---------------- session ---------------- */
+
+  function readSession() {
+    try {
+      var d = JSON.parse(localStorage.getItem(TOKEN_KEY) || 'null');
+      if (!d || !d.token) return null;
+      if (d.until && Date.now() > d.until) { clearSession(); return null; }
+      return d;
+    } catch (e) { return null; }
+  }
+
+  function writeSession(token, user) {
+    var s = { token: token, user: user || null, until: Date.now() + SESSION_MINUTES * 60e3 };
+    try { localStorage.setItem(TOKEN_KEY, JSON.stringify(s)); } catch (e) {}
+    try { localStorage.setItem(USER_KEY, JSON.stringify(user || null)); } catch (e) {}
+  }
+
+  function clearSession() {
+    try { localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+    try { localStorage.removeItem(USER_KEY); } catch (e) {}
+  }
+
+  /* every authenticated call pushes the expiry forward, mirroring the
+     Worker's own idle timeout */
+  function touch() {
+    var s = readSession();
+    if (!s) return;
+    s.until = Date.now() + SESSION_MINUTES * 60e3;
+    try { localStorage.setItem(TOKEN_KEY, JSON.stringify(s)); } catch (e) {}
   }
 
   function readCache() {
@@ -52,10 +105,11 @@
   }
 
   function writeCache(cfg) {
-    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), config: cfg })); } catch (e) { }
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), config: cfg })); } catch (e) {}
   }
 
   var CONFIG = readCache() || empty();
+  var OVERRIDES = {};
   var READY = null;
   var ERROR = null;
 
@@ -63,8 +117,11 @@
     options = options || {};
     var headers = { 'Accept': 'application/json' };
     if (options.body) headers['Content-Type'] = 'application/json';
-    if (options.admin) headers['x-admin-token'] = (window.STORE.adminToken() || '');
     if (options.storeKey) headers['x-store-key'] = STORE_KEY;
+    else if (options.auth !== false) {
+      var s = readSession();
+      if (s && s.token) headers['Authorization'] = 'Bearer ' + s.token;
+    }
     return fetch(BASE + path, {
       method: options.method || 'GET',
       headers: headers,
@@ -74,13 +131,22 @@
       return res.text().then(function (t) {
         var body = null;
         try { body = t ? JSON.parse(t) : null; } catch (e) { body = { raw: t }; }
+        if (res.status === 401) {
+          var msg = (body && (body.error || body.detail)) || 'Not signed in.';
+          var e401 = new Error(msg);
+          e401.status = 401;
+          e401.body = body;
+          e401.unauthorised = true;
+          throw e401;
+        }
         if (!res.ok) {
-          var msg = (body && (body.error || body.detail)) || ('HTTP ' + res.status);
-          var err = new Error(msg);
+          var m = (body && (body.error || body.detail)) || ('HTTP ' + res.status);
+          var err = new Error(m);
           err.status = res.status;
           err.body = body;
           throw err;
         }
+        touch();
         return body;
       });
     });
@@ -90,8 +156,9 @@
      caller can simply paint and never has to special-case the failure. */
   function load() {
     if (READY) return READY;
-    READY = request('/').then(function (d) {
+    READY = request('/config', { auth: false }).then(function (d) {
       CONFIG = normalize(d && d.config);
+      OVERRIDES = (d && d.overrides && typeof d.overrides === 'object') ? d.overrides : {};
       writeCache(CONFIG);
       ERROR = null;
       return CONFIG;
@@ -106,22 +173,33 @@
   window.STORE = {
     base: BASE,
 
-    /* the currently known settings — never null */
     config: function () { return CONFIG; },
     get error() { return ERROR; },
     ready: null,                          /* replaced on first load() */
 
-    /* reload from the service (the admin panel calls this after a save) */
     load: function () { READY = null; return load(); },
 
-    /* what the shop needs: which keys are hidden / pinned / re-priced */
+    /* the owner's published delivery rates — the shop and the checkout both
+       read them here, so a change in the panel moves the real charge */
+    shipping: function () {
+      return CONFIG.shipping || defaultShipping();
+    },
+    announcement: function () { return CONFIG.announcement || ''; },
+    maintenance: function () { return !!CONFIG.maintenance; },
+
     isHidden: function (key) { return CONFIG.hidden.indexOf(String(key)) !== -1; },
+    /* the owner's per-product edits, keyed by the same id the shop uses */
+    overrides: function () { return OVERRIDES; },
+    overrideFor: function (key) {
+      var o = OVERRIDES[String(key)];
+      return (o && typeof o === 'object') ? o : null;
+    },
     isNewArrival: function (key) { return CONFIG.newArrivals.indexOf(String(key)) !== -1; },
+    isPinned: function (key) { return CONFIG.pinned.indexOf(String(key)) !== -1; },
     priceOf: function (key) {
       var v = CONFIG.price[String(key)];
       return (v === undefined || v === null) ? null : Number(v);
     },
-    /* sort a product list by the admin's pin order, then by its own order */
     order: function (list) {
       var pins = CONFIG.pinned;
       if (!pins.length) return list;
@@ -137,36 +215,102 @@
       });
     },
 
-    /* ---- admin side ---- */
-    adminToken: function () {
-      try { return localStorage.getItem(TOKEN_KEY) || ''; } catch (e) { return ''; }
+    /* ---- session ---- */
+    session: function () { return readSession(); },
+    user: function () {
+      var s = readSession();
+      return (s && s.user) || null;
     },
-    setAdminToken: function (t) {
-      try { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); } catch (e) { }
+    signedIn: function () { return !!readSession(); },
+    signOut: function () {
+      var s = readSession();
+      if (s && s.token) request('/auth/logout', { method: 'POST' }).catch(function () {});
+      clearSession();
     },
-    /* verify the token by attempting a harmless read that requires it */
-    verifyToken: function () {
-      return request('/orders', { admin: true }).then(function () { return true; });
+
+    /* password -> token. The password itself is never stored. */
+    signIn: function (username, password) {
+      return request('/auth/login', {
+        method: 'POST', auth: false, body: { username: username, password: password }
+      }).then(function (d) {
+        if (!d || !d.token) throw new Error('The service did not return a session token.');
+        writeSession(d.token, d.user);
+        return d.user || null;
+      });
     },
-    save: function (cfg) {
-      return request('/', { method: 'PUT', admin: true, body: cfg }).then(function (d) {
+
+    changePassword: function (oldPassword, newPassword) {
+      return request('/auth/password', {
+        method: 'POST', body: { oldPassword: oldPassword, newPassword: newPassword }
+      });
+    },
+
+    /* ---- panel reads/writes ---- */
+    bootstrap: function () { return request('/bootstrap'); },
+    saveConfig: function (cfg) {
+      return request('/config', { method: 'PUT', body: { config: cfg } }).then(function (d) {
         CONFIG = normalize(d && d.config);
         writeCache(CONFIG);
         return CONFIG;
       });
     },
-    orders: function () {
-      return request('/orders', { admin: true }).then(function (d) { return (d && d.orders) || []; });
+    saveOverrides: function (map) {
+      return request('/product-overrides', { method: 'PUT', body: { overrides: map } });
     },
+    orders: function () { return request('/orders').then(function (d) { return (d && d.orders) || []; }); },
     patchOrder: function (id, patch) {
-      return request('/orders/' + encodeURIComponent(id), { method: 'PATCH', admin: true, body: patch });
+      return request('/orders/' + encodeURIComponent(id), { method: 'PATCH', body: patch });
     },
-    /* called by the checkout once BusinessKoro accepted an order */
+    deleteOrder: function (id) {
+      return request('/orders/' + encodeURIComponent(id), { method: 'DELETE' });
+    },
+    saveSettings: function (s) { return request('/settings', { method: 'PUT', body: { settings: s } }); },
+    savePages: function (p) { return request('/pages', { method: 'PUT', body: { pages: p } }); },
+    addCoupon: function (c) { return request('/coupons', { method: 'POST', body: c }); },
+    patchCoupon: function (id, patch) {
+      return request('/coupons/' + encodeURIComponent(id), { method: 'PATCH', body: patch });
+    },
+    deleteCoupon: function (id) {
+      return request('/coupons/' + encodeURIComponent(id), { method: 'DELETE' });
+    },
+    addReview: function (r) { return request('/reviews', { method: 'POST', body: r }); },
+    patchReview: function (id, patch) {
+      return request('/reviews/' + encodeURIComponent(id), { method: 'PATCH', body: patch });
+    },
+    deleteReview: function (id) {
+      return request('/reviews/' + encodeURIComponent(id), { method: 'DELETE' });
+    },
+    addUser: function (u) { return request('/users', { method: 'POST', body: u }); },
+    patchUser: function (id, patch) {
+      return request('/users/' + encodeURIComponent(id), { method: 'PATCH', body: patch });
+    },
+    deleteUser: function (id) {
+      return request('/users/' + encodeURIComponent(id), { method: 'DELETE' });
+    },
+    addSupplier: function (s) { return request('/suppliers', { method: 'POST', body: s }); },
+    deleteSupplier: function (id) {
+      return request('/suppliers/' + encodeURIComponent(id), { method: 'DELETE' });
+    },
+    addMovement: function (m) { return request('/inventory', { method: 'POST', body: m }); },
+    patchCustomer: function (key, patch) {
+      return request('/customers/' + encodeURIComponent(key), { method: 'PATCH', body: patch });
+    },
+    report: function (from, to) {
+      var q = [];
+      if (from) q.push('from=' + encodeURIComponent(from));
+      if (to) q.push('to=' + encodeURIComponent(to));
+      return request('/reports' + (q.length ? '?' + q.join('&') : '')).then(function (d) {
+        return (d && d.report) || null;
+      });
+    },
+
+    /* called by the checkout once BusinessKoro accepted an order — the write
+       is fire-and-forget so a hiccup here never loses the real order */
     recordOrder: function (rec) {
-      return request('/orders', { method: 'POST', storeKey: true, body: rec }).catch(function () { return null; });
+      return request('/orders', { method: 'POST', storeKey: true, body: rec })
+        .catch(function () { return null; });
     }
   };
 
-  /* expose the promise under a stable name too */
   window.STORE.ready = load();
 })();
