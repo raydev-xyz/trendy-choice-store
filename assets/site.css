@@ -524,7 +524,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .na-view{aspect-ratio:16/10;max-height:min(70vh,560px)}
 }
 @media(max-width:420px){
-  .na-view{aspect-ratio:4/5}
+  /* the catalogue photos are square: a 4/5 box would leave wide empty bands
+     above and below them, so the stage follows the photo's own ratio */
+  .na-view{aspect-ratio:1/1}
   .na-dots{gap:7px;padding:11px 0 13px}
   .na-dot{width:8px;height:8px}
   .na-dot.on{width:22px}
