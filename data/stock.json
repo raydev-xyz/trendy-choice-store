@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:53:26.294Z",
+  "generatedAt": "2026-11-16T18:45:44.760Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -19,7 +19,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 250,
+      "stock": 249,
       "inStock": true,
       "variants": []
     },
@@ -180,13 +180,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 310,
+      "stock": 309,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
           "stock": 66,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 70,
           "inStock": true
         },
         {
@@ -199,12 +205,6 @@
           "color": "Yellow",
           "size": null,
           "stock": 79,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 71,
           "inStock": true
         }
       ]
@@ -395,7 +395,7 @@
       "slug": "mili-mitag-android-device-compatible-with-google-s-find-my-device",
       "name": "MiLi MiTag Android and iphone Device – Compatible with Google’s Find My Device",
       "price": 1050,
-      "stock": 264,
+      "stock": 263,
       "inStock": true,
       "variants": []
     },
@@ -639,7 +639,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 62,
+      "stock": 61,
       "inStock": true,
       "variants": []
     }
