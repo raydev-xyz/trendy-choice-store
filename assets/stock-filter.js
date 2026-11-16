@@ -110,6 +110,106 @@
     if (add) { add.disabled = true; add.setAttribute('aria-disabled', 'true'); }
   }
 
+  /* ---- product detail page ------------------------------------------------
+     The 72 bundled PDPs carry a stock NUMBER and an "In stock" badge that were
+     frozen into the HTML when the pages were exported from an old CSV. Nothing
+     ever refreshed them, so p11.html said "42 in stock" while the backend held
+     333, and p29.html offered colours the backend does not sell. The badge and
+     the add-to-cart button were the only things this file used to touch.
+
+     Paint the live number, the live badge, the live <title> and the backend's
+     own variant list. Values come from the API only; nothing is invented. */
+  function variantGroups(b) {
+    var groups = {}, order = [];
+    (b.variants || []).forEach(function (v) {
+      [['Color', v.color], ['Size', v.size]].forEach(function (pair) {
+        var k = pair[0], val = pair[1];
+        if (!val) return;
+        if (!groups[k]) { groups[k] = []; order.push(k); }
+        if (groups[k].indexOf(val) === -1) groups[k].push(val);
+      });
+    });
+    return order.map(function (k) { return { n: k, v: groups[k] }; });
+  }
+
+  function paintChips(groupEl, groupName, values, saved) {
+    var box = groupEl.querySelector('.opt-vals');
+    if (!box || !values.length) return;
+    var keep = saved && values.indexOf(saved) !== -1 ? saved : values[0];
+    box.innerHTML = values.map(function (v) {
+      return '<button class="opt-chip" type="button" data-g="' + groupName +
+        '" data-v="' + v + '" aria-pressed="' + (v === keep ? 'true' : 'false') + '">' +
+        v + '</button>';
+    }).join('');
+  }
+
+  /* The stock figure is one of several spans in .pdp-meta (category, dot,
+     stock, sometimes a SKU). Find the stock span by its text rather than by
+     position, so a SKU span never gets overwritten. */
+  function setStockText(meta, text) {
+    if (!meta) return;
+    var spans = [].slice.call(meta.querySelectorAll('span')).filter(function (s) {
+      return !s.classList.contains('dot');
+    });
+    var target = null;
+    spans.forEach(function (s) {
+      if (/stock/i.test(s.textContent)) target = s;
+    });
+    if (target) { target.textContent = text; return; }
+    target = document.createElement('span');
+    target.textContent = text;
+    meta.appendChild(target);
+  }
+
+  function paintPdp() {
+    var pid = pagePid();
+    if (!pid) return false;
+
+    var b = (window.BKCAT && window.BKCAT.backend) ? window.BKCAT.backend(pid) : null;
+    var meta = document.querySelector('.pdp-meta');
+    var flag = document.querySelector('.stock-flag');
+    var h1 = document.querySelector('.pdp-info h1');
+    var priceEl = document.querySelector('.price-row .now');
+    var base = h1 ? h1.textContent.trim() : '';
+
+    if (!b) {                      /* not in the live catalogue at all */
+      if (flag) flag.innerHTML = '<span class="badge no">Unavailable</span>';
+      setStockText(meta, 'Not in the live store');
+      if (base) document.title = base + (priceEl ? ' \u00b7 ' + priceEl.textContent.trim() : '') +
+        ' \u00b7 Unavailable';
+      return true;
+    }
+
+    var qty = Number(b.stockQuantity);
+    if (!isFinite(qty)) qty = 0;
+    var live = qty > 0 && b.inStock !== false;
+
+    setStockText(meta, live ? qty.toLocaleString('en-US') + ' in stock' : 'Out of stock');
+    if (flag) flag.innerHTML = live
+      ? '<span class="badge ok">In stock</span>'
+      : '<span class="badge no">Out of stock</span>';
+
+    if (base) document.title = base + (priceEl ? ' \u00b7 ' + priceEl.textContent.trim() : '') +
+      ' \u00b7 ' + (live ? 'In stock' : 'Out of stock');
+
+    /* refresh the option chips from the backend's own variant list */
+    var groups = variantGroups(b);
+    var opts = document.querySelector('.opts');
+    if (groups.length && opts) {
+      var saved = {};
+      try { saved = (window.VARIANTS && window.VARIANTS.get) ? window.VARIANTS.get(pid) : {}; } catch (e) {}
+      groups.forEach(function (g) {
+        var el = null;
+        [].slice.call(opts.querySelectorAll('.opt-group')).forEach(function (x) {
+          var h = x.querySelector('h3');
+          if (h && h.textContent.trim().toLowerCase() === g.n.toLowerCase()) el = x;
+        });
+        if (el) paintChips(el, g.n, g.v, saved[g.n]);
+      });
+    }
+    return true;
+  }
+
   /* Apply availability to the DOM. Nothing is removed. */
   function apply(state) {
     var oos = {}, miss = {};
@@ -147,8 +247,9 @@
       else if (oos[id]) { markCard(c, 'Out of stock'); marked++; }
     });
 
-    /* product detail page: make an unsellable item unbuyable */
+    /* product detail page: paint the live stock first, then act on it */
     var pid = pagePid();
+    if (pid) paintPdp();
     if (pid && (oos[pid] || miss[pid])) {
       var add = document.getElementById('add'), buy = document.getElementById('buy');
       var label = miss[pid] ? 'Unavailable' : 'Out of stock';
@@ -224,7 +325,14 @@
           ', marked on page: ' + n);
       } catch (e) {}
     }, function (err) {
-      /* Cannot know stock -> say so, do not silently guess. */
+      /* Cannot know stock -> say so, do not silently guess. The bundled PDPs
+         carry a stale number in their HTML, so blank it out rather than keep
+         showing a figure that may be months old. */
+      if (pagePid()) {
+        setStockText(document.querySelector('.pdp-meta'), 'Stock unavailable');
+        var fl = document.querySelector('.stock-flag');
+        if (fl) fl.innerHTML = '<span class="badge">Check stock</span>';
+      }
       banner('Live stock could not be read (' + (err && err.message ? err.message : 'API unreachable') +
         '), so out-of-stock items may still be listed. Please reload in a moment.', 'bad');
     });
