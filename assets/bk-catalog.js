@@ -162,7 +162,35 @@
       copy.priceOverridden = true;
       return copy;
     });
+    out = applyFlashSale(out);
     return window.STORE.order ? window.STORE.order(out) : out;
+  }
+
+  /* A flash sale is a time-boxed percentage the owner switches on in the
+     panel. It only ever lowers a price, and only while the clock is inside
+     the window — an expired sale silently stops applying, so a forgotten
+     switch cannot leave the shop selling at a discount forever. */
+  function applyFlashSale(list) {
+    var fs = window.STORE && window.STORE.flashSale ? window.STORE.flashSale() : null;
+    if (!fs || !fs.active || !(fs.percent > 0)) return list;
+    if (fs.endsAt) {
+      var end = new Date(fs.endsAt).getTime();
+      if (isFinite(end) && Date.now() > end) return list;
+    }
+    var ids = fs.ids || [];
+    if (!ids.length) return list;
+    return list.map(function (p) {
+      if (ids.indexOf(String(p.id)) === -1) return p;
+      var sale = Math.max(1, Math.round(p.p * (100 - fs.percent) / 100));
+      if (!(sale < p.p)) return p;
+      var c = {};
+      Object.keys(p).forEach(function (k) { c[k] = p[k]; });
+      c.was = p.p;
+      c.p = sale;
+      c.flashSale = true;
+      c.flashLabel = fs.label || 'Flash sale';
+      return c;
+    });
   }
 
   /* ---- the owner's product edits ------------------------------------------

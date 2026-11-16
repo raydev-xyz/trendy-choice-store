@@ -53,6 +53,11 @@ const K = {
 };
 
 const ORDERS_CAP = 500;
+
+/* The owner's reset key. Override it with a Worker secret named RESET_KEY
+   (wrangler secret put RESET_KEY) — this default only exists so a fresh
+   deployment is not locked out on day one. */
+const DEFAULT_RESET_KEY = 'tc-reset-9f31c7a4e8b25d60';
 const ACTIVITY_CAP = 400;
 const SESSION_HOURS = 12;
 const IDLE_MINUTES = 60;
@@ -164,6 +169,8 @@ function emptyConfig() {
     newArrivals: [],
     copy: {},
     shipping: { insideDhaka: 70, outsideDhaka: 130, freeAbove: 0 },
+    flashSale: { active: false, label: '', endsAt: '', percent: 0, ids: [] },
+    notifications: { sms: '', email: '', status: '' },
     announcement: '',
     maintenance: false,
   };
@@ -194,6 +201,20 @@ function normalize(raw) {
   };
   out.announcement = typeof out.announcement === 'string' ? out.announcement.slice(0, 200) : '';
   out.maintenance = !!out.maintenance;
+  const f = out.flashSale || {};
+  out.flashSale = {
+    active: !!f.active,
+    label: typeof f.label === 'string' ? f.label.slice(0, 60) : '',
+    endsAt: typeof f.endsAt === 'string' ? f.endsAt.slice(0, 40) : '',
+    percent: Number(f.percent) > 0 ? Math.min(90, Math.round(Number(f.percent))) : 0,
+    ids: Array.isArray(f.ids) ? f.ids.map(String).filter(Boolean) : [],
+  };
+  const n = out.notifications || {};
+  out.notifications = {
+    sms: typeof n.sms === 'string' ? n.sms.slice(0, 400) : '',
+    email: typeof n.email === 'string' ? n.email.slice(0, 800) : '',
+    status: typeof n.status === 'string' ? n.status.slice(0, 400) : '',
+  };
   out.v = 3;
   return out;
 }
@@ -541,6 +562,28 @@ async function handle(request, env) {
     }
 
     /* --------------------------- everything else needs a session --------------------------- */
+
+    /* Password reset for a locked-out owner. It cannot need a session (that is
+       the whole point), so it is gated by a separate reset key that only the
+       owner holds — never by the admin password itself. */
+    if (path === '/auth/reset' && method === 'POST') {
+      let body;
+      try { body = await request.json(); } catch (e) { return bad('Invalid JSON body', 400, origin); }
+      const key = String((body && body.resetKey) || '');
+      const username = String((body && body.username) || 'admin').trim().toLowerCase();
+      const newPass = String((body && body.newPassword) || '');
+      const expected = env.RESET_KEY || DEFAULT_RESET_KEY;
+      if (!key || !safeEqual(key, expected)) return bad('That reset key is not right.', 401, origin);
+      if (newPass.length < 8) return bad('The new password must be at least 8 characters.', 400, origin);
+      const users = await ensureBootstrap(env);
+      const user = (users || []).filter((u) => u.username === username)[0];
+      if (!user) return bad('No account with that username.', 404, origin);
+      const h = await hashPassword(newPass);
+      user.salt = h.salt; user.iterations = h.iterations; user.hash = h.hash; user.mustChange = false;
+      await writeJson(env, K.users, users);
+      await logActivity(env, { username: username, role: 'owner' }, 'password_reset', 'password reset with the owner key');
+      return json({ ok: true }, 200, origin);
+    }
 
     const me = await currentUser(request, env);
     if (!me) return bad('Not signed in.', 401, origin);

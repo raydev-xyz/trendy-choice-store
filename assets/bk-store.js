@@ -35,6 +35,8 @@
       hero: { slides: [] },
       hidden: [], pinned: [], price: {}, newArrivals: [], copy: {},
       shipping: defaultShipping(),
+      flashSale: { active: false, label: '', endsAt: '', percent: 0, ids: [] },
+      notifications: { sms: '', email: '', status: '' },
       announcement: '', maintenance: false
     };
   }
@@ -63,6 +65,20 @@
     };
     out.announcement = typeof out.announcement === 'string' ? out.announcement : '';
     out.maintenance = !!out.maintenance;
+    var f = raw.flashSale || {};
+    out.flashSale = {
+      active: !!f.active,
+      label: typeof f.label === 'string' ? f.label.slice(0, 60) : '',
+      endsAt: typeof f.endsAt === 'string' ? f.endsAt : '',
+      percent: Number(f.percent) > 0 ? Math.min(90, Math.round(Number(f.percent))) : 0,
+      ids: Array.isArray(f.ids) ? f.ids.map(String) : []
+    };
+    var n = raw.notifications || {};
+    out.notifications = {
+      sms: typeof n.sms === 'string' ? n.sms.slice(0, 400) : '',
+      email: typeof n.email === 'string' ? n.email.slice(0, 800) : '',
+      status: typeof n.status === 'string' ? n.status.slice(0, 400) : ''
+    };
     return out;
   }
 
@@ -188,6 +204,8 @@
     maintenance: function () { return !!CONFIG.maintenance; },
 
     isHidden: function (key) { return CONFIG.hidden.indexOf(String(key)) !== -1; },
+    flashSale: function () { return CONFIG.flashSale; },
+    notifications: function () { return CONFIG.notifications; },
     /* the owner's per-product edits, keyed by the same id the shop uses */
     overrides: function () { return OVERRIDES; },
     overrideFor: function (key) {
@@ -242,6 +260,14 @@
     changePassword: function (oldPassword, newPassword) {
       return request('/auth/password', {
         method: 'POST', body: { oldPassword: oldPassword, newPassword: newPassword }
+      });
+    },
+
+    /* locked out? the owner's reset key sets a new password without a session */
+    resetPassword: function (resetKey, newPassword, username) {
+      return request('/auth/reset', {
+        method: 'POST', auth: false,
+        body: { resetKey: resetKey, newPassword: newPassword, username: username || 'admin' }
       });
     },
 
