@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:58:58.728Z",
+  "generatedAt": "2026-11-16T16:40:05.662Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -144,7 +144,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 357,
+      "stock": 356,
       "inStock": true,
       "variants": []
     },
@@ -180,7 +180,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 320,
+      "stock": 314,
       "inStock": true,
       "variants": [
         {
@@ -192,19 +192,19 @@
         {
           "color": "White",
           "size": null,
-          "stock": 76,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 70,
+          "stock": 73,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
           "stock": 94,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 67,
           "inStock": true
         }
       ]
@@ -551,7 +551,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 597,
+      "stock": 596,
       "inStock": true,
       "variants": []
     },
