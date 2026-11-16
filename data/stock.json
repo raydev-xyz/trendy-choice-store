@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T08:58:41.191Z",
+  "generatedAt": "2026-11-16T10:39:38.231Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 54,
+  "sellable": 54,
   "outOfStock": 0,
   "products": [
     {
@@ -171,7 +171,7 @@
       "slug": "10m-argb-neon-rope-light-app-remote-control-original",
       "name": "10M ARGB Neon Rope Light – App & Remote Control(original)",
       "price": 2950,
-      "stock": 126,
+      "stock": 125,
       "inStock": true,
       "variants": []
     },
@@ -180,7 +180,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 333,
+      "stock": 332,
       "inStock": true,
       "variants": [
         {
@@ -190,15 +190,15 @@
           "inStock": true
         },
         {
-          "color": "Black",
-          "size": null,
-          "stock": 71,
-          "inStock": true
-        },
-        {
           "color": "White",
           "size": null,
           "stock": 83,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 70,
           "inStock": true
         },
         {
@@ -241,7 +241,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 109,
+      "stock": 108,
       "inStock": true,
       "variants": []
     },
@@ -337,11 +337,20 @@
       ]
     },
     {
+      "id": "19f19e13-b6de-4b47-8384-47c00db29ce4",
+      "slug": "26-inch-self-defense-stick",
+      "name": "26 Inch Self Defense Stick",
+      "price": 750,
+      "stock": 1,
+      "inStock": true,
+      "variants": []
+    },
+    {
       "id": "869e2a7b-1de1-4c2e-a892-6be9998e5ab6",
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 150,
+      "stock": 149,
       "inStock": true,
       "variants": []
     },
@@ -533,7 +542,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 80,
+      "stock": 79,
       "inStock": true,
       "variants": []
     },
@@ -630,7 +639,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 65,
+      "stock": 63,
       "inStock": true,
       "variants": []
     }
