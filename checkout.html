@@ -676,20 +676,44 @@
 
     /* ---- boot ---- */
     placeBtn.innerHTML=placeBtn.innerHTML; window.__savedBtn='Place order';
+
+    /* One place decides what the page shows, so the empty state and the form
+       can never disagree with the basket. This is what used to break: the
+       first collect() ran before the live catalogue arrived, a
+       BusinessKoro-only line could not be priced yet, the page showed
+       "No items yet" — and nothing ever switched it back when the catalogue
+       did arrive. */
+    function paint(){
+      collect();
+      if(!lines.length){
+        empty.hidden=false; body.hidden=true; sub.textContent='No items yet';
+        return false;
+      }
+      empty.hidden=true; body.hidden=false;
+      renderSummary();
+      return true;
+    }
+
     /* the live catalogue arrives asynchronously; re-read it so a cart line
        for a BusinessKoro-only product is priced and orderable */
-    document.addEventListener('bk:catalog',function(){ rebuild(); collect(); if(lines.length) renderSummary(); });
-    collect();
-    if(!lines.length){ empty.hidden=false; body.hidden=true; sub.textContent='No items yet'; return; }
-    body.hidden=false;
-    renderSummary();
-    loadLive().then(function(){
-      /* the delivery charge is known now: paint it and keep it in step with
-         the district the customer picks */
-      var d=document.getElementById('fDist');
-      d.addEventListener('change',paintTotals);
-      paintTotals();
+    document.addEventListener('bk:catalog',function(){
+      rebuild();
+      if(paint()) paintTotals();
     });
+
+    if(paint()){
+      loadLive().then(function(){
+        /* the delivery charge is known now: paint it and keep it in step with
+           the district the customer picks */
+        var d=document.getElementById('fDist');
+        d.addEventListener('change',paintTotals);
+        paintTotals();
+      });
+    } else {
+      /* still show the delivery rates on the empty page, so the customer
+         knows what delivery will cost before they add anything */
+      loadLive().then(paintTotals);
+    }
   });
   </script>
 </main>
