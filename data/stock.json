@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T10:39:38.231Z",
+  "generatedAt": "2026-11-16T11:58:23.588Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -180,19 +180,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 332,
+      "stock": 322,
       "inStock": true,
       "variants": [
         {
-          "color": "Yellow",
-          "size": null,
-          "stock": 85,
-          "inStock": true
-        },
-        {
           "color": "White",
           "size": null,
-          "stock": 83,
+          "stock": 77,
           "inStock": true
         },
         {
@@ -205,6 +199,12 @@
           "color": "Red",
           "size": null,
           "stock": 94,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 81,
           "inStock": true
         }
       ]
@@ -551,7 +551,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 598,
+      "stock": 597,
       "inStock": true,
       "variants": []
     },
