@@ -302,7 +302,15 @@
     if (READY) return READY;
     if (!ORIGINAL) ORIGINAL = (window.PRODUCTS || []).slice();
 
-    READY = window.BK.products().then(function (res) {
+    /* The owner's settings and the catalogue are two independent requests.
+       Wait for the settings FIRST: the overrides they carry are applied while
+       the catalogue is built, so a price or name the owner changed is already
+       in place on the first paint instead of flickering in afterwards. */
+    var settings = (window.STORE && window.STORE.ready) ? window.STORE.ready : Promise.resolve(null);
+
+    READY = settings.then(function () {
+      return window.BK.products();
+    }).then(function (res) {
       RAW = res.products;
       MAP = build(res.products);
       MERGED = merge(res.products, MAP);
