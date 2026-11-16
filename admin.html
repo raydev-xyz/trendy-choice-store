@@ -128,6 +128,7 @@ input[type=checkbox]{width:16px;height:16px;accent-color:var(--gold2);vertical-a
 /* ---------- table ---------- */
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
 table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px}
+.num,.right{text-align:right}
 th{
   text-align:left;padding:10px 12px;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
   color:var(--dim2);border-bottom:1px solid var(--line);background:var(--bg2);font-weight:600;white-space:nowrap;
@@ -228,6 +229,14 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   .g3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:760px){
+  /* compact tables that live inside a dashboard card: let the two or three
+     narrow columns wrap instead of forcing a horizontal scroll */
+  .cardtbl{min-width:0 !important}
+  .cardtbl th,.cardtbl td{padding:7px 5px;font-size:11.5px}
+  .cardtbl th{white-space:normal;font-size:9.5px;line-height:1.25}
+  .cardtbl .cellp .nm b{max-width:120px}
+  .cardtbl .thumb{width:26px;height:26px}
+  .cardtbl td.num,.cardtbl th.right{text-align:right}
   .ad-shell{grid-template-columns:1fr}
   .ad-side{
     position:fixed;left:0;top:0;bottom:0;width:250px;z-index:120;
@@ -333,9 +342,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 <div id="toast"></div>
 <div id="modalHost"></div>
 
-<script src="assets/bk-store.js?v=202611162230"></script>
-<script src="assets/bk-api.js?v=202611162230"></script>
-<script src="assets/bk-catalog.js?v=202611162230"></script>
+<script src="assets/bk-store.js?v=202611162300"></script>
+<script src="assets/bk-api.js?v=202611162300"></script>
+<script src="assets/bk-catalog.js?v=202611162300"></script>
 <script>
 (function(){
 'use strict';
@@ -729,7 +738,7 @@ function topSellers(){
   var list = Object.keys(map).map(function(k){ return map[k]; })
     .sort(function(a,b){ return b.r-a.r; }).slice(0,6);
   if(!list.length) return '<div class="empty"><b>No sales yet</b>Top sellers appear once orders arrive.</div>';
-  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0">'+
+  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl">'+
     '<thead><tr><th>Product</th><th class="right">Qty</th><th class="right">Revenue</th></tr></thead><tbody>'+
     list.map(function(p){
       return '<tr><td><b style="font-weight:500">'+esc(p.n)+'</b></td>'+
@@ -739,7 +748,7 @@ function topSellers(){
 
 function recentOrders(list){
   if(!list.length) return '<div class="empty"><b>No orders yet</b>Orders placed on the shop land here.</div>';
-  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0">'+
+  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl">'+
     '<thead><tr><th>Order</th><th>Customer</th><th class="right">Total</th><th>Status</th></tr></thead><tbody>'+
     list.map(function(o){
       return '<tr><td class="mono">'+esc(o.orderNumber||o.id)+'</td>'+
@@ -751,7 +760,7 @@ function recentOrders(list){
 
 function lowStockTable(list){
   if(!list.length) return '<div class="empty"><b>Nothing running low</b>Every product has more than 5 in stock.</div>';
-  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0">'+
+  return '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl">'+
     '<thead><tr><th>Product</th><th class="right">Left</th></tr></thead><tbody>'+
     list.map(function(p){
       return '<tr><td><div class="cellp"><img class="thumb" src="'+esc(p.i)+'" alt="" loading="lazy">'+
@@ -1366,7 +1375,7 @@ function viewInventory(){
   h += '</div>';
 
   h += '<div class="card" style="margin-bottom:14px"><h3>Low stock ('+low.length+')</h3>'+
-    (low.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0"><thead><tr><th>Product</th><th class="right">Left</th></tr></thead><tbody>'+
+    (low.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl"><thead><tr><th>Product</th><th class="right">Left</th></tr></thead><tbody>'+
       low.map(function(p){
         return '<tr><td>'+esc(p.t)+'</td><td class="num"><span class="pill '+(Number(p.s)<=2?'bad':'warn')+'">'+p.s+'</span></td></tr>';
       }).join('')+'</tbody></table></div>'
@@ -1374,7 +1383,7 @@ function viewInventory(){
   '</div>';
 
   h += '<div class="card"><h3>Movement history</h3>'+
-    (moves.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0"><thead><tr>'+
+    (moves.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl"><thead><tr>'+
       '<th>When</th><th>Product</th><th class="right">Qty</th><th>Note</th><th>By</th></tr></thead><tbody>'+
       moves.slice(0,60).map(function(m){
         return '<tr><td class="small dim nowrap">'+dt(m.at)+'</td><td>'+esc(m.productName||m.productId)+'</td>'+
@@ -1548,7 +1557,7 @@ function viewContent(){
   if(!reviews.length){
     h += '<div class="empty"><b>No reviews yet</b>Reviews submitted on the shop land here for approval.</div>';
   } else {
-    h += '<div class="tw" style="border:0;background:transparent"><table style="min-width:0"><thead><tr>'+
+    h += '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl"><thead><tr>'+
       '<th>Product</th><th>Customer</th><th>Rating</th><th>Review</th><th>State</th><th class="right">Actions</th></tr></thead><tbody>';
     reviews.forEach(function(r){
       h += '<tr><td class="small">'+esc(r.productName||r.productId)+'</td>'+
@@ -1635,14 +1644,14 @@ function viewReports(){
 
   h += '<div class="grid g2">';
   h += '<div class="card"><h3>By day</h3>'+
-    (r.byDay.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0"><thead><tr><th>Date</th><th class="right">Orders</th><th class="right">Revenue</th></tr></thead><tbody>'+
+    (r.byDay.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl"><thead><tr><th>Date</th><th class="right">Orders</th><th class="right">Revenue</th></tr></thead><tbody>'+
       r.byDay.map(function(d){
         return '<tr><td class="small">'+esc(d.date)+'</td><td class="num">'+d.orders+'</td><td class="num">'+money(d.revenue)+'</td></tr>';
       }).join('')+'</tbody></table></div>'
       : '<div class="empty"><b>No orders in this range</b></div>')+
   '</div>';
   h += '<div class="card"><h3>By product</h3>'+
-    (r.byProduct.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0"><thead><tr><th>Product</th><th class="right">Qty</th><th class="right">Revenue</th></tr></thead><tbody>'+
+    (r.byProduct.length ? '<div class="tw" style="border:0;background:transparent"><table style="min-width:0" class="cardtbl"><thead><tr><th>Product</th><th class="right">Qty</th><th class="right">Revenue</th></tr></thead><tbody>'+
       r.byProduct.slice(0,20).map(function(p){
         return '<tr><td class="small">'+esc(p.name)+'</td><td class="num">'+p.qty+'</td><td class="num">'+money(p.revenue)+'</td></tr>';
       }).join('')+'</tbody></table></div>'
