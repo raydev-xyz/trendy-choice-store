@@ -319,7 +319,21 @@
       });
       return found;
     }
-    list.forEach(function (x) { if (String(x.id) === String(key)) found = x; });
+    /* A product that exists only in BusinessKoro is keyed "bk:<uuid>" in the
+       catalogue, but the links the shop generates carry the bare uuid
+       (?p=<uuid>). Accept either, and fall back to the backend id, so a link
+       written by any part of the site resolves to the same product. */
+    list.forEach(function (x) {
+      if (String(x.id) === String(key)) found = x;
+    });
+    if (found) return found;
+    list.forEach(function (x) {
+      if (String(x.id) === 'bk:' + key) found = x;
+    });
+    if (found) return found;
+    list.forEach(function (x) {
+      if (x.bkId && String(x.bkId) === String(key)) found = x;
+    });
     return found;
   }
 
