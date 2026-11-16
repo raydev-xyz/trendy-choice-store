@@ -142,6 +142,10 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .cellp{display:flex;align-items:center;gap:9px;min-width:0}
 .cellp .nm{min-width:0}
 .cellp .nm b{display:block;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:230px}
+/* inside a dashboard card the table is narrow, so let the name wrap rather
+   than hide behind an ellipsis the admin cannot read */
+.cardtbl .cellp .nm b{max-width:none;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.3}
+.cardtbl td b{white-space:normal;overflow-wrap:anywhere}
 .cellp .nm span{display:block;font-size:10.5px;color:var(--dim2)}
 
 /* ---------- pills ---------- */
@@ -343,9 +347,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 <div id="toast"></div>
 <div id="modalHost"></div>
 
-<script src="assets/bk-store.js?v=202611162400"></script>
-<script src="assets/bk-api.js?v=202611162400"></script>
-<script src="assets/bk-catalog.js?v=202611162400"></script>
+<script src="assets/bk-store.js?v=202611162430"></script>
+<script src="assets/bk-api.js?v=202611162430"></script>
+<script src="assets/bk-catalog.js?v=202611162430"></script>
 <script>
 (function(){
 'use strict';
@@ -1711,7 +1715,7 @@ function viewSettings(){
       '<label class="f"><span>Phone</span><input type="text" id="stPhone" value="'+esc(s.phone||'')+'"></label>'+
       '<label class="f"><span>WhatsApp</span><input type="text" id="stWa" value="'+esc(s.whatsapp||'')+'"></label>'+
     '</div>'+
-    '<label class="f"><span>Email</span><input type="email" id="stEmail" value="'+esc(s.email||'')+'"></label>'+
+    '<label class="f"><span>Email</span><input type="email" id="stEmail" placeholder="shop@example.com" value="'+esc(s.email||'')+'"></label>'+
     '<label class="f"><span>Address</span><input type="text" id="stAddr" value="'+esc(s.address||'')+'"></label>'+
     '<div class="grid g2">'+
       '<label class="f"><span>Currency symbol</span><input type="text" id="stCur" value="'+esc(s.currencySymbol||'\u09F3')+'"></label>'+
@@ -1740,11 +1744,11 @@ function viewSettings(){
   '</div>';
 
   h += '<div class="card"><h3>SEO &amp; social</h3>'+
-    '<label class="f"><span>Meta title</span><input type="text" id="stSeoT" value="'+esc((s.seo&&s.seo.title)||'')+'"></label>'+
-    '<label class="f"><span>Meta description</span><textarea id="stSeoD" rows="2">'+esc((s.seo&&s.seo.description)||'')+'</textarea></label>'+
+    '<label class="f"><span>Meta title</span><input type="text" id="stSeoT" placeholder="Trendy Choice \u2014 shop smart, live trendy" value="'+esc((s.seo&&s.seo.title)||'')+'"></label>'+
+    '<label class="f"><span>Meta description</span><textarea id="stSeoD" rows="2" placeholder="What the shop sells, in one sentence for search engines.">'+esc((s.seo&&s.seo.description)||'')+'</textarea></label>'+
     '<div class="grid g2">'+
-      '<label class="f"><span>Facebook</span><input type="url" id="stFb" value="'+esc((s.social&&s.social.facebook)||'')+'"></label>'+
-      '<label class="f"><span>Instagram</span><input type="url" id="stIg" value="'+esc((s.social&&s.social.instagram)||'')+'"></label>'+
+      '<label class="f"><span>Facebook</span><input type="url" id="stFb" placeholder="https://facebook.com/yourpage" value="'+esc((s.social&&s.social.facebook)||'')+'"></label>'+
+      '<label class="f"><span>Instagram</span><input type="url" id="stIg" placeholder="https://instagram.com/yourpage" value="'+esc((s.social&&s.social.instagram)||'')+'"></label>'+
     '</div>'+
   '</div>';
   h += '</div>';
