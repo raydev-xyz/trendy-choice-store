@@ -209,8 +209,9 @@
 
   <script>
   document.addEventListener('DOMContentLoaded',function(){
-    var P=window.PRODUCTS||[], byId={};
-    P.forEach(function(p){byId[p.id]=p;});
+    function rebuild(){ byId={}; (window.PRODUCTS||[]).forEach(function(p){byId[p.id]=p;}); }
+    var byId={};
+    rebuild();
     function esc(s){return String(s).replace(/[&<>"]/g,function(c){
       return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
     /* the client prefixes messages with their own "HTTP nnn — "; the receipt
@@ -269,7 +270,11 @@
       var c=window.CART.read(), ids=Object.keys(c);
       lines=[]; total=0; count=0;
       ids.forEach(function(id){
-        var p=byId[id]; if(!p){window.CART.remove(id);return;}
+        var p=byId[id];
+        /* only drop a line once the live catalogue is known: before it
+           arrives a BusinessKoro-only product would look unknown here and
+           get silently thrown out of the cart */
+        if(!p){ if(window.BKCAT&&window.BKCAT.liveCount) window.CART.remove(id); return; }
         var q=c[id], line=p.p*q; total+=line; count+=q;
         lines.push({id:id,p:p,q:q,line:line,v:(window.VARIANTS?window.VARIANTS.text(id):''),
                     vv:(window.VARIANTS?window.VARIANTS.get(id):{})});
@@ -516,6 +521,9 @@
 
     /* ---- boot ---- */
     placeBtn.innerHTML=placeBtn.innerHTML; window.__savedBtn='Place order';
+    /* the live catalogue arrives asynchronously; re-read it so a cart line
+       for a BusinessKoro-only product is priced and orderable */
+    document.addEventListener('bk:catalog',function(){ rebuild(); collect(); if(lines.length) renderSummary(); });
     collect();
     if(!lines.length){ empty.hidden=false; body.hidden=true; sub.textContent='No items yet'; return; }
     body.hidden=false;

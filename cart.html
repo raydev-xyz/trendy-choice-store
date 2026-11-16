@@ -38,13 +38,17 @@
   <script>
   document.addEventListener('DOMContentLoaded',function(){
     var wrap=document.getElementById('cwrap'), sub=document.getElementById('csub');
+    function rebuild(){ P=window.PRODUCTS||[]; byId={}; P.forEach(function(p){byId[p.id]=p;}); }
     var P=window.PRODUCTS||[], byId={};
-    P.forEach(function(p){byId[p.id]=p;});
+    rebuild();
     function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
     function render(){
       var c=window.CART.read(), ids=Object.keys(c), rows=[], total=0, count=0;
       ids.forEach(function(id){
-        var p=byId[id]; if(!p){window.CART.remove(id);return;}
+        var p=byId[id];
+        /* only drop a line once the live catalogue is known: before it
+           arrives a BusinessKoro-only product would look unknown here */
+        if(!p){ if(window.BKCAT&&window.BKCAT.liveCount) window.CART.remove(id); return; }
         var q=c[id], line=p.p*q; total+=line; count+=q;
         rows.push('<div class="citem" data-id="'+id+'">'+
           '<img src="'+p.i+'" alt="" loading="lazy">'+
@@ -88,6 +92,10 @@
     document.getElementById('clear').addEventListener('click',function(){
       if(window.CART.count()){window.CART.clear();render();}
     });
+    /* the live catalogue replaces window.PRODUCTS after it arrives, so
+       re-render then — otherwise a cart line for a BusinessKoro-only
+       product would look "unknown" and get dropped. */
+    document.addEventListener('bk:catalog',function(){ rebuild(); render(); });
     render();
   });
   </script>
@@ -95,6 +103,8 @@
 <footer data-footer></footer>
 <div id="siteDock" data-active="cart"></div>
 <script src="products.js"></script>
+<script src="assets/bk-api.js"></script>
+<script src="assets/bk-catalog.js"></script>
 <script src="assets/site.js"></script>
 <script src="assets/stock-filter.js"></script>
 

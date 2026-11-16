@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Product · Trendy Choice</title>
+<meta name="description" content="Product details at Trendy Choice.">
+<meta name="theme-color" content="#06030f">
+<meta property="og:title" content="Product · Trendy Choice">
+<meta property="og:description" content="Product details at Trendy Choice.">
+<meta property="og:type" content="product">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-base="../">
+<header id="siteHeader"></header>
+<main>
+  <div class="wrap pdp">
+    <div class="back-bar">
+      <a class="back-btn" href="../products.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg> Shop</a>
+      <span class="crumb" id="vCrumb">Shop</span>
+    </div>
+
+    <div class="pdp-grid">
+      <div class="pdp-media-wrap">
+        <div class="pdp-media">
+          <img id="vImg" src="../images/p01.jpg" alt="" width="700" height="700">
+          <span class="stock-flag" id="vFlag"></span>
+        </div>
+      </div>
+
+      <div>
+        <div class="pdp-info glass">
+          <h1 id="vName">Loading product…</h1>
+          <div class="pdp-meta" id="vMeta"></div>
+          <div class="price-row"><span class="now" id="vPrice"></span></div>
+          <div class="opts" id="vOpts"></div>
+
+          <div class="cta">
+            <button class="btn cart" id="add" disabled><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.3 11.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/></svg> Add to cart</button>
+            <button class="btn buy" id="buy" disabled><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> Buy now</button>
+          </div>
+
+          <div class="desc-block">
+            <h2>Product details</h2>
+            <p id="vDesc"></p>
+          </div>
+        </div>
+
+        <p class="note" id="vNote">Payment: bKash · Nagad · Rocket · Upay · COD. Orders are confirmed
+          on WhatsApp or by phone before dispatch.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer data-footer></footer>
+<div id="siteDock" data-active="shop"></div>
+<script src="../products.js"></script>
+<script src="../assets/bk-api.js"></script>
+<script src="../assets/bk-catalog.js"></script>
+<script src="../assets/site.js"></script>
+<script src="../assets/stock-filter.js"></script>
+<script>
+/* Detail page for a product that exists only in BusinessKoro (no bundled
+   p<N>.html page). Reached as product/view.html?p=<backend uuid>. Every
+   value shown comes from the live catalogue; nothing is invented. */
+(function(){
+  function qs(k){ var m=new RegExp('[?&]'+k+'=([^&]*)').exec(location.search); return m?decodeURIComponent(m[1]):''; }
+  var bkId=qs('p');
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function boot(){
+    var nameEl=document.getElementById('vName'), metaEl=document.getElementById('vMeta'),
+        priceEl=document.getElementById('vPrice'), descEl=document.getElementById('vDesc'),
+        imgEl=document.getElementById('vImg'), flagEl=document.getElementById('vFlag'),
+        optsEl=document.getElementById('vOpts'), crumbEl=document.getElementById('vCrumb'),
+        add=document.getElementById('add'), buy=document.getElementById('buy');
+
+    function fail(msg){
+      nameEl.textContent='Product unavailable';
+      descEl.textContent=msg;
+      flagEl.innerHTML='<span class="badge">—</span>';
+      add.disabled=true; buy.disabled=true;
+    }
+
+    if(!bkId) return fail('No product was requested. Open a product from the shop.');
+    if(!window.BKCAT) return fail('The store API client did not load, so this product cannot be shown.');
+
+    document.title='Loading product… · Trendy Choice';
+
+    window.BKCAT.load().then(function(){
+      var list=window.BKCAT.catalog()||[];
+      var p=null;
+      list.forEach(function(x){ if(String(x.bkId)===String(bkId)) p=x; });
+      if(!p) return fail('This product is not in the live store catalogue right now.');
+
+      var live=!p.unavailable && Number(p.s)>0;
+      document.title=p.t+' · '+window.money(p.p)+' · '+(live?'In stock':'Out of stock');
+      nameEl.textContent=p.t;
+      crumbEl.textContent=p.c||'Shop';
+      metaEl.innerHTML='<span>'+esc(p.c||'Shop')+'</span><span class="dot"></span>'+
+        (live ? '<span>'+Number(p.s).toLocaleString('en-US')+' in stock</span>' : '<span>Out of stock</span>');
+      priceEl.textContent=window.money(p.p);
+      descEl.textContent=(p.d||'').replace(/^#+\s*/gm,'').replace(/\*\*/g,'').trim()||'No description provided.';
+      if(p.i){ imgEl.src=/^https?:\/\//i.test(p.i)?p.i:'../'+p.i; }
+      imgEl.alt=p.t;
+      flagEl.innerHTML=live?'<span class="badge ok">In stock</span>':'<span class="badge">Out of stock</span>';
+
+      var picked={};
+      if(p.opts&&p.opts.length){
+        optsEl.innerHTML=p.opts.map(function(g){
+          return '<div class="opt-group"><h3>'+esc(g.n)+'</h3><div class="opt-vals">'+
+            g.v.map(function(v,i){
+              if(i===0) picked[g.n]=v;
+              return '<button class="opt-chip" type="button" data-g="'+esc(g.n)+'" data-v="'+esc(v)+'" aria-pressed="'+(i===0?'true':'false')+'">'+esc(v)+'</button>';
+            }).join('')+'</div></div>';
+        }).join('');
+        [].slice.call(optsEl.querySelectorAll('.opt-chip')).forEach(function(c){
+          c.addEventListener('click',function(){
+            var g=c.getAttribute('data-g');
+            picked[g]=c.getAttribute('data-v');
+            [].slice.call(optsEl.querySelectorAll('.opt-chip')).forEach(function(o){
+              if(o.getAttribute('data-g')===g) o.setAttribute('aria-pressed', o===c?'true':'false');
+            });
+          });
+        });
+      }
+
+      if(!live){
+        add.disabled=true; buy.disabled=true;
+        add.textContent='Out of stock';
+        return;
+      }
+
+      add.disabled=false; buy.disabled=false;
+      function go(cart){
+        window.CART.add(p.id,1);
+        Object.keys(picked).forEach(function(k){ window.VARIANTS.set(p.id,k,picked[k]); });
+        window.toast('Added to cart');
+        if(cart) setTimeout(function(){ location.href='../cart.html'; },260);
+      }
+      add.addEventListener('click',function(){ go(false); });
+      buy.addEventListener('click',function(){ go(true); });
+    }, function(err){
+      fail('The store backend could not be reached ('+(err&&err.message?err.message:'network error')+'). Please try again in a moment.');
+    });
+  }
+
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot);
+  else boot();
+})();
+</script>
+</body>
+</html>
