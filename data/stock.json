@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T11:58:23.588Z",
+  "generatedAt": "2026-11-16T14:58:58.728Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -180,13 +180,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 322,
+      "stock": 320,
       "inStock": true,
       "variants": [
         {
+          "color": "Yellow",
+          "size": null,
+          "stock": 80,
+          "inStock": true
+        },
+        {
           "color": "White",
           "size": null,
-          "stock": 77,
+          "stock": 76,
           "inStock": true
         },
         {
@@ -199,12 +205,6 @@
           "color": "Red",
           "size": null,
           "stock": 94,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 81,
           "inStock": true
         }
       ]
@@ -241,7 +241,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 108,
+      "stock": 107,
       "inStock": true,
       "variants": []
     },
@@ -639,7 +639,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 63,
+      "stock": 62,
       "inStock": true,
       "variants": []
     }
