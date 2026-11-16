@@ -234,7 +234,8 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   .cardtbl{min-width:0 !important}
   .cardtbl th,.cardtbl td{padding:7px 5px;font-size:11.5px}
   .cardtbl th{white-space:normal;font-size:9.5px;line-height:1.25}
-  .cardtbl .cellp .nm b{max-width:120px}
+  .cardtbl .cellp .nm b{max-width:none;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.3}
+  .cardtbl td b{white-space:normal;overflow-wrap:anywhere}
   .cardtbl .thumb{width:26px;height:26px}
   .cardtbl td.num,.cardtbl th.right{text-align:right}
   .ad-shell{grid-template-columns:1fr}
@@ -342,9 +343,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 <div id="toast"></div>
 <div id="modalHost"></div>
 
-<script src="assets/bk-store.js?v=202611162300"></script>
-<script src="assets/bk-api.js?v=202611162300"></script>
-<script src="assets/bk-catalog.js?v=202611162300"></script>
+<script src="assets/bk-store.js?v=202611162330"></script>
+<script src="assets/bk-api.js?v=202611162330"></script>
+<script src="assets/bk-catalog.js?v=202611162330"></script>
 <script>
 (function(){
 'use strict';
