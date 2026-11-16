@@ -76,10 +76,13 @@
   }
 
   function paint(list) {
-    var n = renderGrids(list);
-    renderMarquee(list);
+    /* Out-of-stock and not-in-catalogue products are not listed at all —
+       see sellable() in bk-catalog.js. */
+    var shown = window.BKCAT && window.BKCAT.sellable ? window.BKCAT.sellable() : list;
+    var n = renderGrids(shown);
+    renderMarquee(shown);
     try {
-      console.info('[catalog] rendered ' + n + ' products from the live store' +
+      console.info('[catalog] rendered ' + n + ' sellable products' +
         (window.BKCAT && window.BKCAT.liveCount ? ' (backend lists ' + window.BKCAT.liveCount + ')' : ''));
     } catch (e) {}
   }
@@ -89,8 +92,21 @@
     window.BKCAT.load().then(function () {
       paint(window.BKCAT.catalog());
     }, function (err) {
-      /* keep the bundled cards; say nothing false */
+      /* bk-api.js already falls back to data/stock.json, so reaching here means
+         neither the Worker NOR the snapshot answered. The cards baked into the
+         HTML are an old export and may list products that cannot be sold, so
+         say so rather than letting them pass for the live catalogue. */
       try { console.warn('[catalog] live catalogue unavailable: ' + (err && err.message)); } catch (e) {}
+      var wrap = document.querySelector('.wrap') || document.body;
+      if (wrap && !document.getElementById('bkGridNote')) {
+        var d = document.createElement('div');
+        d.id = 'bkGridNote';
+        d.style.cssText = 'margin:14px 0 18px;padding:11px 14px;border-radius:14px;font-size:12.5px;' +
+          'line-height:1.55;background:rgba(255,80,110,.12);border:1px solid rgba(255,80,110,.4);color:#ffd4dc';
+        d.textContent = 'The live store could not be reached, so availability below may be out of date. ' +
+          'Please reload in a moment.';
+        wrap.insertBefore(d, wrap.firstChild);
+      }
     });
   }
 

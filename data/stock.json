@@ -1,0 +1,638 @@
+{
+  "generatedAt": "2026-11-16T08:58:41.191Z",
+  "source": "https://trendy.r4ydevbd.workers.dev/products",
+  "total": 53,
+  "sellable": 53,
+  "outOfStock": 0,
+  "products": [
+    {
+      "id": "f6052e9f-b676-403b-a9fc-fddc6cd2e610",
+      "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
+      "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
+      "price": 850,
+      "stock": 249,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "e840d6ab-29aa-4174-85a2-a856531ebe94",
+      "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
+      "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
+      "price": 1500,
+      "stock": 250,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "242e68a9-0786-4b30-8c7f-a016f505c970",
+      "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
+      "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
+      "price": 850,
+      "stock": 250,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "22fb3fe4-4c41-470f-b0e0-79c3e1bb95f8",
+      "slug": "black-paisley-hoodie-dropsoulder-combo",
+      "name": "Black Paisley Hoodie & Dropsoulder Combo",
+      "price": 1200,
+      "stock": 1888,
+      "inStock": true,
+      "variants": [
+        {
+          "color": null,
+          "size": "L",
+          "stock": 944,
+          "inStock": true
+        },
+        {
+          "color": null,
+          "size": "XL",
+          "stock": 947,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "869a8aa2-d9ad-4c40-a8aa-7f2c21c407ba",
+      "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
+      "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
+      "price": 800,
+      "stock": 2740,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Jet Black",
+          "size": "XL",
+          "stock": 345,
+          "inStock": true
+        },
+        {
+          "color": "Cofee",
+          "size": "XL",
+          "stock": 345,
+          "inStock": true
+        },
+        {
+          "color": "Cofee",
+          "size": "L",
+          "stock": 349,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "L",
+          "stock": 346,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 343,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 345,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 347,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "XL",
+          "stock": 346,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "c199c491-52f3-4e8c-876e-0ed1957b73f6",
+      "slug": "ven-dens-vd-pb030-10000mah-wireless-power-bank-with-magsafe",
+      "name": "VEN-DENS VD-PB030 10000mAh Wireless Power Bank with Magsafe",
+      "price": 1900,
+      "stock": 179,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "07c50511-6196-4a34-98e0-7a6df1ad0d9e",
+      "slug": "x9-handhole-game-console-black-hawk",
+      "name": "X9 Handhole Game Console black hawk",
+      "price": 4500,
+      "stock": 326,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "12a7bcab-f705-424d-9004-e4906359d005",
+      "slug": "hoco-ca6-glacier-ai-semiconductor-mobile-cooler",
+      "name": "Hoco GA6 Glacier AI Semiconductor Mobile Cooler",
+      "price": 1150,
+      "stock": 118,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "1653fa52-7d49-4dca-a141-7deb1b4ab937",
+      "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
+      "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
+      "price": 650,
+      "stock": 357,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "ef573f8b-e0dd-409b-97a7-29e89a8a4d75",
+      "slug": "j36-ultra-retro-handheld-game-console-100-original",
+      "name": "J36 Ultra Retro Handheld Game Console (100% Original)",
+      "price": 5500,
+      "stock": 144,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "f6e03e61-20e1-4f95-af45-4c23065e72e9",
+      "slug": "p6-retro-game-console-with-620-classic-games-tv-support",
+      "name": "P6 Retro Game Console with 620 Classic Games & TV Support",
+      "price": 2500,
+      "stock": 149,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "bafe6fe1-8e31-4eac-86b3-a26d77c64dce",
+      "slug": "10m-argb-neon-rope-light-app-remote-control-original",
+      "name": "10M ARGB Neon Rope Light – App & Remote Control(original)",
+      "price": 2950,
+      "stock": 126,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "6a765b75-17bf-4536-ba64-5c111d376fa1",
+      "slug": "k8-wireless-earbuds",
+      "name": "K8 Wireless Earbuds",
+      "price": 400,
+      "stock": 333,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 85,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 71,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 83,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 94,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "4384f9fc-d380-4928-8272-03016151fc06",
+      "slug": "ven-dens-50000mah-vd-pb063-22-5w-fast-charging-power-bank-with-digital-display-built-in-cables",
+      "name": "Ven-Dens 50000mAh VD-PB063 22.5W Fast Charging Power Bank with Digital Display & Built-in Cables",
+      "price": 2600,
+      "stock": 124,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "2e355a6b-de46-4d95-bd9d-a7ff35be928f",
+      "slug": "shoe-cleaner-foam-white-shoe-cleaning-kit-with-brush-towel",
+      "name": "Shoe Cleaner Foam White Shoe Cleaning Kit with Brush & Towel",
+      "price": 700,
+      "stock": 1,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "af958544-b780-4d5d-95eb-75845fc361ad",
+      "slug": "zepter-kitchen-knife-set-6-pcs-original",
+      "name": "Zepter Kitchen Knife Set 6 Pcs (original)",
+      "price": 850,
+      "stock": 137,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "16a99192-e130-492b-afb3-3b68efb16a81",
+      "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
+      "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
+      "price": 850,
+      "stock": 109,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "b06f5dc6-9a94-43e8-8112-5ca9ca14f641",
+      "slug": "m88-led-video-light",
+      "name": "M88 LED Video Light ",
+      "price": 650,
+      "stock": 142,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "d360e22c-8bd7-4ce2-ad14-f05694e4cfa8",
+      "slug": "a59-plus-watch-combo",
+      "name": "A59 Plus Watch Combo",
+      "price": 1500,
+      "stock": 101,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "f1239262-5b37-43fb-93d2-21e563ad6232",
+      "slug": "ven-dens-vd-pb062-power-bank-30000mah",
+      "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
+      "price": 1900,
+      "stock": 309,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "13a3d6a5-2a8a-4f8b-b655-9a84188682de",
+      "slug": "olax-m100-power-bank-wifi-router",
+      "name": "OLAX M100 Power Bank WiFi Router ",
+      "price": 3400,
+      "stock": 93,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "e3db0798-61a4-4c77-86fb-7198b079c0ba",
+      "slug": "4g-pocket-router-olax-mf982",
+      "name": "4G Pocket Router OLAX MF982",
+      "price": 3100,
+      "stock": 1,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "12bb2a8f-b8d3-4697-bf5f-c8d04230661c",
+      "slug": "unique-design-strong-quality-camping-lamp-light",
+      "name": "Unique Design Strong quality Camping lamp light",
+      "price": 800,
+      "stock": 142,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "5bf0a59e-b77a-4ff1-a261-9201fa74a7e5",
+      "slug": "solar-interaction-wall-lamp",
+      "name": "Solar Interaction Wall Lamp",
+      "price": 480,
+      "stock": 105,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "dbac2722-5719-4162-aaf5-d7ea4ee935c5",
+      "slug": "portable-electric-kettle",
+      "name": "Portable Electric Kettle",
+      "price": 950,
+      "stock": 150,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        },
+        {
+          "color": "Pink",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        },
+        {
+          "color": "blue",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "869e2a7b-1de1-4c2e-a892-6be9998e5ab6",
+      "slug": "plextone-rx3-plus-wired-gaming-earphone",
+      "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
+      "price": 1140,
+      "stock": 150,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "30bfea0a-b349-429b-a091-9923621a4a81",
+      "slug": "siren-alarm-lock-for-security",
+      "name": "Siren Alarm Lock For Security",
+      "price": 700,
+      "stock": 92,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "ecd85dc4-10a4-4c1a-9e93-0a5a46c41532",
+      "slug": "yuoto-explorer-16000-puffs-50mg-nic-disposable-type-c-rechargeable",
+      "name": "Yuoto Explorer 16000 Puffs | 50mg Nic Disposable | Type C Rechargeable",
+      "price": 1600,
+      "stock": 56,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "f5ec0305-9aa9-4753-92c4-e54fe5980cc5",
+      "slug": "kemei-kemei-km-026",
+      "name": "Kemei Kemei KM-026",
+      "price": 1500,
+      "stock": 114,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "e7e9c405-ff15-4dba-b3e9-23bae8f180e1",
+      "slug": "chest-strap-mount",
+      "name": "Chest Strap Mount",
+      "price": 850,
+      "stock": 177,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "675007e7-97b4-4a4f-ad55-eae0e6855432",
+      "slug": "mili-mitag-android-device-compatible-with-google-s-find-my-device",
+      "name": "MiLi MiTag Android and iphone Device – Compatible with Google’s Find My Device",
+      "price": 1050,
+      "stock": 264,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "7dcf40fd-d7ff-4c0b-adab-e91e295c0b00",
+      "slug": "3d-led-digital-clock",
+      "name": "3D LED Digital Clock",
+      "price": 800,
+      "stock": 123,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "orange",
+          "size": null,
+          "stock": 46,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 41,
+          "inStock": true
+        },
+        {
+          "color": "Green",
+          "size": null,
+          "stock": 43,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "a79d3d6c-bdcd-4a6a-af14-c9a6457c0962",
+      "slug": "jio-4g-lte-mobile-wifi-hotspot-portable-router",
+      "name": "JIO 4G LTE  Mobile WiFi Hotspot Portable Router",
+      "price": 1900,
+      "stock": 100,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "781d0a29-1ee6-41a2-b4e2-50d0cb582e00",
+      "slug": "m25-two-in-one-split-wireless-dj-speaker",
+      "name": "M25 Two-In-One Split Wireless DJ Speaker",
+      "price": 1500,
+      "stock": 104,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "b029b246-f29b-4579-97fb-3da22acb4338",
+      "slug": "j36-ultra-all-in-one-handheld-gaming-console",
+      "name": "R36s All-in-One Handheld Gaming Console",
+      "price": 3550,
+      "stock": 205,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "55b2a4b4-30f3-451b-b00a-64692c55c904",
+      "slug": "apple-airpods-black-colour-special-edition-mastercopy",
+      "name": "Apple Airpods Black Colour Special Edition MasterCopy",
+      "price": 850,
+      "stock": 461,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "5d0cba61-8242-4058-bc3e-aeca594d6a0a",
+      "slug": "vintage-glasses-men-women",
+      "name": "vintage glasses men & Women",
+      "price": 320,
+      "stock": 50,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Purple",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "b0b6e6cc-1a32-467d-af62-6b52d260eb67",
+      "slug": "polygonal-men-women-sunglasses",
+      "name": "Polygonal Men & Women Sunglasses",
+      "price": 990,
+      "stock": 50,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 0,
+          "inStock": false
+        },
+        {
+          "color": "Purple",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "70795826-a1d3-434f-8c86-f345595d8f18",
+      "slug": "android-smart-projector-hy300-4k-original",
+      "name": "Android Smart Projector HY300 4K (ORIGINAL)",
+      "price": 4950,
+      "stock": 195,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "5ff68125-f0d3-4b59-9522-2ff283e09fcc",
+      "slug": "mobile-phone-waterproof-box-bathroom-shower-phone-placement-box",
+      "name": "Mobile Phone Waterproof Box Bathroom Shower Phone Placement Box",
+      "price": 550,
+      "stock": 62,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "ab4f6153-46f3-4823-a07f-b7afc2543992",
+      "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
+      "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
+      "price": 1080,
+      "stock": 16,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "2abd3e46-5020-4a5a-ba59-35f47da4ea1e",
+      "slug": "apple-airpods-pro-2nd-generation",
+      "name": "Apple Airpods pro 2nd generation MasterCopy",
+      "price": 550,
+      "stock": 92,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "68651b37-8f20-422c-b93d-e39a87156be2",
+      "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
+      "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
+      "price": 1750,
+      "stock": 80,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "c9d7e032-5e9f-4e20-b0b4-7f4cce95861d",
+      "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
+      "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
+      "price": 800,
+      "stock": 598,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "d39c1449-7e6d-4966-912f-96d4741d37b2",
+      "slug": "dual-horn-transparent-mecha-speaker",
+      "name": "Dual Horn Transparent Mecha Speaker",
+      "price": 1150,
+      "stock": 98,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "caffd051-2609-4b4d-8b92-07201e981e0a",
+      "slug": "portable-smart-electric-grape-peeler-machine",
+      "name": "Portable Smart Electric Grape Peeler Machine",
+      "price": 1600,
+      "stock": 200,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "c2a8c5d6-073e-4562-8970-d8d72c0ad5ac",
+      "slug": "ultra-s9-android-smart-watch",
+      "name": "Ultra S9 Android Smart Watch",
+      "price": 4300,
+      "stock": 192,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "0dad4207-f4a3-408b-bfe5-38c69465af47",
+      "slug": "cordless-electric-screwdriver-tool-kit",
+      "name": "Cordless Electric Screwdriver Tool Kit",
+      "price": 1350,
+      "stock": 149,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "dcb9792b-a609-4377-af0a-c613fab8d847",
+      "slug": "memo-cx07-magnetic-phone-cooler-fan",
+      "name": "Memo CX07 Magnetic Phone Cooler Fan",
+      "price": 1150,
+      "stock": 146,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "520d3230-558d-48b4-9ae3-91bb9c384b50",
+      "slug": "memo-cx12-magnetic-phone-cooler-fan",
+      "name": "MEMO CX12 Magnetic Phone Cooler Fan",
+      "price": 1750,
+      "stock": 168,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "be24fb37-1c47-476f-8979-4377f5b757d4",
+      "slug": "mini-body-massage-gun-sl-720-original-version",
+      "name": "Mini Body Massage Gun SL-720 (original Version)",
+      "price": 950,
+      "stock": 69,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Silver",
+          "size": null,
+          "stock": 74,
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "cc90fd6a-3773-47fd-884c-7650692adebe",
+      "slug": "f11-2-dual-wireless-microphone-set",
+      "name": "F11-2 Dual Wireless Microphone Set",
+      "price": 1150,
+      "stock": 125,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "bbbacf87-a611-4cd6-9679-b27122548df7",
+      "slug": "5-in-1-gaming-combo-pack",
+      "name": "5 in 1 Gaming Combo Pack",
+      "price": 1950,
+      "stock": 65,
+      "inStock": true,
+      "variants": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+name: Stock sync
+
+# Keeps data/stock.json in step with the live BusinessKoro catalogue.
+#
+# The storefront already reads the Worker API on every page load, so a visitor
+# always sees current stock. This workflow exists for the two things a browser
+# cannot do: it keeps a committed snapshot the site can fall back to when the
+# API is unreachable, and it leaves an auditable history of what went out of
+# stock and when.
+#
+# Schedule: every 30 minutes. GitHub runs cron jobs on UTC and may delay a run
+# by a few minutes under load — that is normal and harmless here.
+# Change the interval by editing the cron line below, e.g.
+#   '0 */2 * * *'   every 2 hours
+#   '0 */3 * * *'   every 3 hours
+#   '0 6 * * *'     once a day at 06:00 UTC
+# Pause it with the "Disable workflow" button on the Actions tab, or by
+# commenting out the schedule block.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch the live catalogue and write data/stock.json
+        run: node scripts/sync-stock.mjs
+
+      - name: Commit the snapshot when it changed
+        run: |
+          if [ -z "$(git status --porcelain data/stock.json)" ]; then
+            echo "Snapshot unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stock.json
+          git commit -m "chore(stock): refresh snapshot [skip ci]"
+          git push

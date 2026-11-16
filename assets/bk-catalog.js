@@ -127,6 +127,23 @@
     return order.map(function (k) { return { n: k, v: groups[k] }; });
   }
 
+  /* ---- storefront visibility ------------------------------------------------
+     Owner's rule: a product that cannot be sold is not shown in the shop.
+     "Cannot be sold" means exactly one thing — the backend reports no stock
+     (stockQuantity 0 or inStock false), or the product is not in the live
+     catalogue at all (unavailable). Both are dropped from the rendered list
+     here; they are NOT deleted from the catalogue, so the cart and checkout
+     can still recognise an id someone saved earlier.
+
+     Set window.BKCAT.showUnavailable = true (before the grid paints) to list
+     them again with their badge — useful when auditing the catalogue. */
+  function sellable(list) {
+    if (window.BKCAT && window.BKCAT.showUnavailable) return list;
+    return list.filter(function (p) {
+      return !p.unavailable && Number(p.s) > 0;
+    });
+  }
+
   /* Build the list the storefront renders.
      Order is preserved: every bundled product keeps its card and its id
      (that is what the cart, the product pages and the checkout key on),
@@ -231,6 +248,8 @@
     get lastCharges() { return CHARGES; },
     /* the live merged catalogue, or the bundled one before it loads */
     catalog: function () { return MERGED || window.PRODUCTS || []; },
+    /* only what can actually be sold — what the shop renders */
+    sellable: function () { return sellable(this.catalog()); },
     /* the backend's own product list (unmerged), or null before it loads */
     raw: function () { return RAW; },
     /* backend product for a local id (or a 'bk:<uuid>' id), or null */

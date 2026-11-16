@@ -65,11 +65,35 @@
   window.BK = {
     worker: WORKER,
 
-    /* GET /products -> real catalogue */
+    /* GET /products -> real catalogue.
+       If the Worker cannot be reached, data/stock.json is used instead — the
+       snapshot scripts/sync-stock.mjs refreshes every 30 minutes. It is
+       declared as a fallback so nobody mistakes it for a live answer: the
+       returned object carries `stale: true` and the snapshot's own timestamp. */
     products: function () {
       return request('/products').then(function (d) {
         var list = (d && d.data) ? d.data : (Array.isArray(d) ? d : []);
-        return { products: list, deliveryCharges: (d && d.deliveryCharges) || null, raw: d };
+        return { products: list, deliveryCharges: (d && d.deliveryCharges) || null, raw: d, stale: false };
+      }, function (err) {
+        return snapshot().then(function (snap) {
+          if (!snap) throw err;                       /* no snapshot: keep the real error */
+          window.BK.fallback = { at: snap.generatedAt, reason: String(err && err.message || err) };
+          return {
+            products: snap.products.map(function (p) {
+              return {
+                id: p.id, slug: p.slug, name: p.name,
+                suggestedPrice: p.price, stockQuantity: p.stock, inStock: p.inStock,
+                variants: (p.variants || []).map(function (v) {
+                  return { color: v.color, size: v.size, stockQuantity: v.stock, inStock: v.inStock };
+                })
+              };
+            }),
+            deliveryCharges: null,
+            raw: snap,
+            stale: true,
+            generatedAt: snap.generatedAt
+          };
+        });
       });
     },
 
@@ -83,4 +107,19 @@
       return request('/orders/' + encodeURIComponent(id));
     }
   };
+
+  /* The committed stock snapshot, read at most once per page. */
+  var SNAP = null;
+  function snapshot() {
+    if (SNAP) return Promise.resolve(SNAP);
+    var base = (document.body && document.body.getAttribute('data-base')) || '';
+    return fetch(base + 'data/stock.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !Array.isArray(d.products) || !d.products.length) return null;
+        SNAP = d;
+        return d;
+      })
+      .catch(function () { return null; });
+  }
 })();
