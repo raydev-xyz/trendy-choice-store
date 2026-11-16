@@ -102,6 +102,15 @@
     }
     if (el.add) { el.add.disabled = true; el.add.textContent = 'Add to cart'; }
     if (el.buy) { el.buy.disabled = true; el.buy.textContent = 'Buy now'; }
+    /* the WhatsApp bubble is baked into every pN.html with that page's own
+       name and price, so it has to be blanked here too — otherwise the
+       previous product's name is the one thing still on screen */
+    if (el.chat) {
+      var bubble = el.chat.querySelector('.bubble');
+      if (bubble) bubble.innerHTML = 'Loading this product\u2019s details\u2026<time>Now</time>';
+      var wa = el.chat.querySelector('#wa');
+      if (wa) wa.setAttribute('href', '#');
+    }
     var old = document.getElementById('pdpNote');
     if (old) old.parentNode.removeChild(old);
     var flagless = document.getElementById('pdpOos');
