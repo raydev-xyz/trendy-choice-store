@@ -219,7 +219,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .chart .bar{flex:1;min-width:5px;background:linear-gradient(180deg,var(--gold),rgba(232,195,122,.25));border-radius:4px 4px 0 0;position:relative;transition:filter .15s}
 .chart .bar:hover{filter:brightness(1.25)}
 .chart .bar span{position:absolute;bottom:-19px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--dim2);white-space:nowrap}
-.chart-wrap{padding-bottom:22px}
+.chart-wrap{padding-bottom:34px}
 
 /* ---------- mobile ---------- */
 .ad-burger{display:none;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:8px 11px;cursor:pointer;font-size:16px;line-height:1}
@@ -333,9 +333,9 @@ td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 <div id="toast"></div>
 <div id="modalHost"></div>
 
-<script src="assets/bk-store.js?v=202611162145"></script>
-<script src="assets/bk-api.js?v=202611162145"></script>
-<script src="assets/bk-catalog.js?v=202611162145"></script>
+<script src="assets/bk-store.js?v=202611162200"></script>
+<script src="assets/bk-api.js?v=202611162200"></script>
+<script src="assets/bk-catalog.js?v=202611162200"></script>
 <script>
 (function(){
 'use strict';
@@ -713,7 +713,7 @@ function chart14(){
   }).join('');
   var total = days.reduce(function(s,d){ return s+map[d]; },0);
   return '<div class="chart">'+bars+'</div>'+
-    '<div class="small dim" style="margin-top:6px">'+money(total)+' over 14 days</div>';
+    '<div class="small dim" style="margin-top:14px">'+money(total)+' over 14 days</div>';
 }
 
 function topSellers(){
