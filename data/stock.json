@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:40:05.662Z",
+  "generatedAt": "2026-11-16T17:53:26.294Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -180,19 +180,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 314,
+      "stock": 310,
       "inStock": true,
       "variants": [
         {
-          "color": "Yellow",
+          "color": "Black",
           "size": null,
-          "stock": 80,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 73,
+          "stock": 66,
           "inStock": true
         },
         {
@@ -202,9 +196,15 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Yellow",
           "size": null,
-          "stock": 67,
+          "stock": 79,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 71,
           "inStock": true
         }
       ]
@@ -551,7 +551,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 596,
+      "stock": 593,
       "inStock": true,
       "variants": []
     },
@@ -614,13 +614,13 @@
       "slug": "mini-body-massage-gun-sl-720-original-version",
       "name": "Mini Body Massage Gun SL-720 (original Version)",
       "price": 950,
-      "stock": 69,
+      "stock": 68,
       "inStock": true,
       "variants": [
         {
           "color": "Silver",
           "size": null,
-          "stock": 74,
+          "stock": 73,
           "inStock": true
         }
       ]
