@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T08:51:37.330Z",
+  "generatedAt": "2026-11-17T09:53:37.745Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -59,17 +59,11 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2740,
+      "stock": 2738,
       "inStock": true,
       "variants": [
         {
           "color": "Jet Black",
-          "size": "XL",
-          "stock": 345,
-          "inStock": true
-        },
-        {
-          "color": "Cofee",
           "size": "XL",
           "stock": 345,
           "inStock": true
@@ -87,6 +81,18 @@
           "inStock": true
         },
         {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 346,
+          "inStock": true
+        },
+        {
+          "color": "Cofee",
+          "size": "XL",
+          "stock": 344,
+          "inStock": true
+        },
+        {
           "color": "Off-White",
           "size": "L",
           "stock": 343,
@@ -96,12 +102,6 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 345,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "XL",
-          "stock": 347,
           "inStock": true
         },
         {
@@ -180,19 +180,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 301,
+      "stock": 300,
       "inStock": true,
       "variants": [
         {
-          "color": "Red",
+          "color": "White",
           "size": null,
-          "stock": 93,
+          "stock": 67,
           "inStock": true
         },
         {
-          "color": "White",
+          "color": "Black",
           "size": null,
-          "stock": 68,
+          "stock": 61,
           "inStock": true
         },
         {
@@ -202,9 +202,9 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Red",
           "size": null,
-          "stock": 62,
+          "stock": 92,
           "inStock": true
         }
       ]
@@ -551,7 +551,7 @@
       "slug": "dual-horn-transparent-mecha-speaker",
       "name": "Dual Horn Transparent Mecha Speaker",
       "price": 1150,
-      "stock": 98,
+      "stock": 99,
       "inStock": true,
       "variants": []
     },
@@ -578,7 +578,7 @@
       "slug": "cordless-electric-screwdriver-tool-kit",
       "name": "Cordless Electric Screwdriver Tool Kit",
       "price": 1350,
-      "stock": 149,
+      "stock": 150,
       "inStock": true,
       "variants": []
     },
@@ -621,7 +621,7 @@
       "slug": "f11-2-dual-wireless-microphone-set",
       "name": "F11-2 Dual Wireless Microphone Set",
       "price": 1150,
-      "stock": 125,
+      "stock": 126,
       "inStock": true,
       "variants": []
     },
