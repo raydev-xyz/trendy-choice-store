@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:29:49.211Z",
+  "generatedAt": "2026-11-17T07:52:10.780Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -180,15 +180,9 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 306,
+      "stock": 304,
       "inStock": true,
       "variants": [
-        {
-          "color": "White",
-          "size": null,
-          "stock": 70,
-          "inStock": true
-        },
         {
           "color": "Red",
           "size": null,
@@ -199,6 +193,12 @@
           "color": "Black",
           "size": null,
           "stock": 64,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 68,
           "inStock": true
         },
         {
@@ -395,7 +395,7 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 123,
+      "stock": 122,
       "inStock": true,
       "variants": [
         {
@@ -407,7 +407,7 @@
         {
           "color": "Red",
           "size": null,
-          "stock": 41,
+          "stock": 40,
           "inStock": true
         },
         {
