@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:08:45.120Z",
+  "generatedAt": "2026-11-17T15:20:09.055Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1800,
+      "stock": 1799,
       "inStock": true,
       "variants": [
         {
@@ -26,12 +26,6 @@
           "inStock": true
         },
         {
-          "color": "Black",
-          "size": "XL",
-          "stock": 300,
-          "inStock": true
-        },
-        {
           "color": "Off-White",
           "size": "XL",
           "stock": 300,
@@ -47,6 +41,12 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 299,
           "inStock": true
         }
       ]
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 247,
+      "stock": 246,
       "inStock": true,
       "variants": []
     },
@@ -139,15 +139,15 @@
           "inStock": true
         },
         {
-          "color": "Off-White",
-          "size": "L",
-          "stock": 343,
-          "inStock": true
-        },
-        {
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 343,
           "inStock": true
         },
         {
@@ -226,31 +226,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 252,
+      "stock": 246,
       "inStock": true,
       "variants": [
         {
+          "color": "Black",
+          "size": null,
+          "stock": 49,
+          "inStock": true
+        },
+        {
           "color": "Red",
           "size": null,
-          "stock": 91,
+          "stock": 90,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 69,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 52,
+          "stock": 68,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 62,
+          "stock": 61,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 106,
+      "stock": 105,
       "inStock": true,
       "variants": []
     },
@@ -496,7 +496,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 461,
+      "stock": 460,
       "inStock": true,
       "variants": []
     },
@@ -676,7 +676,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 57,
+      "stock": 56,
       "inStock": true,
       "variants": []
     }
