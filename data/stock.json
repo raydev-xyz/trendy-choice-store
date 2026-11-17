@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T07:52:10.780Z",
+  "generatedAt": "2026-11-17T08:51:37.330Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -180,19 +180,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 304,
+      "stock": 301,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
           "stock": 93,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 64,
           "inStock": true
         },
         {
@@ -204,7 +198,13 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 79,
+          "stock": 78,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 62,
           "inStock": true
         }
       ]
@@ -313,15 +313,9 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 150,
+      "stock": 149,
       "inStock": true,
       "variants": [
-        {
-          "color": "White",
-          "size": null,
-          "stock": 50,
-          "inStock": true
-        },
         {
           "color": "Pink",
           "size": null,
@@ -332,6 +326,12 @@
           "color": "blue",
           "size": null,
           "stock": 50,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 49,
           "inStock": true
         }
       ]
