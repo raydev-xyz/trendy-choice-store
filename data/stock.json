@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-17T04:24:46.258Z",
+  "generatedAt": "2026-11-17T05:27:02.038Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 54,
-  "sellable": 54,
+  "total": 53,
+  "sellable": 53,
   "outOfStock": 0,
   "products": [
     {
@@ -10,7 +10,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 248,
+      "stock": 247,
       "inStock": true,
       "variants": []
     },
@@ -180,15 +180,9 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 309,
+      "stock": 307,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 66,
-          "inStock": true
-        },
         {
           "color": "White",
           "size": null,
@@ -196,9 +190,15 @@
           "inStock": true
         },
         {
+          "color": "Black",
+          "size": null,
+          "stock": 65,
+          "inStock": true
+        },
+        {
           "color": "Red",
           "size": null,
-          "stock": 94,
+          "stock": 93,
           "inStock": true
         },
         {
@@ -241,7 +241,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 107,
+      "stock": 106,
       "inStock": true,
       "variants": []
     },
@@ -335,15 +335,6 @@
           "inStock": true
         }
       ]
-    },
-    {
-      "id": "19f19e13-b6de-4b47-8384-47c00db29ce4",
-      "slug": "26-inch-self-defense-stick",
-      "name": "26 Inch Self Defense Stick",
-      "price": 750,
-      "stock": 1,
-      "inStock": true,
-      "variants": []
     },
     {
       "id": "869e2a7b-1de1-4c2e-a892-6be9998e5ab6",
@@ -542,7 +533,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 79,
+      "stock": 78,
       "inStock": true,
       "variants": []
     },
@@ -639,7 +630,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 61,
+      "stock": 60,
       "inStock": true,
       "variants": []
     }
