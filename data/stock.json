@@ -1,10 +1,56 @@
 {
-  "generatedAt": "2026-11-17T12:51:44.736Z",
+  "generatedAt": "2026-11-17T14:08:45.120Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 54,
+  "sellable": 54,
   "outOfStock": 0,
   "products": [
+    {
+      "id": "daed4a45-7ffa-4a3a-bebc-8433475ca9b0",
+      "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
+      "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
+      "price": 1800,
+      "stock": 1800,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Black",
+          "size": "L",
+          "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "XL",
+          "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "M",
+          "stock": 300,
+          "inStock": true
+        }
+      ]
+    },
     {
       "id": "f6052e9f-b676-403b-a9fc-fddc6cd2e610",
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
@@ -59,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2738,
+      "stock": 2739,
       "inStock": true,
       "variants": [
         {
@@ -93,21 +139,21 @@
           "inStock": true
         },
         {
-          "color": "Cofee",
-          "size": "XL",
-          "stock": 344,
-          "inStock": true
-        },
-        {
           "color": "Off-White",
           "size": "L",
           "stock": 343,
           "inStock": true
         },
         {
+          "color": "Cofee",
+          "size": "XL",
+          "stock": 344,
+          "inStock": true
+        },
+        {
           "color": "Jet Black",
           "size": "L",
-          "stock": 344,
+          "stock": 345,
           "inStock": true
         }
       ]
@@ -144,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 355,
+      "stock": 354,
       "inStock": true,
       "variants": []
     },
@@ -180,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 281,
+      "stock": 252,
       "inStock": true,
       "variants": [
         {
@@ -198,13 +244,13 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 55,
+          "stock": 52,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 63,
+          "stock": 62,
           "inStock": true
         }
       ]
@@ -542,7 +588,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 592,
+      "stock": 591,
       "inStock": true,
       "variants": []
     },
@@ -630,7 +676,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 58,
+      "stock": 57,
       "inStock": true,
       "variants": []
     }
