@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T10:54:14.537Z",
+  "generatedAt": "2026-11-17T11:43:06.075Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -59,7 +59,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2738,
+      "stock": 2737,
       "inStock": true,
       "variants": [
         {
@@ -99,15 +99,15 @@
           "inStock": true
         },
         {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 345,
-          "inStock": true
-        },
-        {
           "color": "Off-White",
           "size": "XL",
           "stock": 346,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 344,
           "inStock": true
         }
       ]
@@ -144,7 +144,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 356,
+      "stock": 355,
       "inStock": true,
       "variants": []
     },
@@ -180,31 +180,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 295,
+      "stock": 288,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Red",
           "size": null,
-          "stock": 67,
+          "stock": 91,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 61,
+          "stock": 57,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 66,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 73,
-          "inStock": true
-        },
-        {
-          "color": "Red",
-          "size": null,
-          "stock": 92,
+          "stock": 72,
           "inStock": true
         }
       ]
@@ -386,7 +386,7 @@
       "slug": "mili-mitag-android-device-compatible-with-google-s-find-my-device",
       "name": "MiLi MiTag Android and iphone Device – Compatible with Google’s Find My Device",
       "price": 1050,
-      "stock": 263,
+      "stock": 262,
       "inStock": true,
       "variants": []
     },
@@ -515,7 +515,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 15,
+      "stock": 14,
       "inStock": true,
       "variants": []
     },
