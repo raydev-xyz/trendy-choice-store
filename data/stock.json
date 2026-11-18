@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T17:30:16.872Z",
+  "generatedAt": "2026-11-18T18:45:03.705Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 243,
+      "stock": 242,
       "inStock": true,
       "variants": []
     },
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 248,
+      "stock": 247,
       "inStock": true,
       "variants": []
     },
@@ -181,7 +181,7 @@
       "slug": "hoco-ca6-glacier-ai-semiconductor-mobile-cooler",
       "name": "Hoco GA6 Glacier AI Semiconductor Mobile Cooler",
       "price": 1150,
-      "stock": 118,
+      "stock": 117,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 199,
+      "stock": 194,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Black",
           "size": null,
-          "stock": 48,
+          "stock": 31,
           "inStock": true
         },
         {
@@ -244,13 +244,13 @@
         {
           "color": "Red",
           "size": null,
-          "stock": 87,
+          "stock": 86,
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "White",
           "size": null,
-          "stock": 33,
+          "stock": 46,
           "inStock": true
         }
       ]
@@ -514,7 +514,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 458,
+      "stock": 457,
       "inStock": true,
       "variants": []
     },
@@ -572,7 +572,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 91,
+      "stock": 90,
       "inStock": true,
       "variants": []
     },
