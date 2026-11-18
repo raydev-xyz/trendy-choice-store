@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T20:45:50.517Z",
+  "generatedAt": "2026-11-18T23:42:36.877Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 192,
+      "stock": 191,
       "inStock": true,
       "variants": [
         {
@@ -242,15 +242,15 @@
           "inStock": true
         },
         {
-          "color": "Red",
+          "color": "White",
           "size": null,
-          "stock": 86,
+          "stock": 45,
           "inStock": true
         },
         {
-          "color": "White",
+          "color": "Red",
           "size": null,
-          "stock": 46,
+          "stock": 86,
           "inStock": true
         }
       ]
