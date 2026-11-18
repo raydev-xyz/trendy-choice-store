@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T10:54:52.084Z",
+  "generatedAt": "2026-11-18T11:52:46.440Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 55,
+  "sellable": 55,
   "outOfStock": 0,
   "products": [
     {
@@ -383,6 +383,15 @@
       ]
     },
     {
+      "id": "19f19e13-b6de-4b47-8384-47c00db29ce4",
+      "slug": "26-inch-self-defense-stick",
+      "name": "26 Inch Self Defense Stick",
+      "price": 750,
+      "stock": 1,
+      "inStock": true,
+      "variants": []
+    },
+    {
       "id": "869e2a7b-1de1-4c2e-a892-6be9998e5ab6",
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
@@ -463,6 +472,15 @@
           "inStock": true
         }
       ]
+    },
+    {
+      "id": "4e909f96-96cb-4791-858e-3644c9d8d732",
+      "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
+      "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
+      "price": 1800,
+      "stock": 300,
+      "inStock": true,
+      "variants": []
     },
     {
       "id": "a79d3d6c-bdcd-4a6a-af14-c9a6457c0962",
