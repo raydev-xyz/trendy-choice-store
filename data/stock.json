@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T09:52:59.210Z",
+  "generatedAt": "2026-11-18T10:54:52.084Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 227,
+      "stock": 226,
       "inStock": true,
       "variants": [
         {
@@ -244,7 +244,7 @@
         {
           "color": "Red",
           "size": null,
-          "stock": 90,
+          "stock": 89,
           "inStock": true
         },
         {
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 103,
+      "stock": 102,
       "inStock": true,
       "variants": []
     },
@@ -635,13 +635,13 @@
       "slug": "mini-body-massage-gun-sl-720-original-version",
       "name": "Mini Body Massage Gun SL-720 (original Version)",
       "price": 950,
-      "stock": 68,
+      "stock": 67,
       "inStock": true,
       "variants": [
         {
           "color": "Silver",
           "size": null,
-          "stock": 73,
+          "stock": 72,
           "inStock": true
         }
       ]
@@ -660,7 +660,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 48,
+      "stock": 46,
       "inStock": true,
       "variants": []
     }
