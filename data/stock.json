@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T04:28:11.160Z",
+  "generatedAt": "2026-11-18T05:32:31.366Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 54,
-  "sellable": 54,
+  "total": 53,
+  "sellable": 53,
   "outOfStock": 0,
   "products": [
     {
@@ -226,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 238,
+      "stock": 233,
       "inStock": true,
       "variants": [
         {
+          "color": "Black",
+          "size": null,
+          "stock": 44,
+          "inStock": true
+        },
+        {
           "color": "Yellow",
           "size": null,
-          "stock": 65,
+          "stock": 64,
           "inStock": true
         },
         {
@@ -244,13 +250,7 @@
         {
           "color": "White",
           "size": null,
-          "stock": 59,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 46,
+          "stock": 57,
           "inStock": true
         }
       ]
@@ -501,22 +501,6 @@
       "variants": []
     },
     {
-      "id": "5d0cba61-8242-4058-bc3e-aeca594d6a0a",
-      "slug": "vintage-glasses-men-women",
-      "name": "vintage glasses men & Women",
-      "price": 320,
-      "stock": 49,
-      "inStock": true,
-      "variants": [
-        {
-          "color": "Purple",
-          "size": null,
-          "stock": 49,
-          "inStock": true
-        }
-      ]
-    },
-    {
       "id": "b0b6e6cc-1a32-467d-af62-6b52d260eb67",
       "slug": "polygonal-men-women-sunglasses",
       "name": "Polygonal Men & Women Sunglasses",
@@ -588,7 +572,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 590,
+      "stock": 589,
       "inStock": true,
       "variants": []
     },
@@ -633,7 +617,7 @@
       "slug": "memo-cx07-magnetic-phone-cooler-fan",
       "name": "Memo CX07 Magnetic Phone Cooler Fan",
       "price": 1150,
-      "stock": 146,
+      "stock": 145,
       "inStock": true,
       "variants": []
     },
