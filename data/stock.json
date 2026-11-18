@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:00:14.069Z",
+  "generatedAt": "2026-11-18T08:36:29.593Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 245,
+      "stock": 244,
       "inStock": true,
       "variants": []
     },
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 249,
+      "stock": 248,
       "inStock": true,
       "variants": []
     },
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2737,
+      "stock": 2736,
       "inStock": true,
       "variants": [
         {
@@ -139,12 +139,6 @@
           "inStock": true
         },
         {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 344,
-          "inStock": true
-        },
-        {
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
@@ -152,6 +146,12 @@
         },
         {
           "color": "Off-White",
+          "size": "L",
+          "stock": 343,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
           "size": "L",
           "stock": 343,
           "inStock": true
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 352,
+      "stock": 350,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 230,
+      "stock": 228,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 55,
+          "inStock": true
+        },
         {
           "color": "Yellow",
           "size": null,
@@ -245,12 +251,6 @@
           "color": "Black",
           "size": null,
           "stock": 42,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 57,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 104,
+      "stock": 103,
       "inStock": true,
       "variants": []
     },
@@ -545,7 +545,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 13,
+      "stock": 12,
       "inStock": true,
       "variants": []
     },
@@ -572,7 +572,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 589,
+      "stock": 588,
       "inStock": true,
       "variants": []
     },
