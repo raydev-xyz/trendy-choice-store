@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:21:25.120Z",
+  "generatedAt": "2026-11-18T04:28:11.160Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -226,15 +226,9 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 240,
+      "stock": 238,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 48,
-          "inStock": true
-        },
         {
           "color": "Yellow",
           "size": null,
@@ -251,6 +245,12 @@
           "color": "White",
           "size": null,
           "stock": 59,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 46,
           "inStock": true
         }
       ]
@@ -615,7 +615,7 @@
       "slug": "ultra-s9-android-smart-watch",
       "name": "Ultra S9 Android Smart Watch",
       "price": 4300,
-      "stock": 192,
+      "stock": 191,
       "inStock": true,
       "variants": []
     },
@@ -676,7 +676,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 55,
+      "stock": 50,
       "inStock": true,
       "variants": []
     }
