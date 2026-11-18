@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:52:46.440Z",
+  "generatedAt": "2026-11-18T12:56:43.720Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,31 +226,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 226,
+      "stock": 218,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Red",
           "size": null,
-          "stock": 54,
+          "stock": 88,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 64,
-          "inStock": true
-        },
-        {
-          "color": "Red",
-          "size": null,
-          "stock": 89,
+          "stock": 61,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 42,
+          "stock": 39,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 53,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 102,
+      "stock": 100,
       "inStock": true,
       "variants": []
     },
@@ -323,7 +323,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 93,
+      "stock": 92,
       "inStock": true,
       "variants": []
     },
@@ -396,7 +396,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 149,
+      "stock": 148,
       "inStock": true,
       "variants": []
     },
@@ -678,7 +678,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 46,
+      "stock": 45,
       "inStock": true,
       "variants": []
     }
