@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T08:36:29.593Z",
+  "generatedAt": "2026-11-18T09:52:59.210Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 228,
+      "stock": 227,
       "inStock": true,
       "variants": [
         {
           "color": "White",
           "size": null,
-          "stock": 55,
+          "stock": 54,
           "inStock": true
         },
         {
@@ -660,7 +660,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 49,
+      "stock": 48,
       "inStock": true,
       "variants": []
     }
