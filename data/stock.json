@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T05:32:31.366Z",
+  "generatedAt": "2026-11-18T07:00:14.069Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2738,
+      "stock": 2737,
       "inStock": true,
       "variants": [
         {
@@ -139,6 +139,12 @@
           "inStock": true
         },
         {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 344,
+          "inStock": true
+        },
+        {
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
@@ -148,12 +154,6 @@
           "color": "Off-White",
           "size": "L",
           "stock": 343,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 345,
           "inStock": true
         }
       ]
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 353,
+      "stock": 352,
       "inStock": true,
       "variants": []
     },
@@ -226,15 +226,9 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 233,
+      "stock": 230,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 44,
-          "inStock": true
-        },
         {
           "color": "Yellow",
           "size": null,
@@ -245,6 +239,12 @@
           "color": "Red",
           "size": null,
           "stock": 90,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 42,
           "inStock": true
         },
         {
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 105,
+      "stock": 104,
       "inStock": true,
       "variants": []
     },
@@ -441,7 +441,7 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 122,
+      "stock": 121,
       "inStock": true,
       "variants": [
         {
@@ -451,15 +451,15 @@
           "inStock": true
         },
         {
-          "color": "Red",
-          "size": null,
-          "stock": 40,
-          "inStock": true
-        },
-        {
           "color": "Green",
           "size": null,
           "stock": 43,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 39,
           "inStock": true
         }
       ]
@@ -496,7 +496,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 460,
+      "stock": 459,
       "inStock": true,
       "variants": []
     },
@@ -617,7 +617,7 @@
       "slug": "memo-cx07-magnetic-phone-cooler-fan",
       "name": "Memo CX07 Magnetic Phone Cooler Fan",
       "price": 1150,
-      "stock": 145,
+      "stock": 144,
       "inStock": true,
       "variants": []
     },
@@ -660,7 +660,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 50,
+      "stock": 49,
       "inStock": true,
       "variants": []
     }
