@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T16:30:25.123Z",
+  "generatedAt": "2026-11-19T17:49:46.837Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 241,
+      "stock": 240,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 144,
+      "stock": 141,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 30,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": null,
@@ -245,12 +251,6 @@
           "color": "Red",
           "size": null,
           "stock": 82,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 33,
           "inStock": true
         }
       ]
