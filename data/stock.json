@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T20:48:25.702Z",
+  "generatedAt": "2026-11-19T21:41:54.668Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2728,
+      "stock": 2726,
       "inStock": true,
       "variants": [
         {
@@ -115,15 +115,9 @@
           "inStock": true
         },
         {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 342,
-          "inStock": true
-        },
-        {
           "color": "Navy Blue",
           "size": "L",
-          "stock": 342,
+          "stock": 341,
           "inStock": true
         },
         {
@@ -148,6 +142,12 @@
           "color": "Navy Blue",
           "size": "XL",
           "stock": 345,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 341,
           "inStock": true
         },
         {
