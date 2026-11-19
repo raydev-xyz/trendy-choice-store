@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T11:51:41.926Z",
+  "generatedAt": "2026-11-19T12:59:25.964Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,15 +10,9 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1796,
+      "stock": 1794,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 297,
-          "inStock": true
-        },
         {
           "color": "Black",
           "size": "L",
@@ -41,6 +35,12 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 295,
           "inStock": true
         },
         {
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 242,
+      "stock": 241,
       "inStock": true,
       "variants": []
     },
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2735,
+      "stock": 2733,
       "inStock": true,
       "variants": [
         {
@@ -123,13 +123,7 @@
         {
           "color": "Navy Blue",
           "size": "L",
-          "stock": 346,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "XL",
-          "stock": 347,
+          "stock": 345,
           "inStock": true
         },
         {
@@ -154,6 +148,12 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 343,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "XL",
+          "stock": 346,
           "inStock": true
         }
       ]
@@ -226,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 162,
+      "stock": 155,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Yellow",
           "size": null,
-          "stock": 37,
+          "stock": 40,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 18,
           "inStock": true
         },
         {
@@ -242,15 +248,9 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "White",
           "size": null,
-          "stock": 21,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 43,
+          "stock": 36,
           "inStock": true
         }
       ]
@@ -387,7 +387,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 148,
+      "stock": 147,
       "inStock": true,
       "variants": []
     },
@@ -423,7 +423,7 @@
       "slug": "chest-strap-mount",
       "name": "Chest Strap Mount",
       "price": 850,
-      "stock": 176,
+      "stock": 177,
       "inStock": true,
       "variants": []
     },
@@ -441,13 +441,13 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 120,
+      "stock": 119,
       "inStock": true,
       "variants": [
         {
           "color": "orange",
           "size": null,
-          "stock": 46,
+          "stock": 45,
           "inStock": true
         },
         {
@@ -676,7 +676,7 @@
       "slug": "f11-2-dual-wireless-microphone-set",
       "name": "F11-2 Dual Wireless Microphone Set",
       "price": 1150,
-      "stock": 125,
+      "stock": 126,
       "inStock": true,
       "variants": []
     },
@@ -685,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 39,
+      "stock": 34,
       "inStock": true,
       "variants": []
     }
