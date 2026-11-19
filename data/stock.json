@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T14:21:17.218Z",
+  "generatedAt": "2026-11-19T15:26:12.302Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,15 +105,9 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2729,
+      "stock": 2728,
       "inStock": true,
       "variants": [
-        {
-          "color": "Jet Black",
-          "size": "XL",
-          "stock": 344,
-          "inStock": true
-        },
         {
           "color": "Cofee",
           "size": "L",
@@ -136,6 +130,12 @@
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
+          "size": "XL",
+          "stock": 343,
           "inStock": true
         },
         {
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 150,
+      "stock": 148,
       "inStock": true,
       "variants": [
         {
@@ -238,7 +238,7 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 39,
+          "stock": 37,
           "inStock": true
         },
         {
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 91,
+      "stock": 90,
       "inStock": true,
       "variants": []
     },
