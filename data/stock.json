@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T07:00:16.205Z",
+  "generatedAt": "2026-11-19T08:39:34.069Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 56,
-  "sellable": 56,
+  "total": 55,
+  "sellable": 55,
   "outOfStock": 0,
   "products": [
     {
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1797,
+      "stock": 1796,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 297,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": "L",
@@ -42,12 +48,6 @@
           "size": "XL",
           "stock": 299,
           "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 298,
-          "inStock": true
         }
       ]
     },
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 245,
+      "stock": 243,
       "inStock": true,
       "variants": []
     },
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 173,
+      "stock": 170,
       "inStock": true,
       "variants": [
         {
@@ -244,13 +244,13 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 48,
+          "stock": 46,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 25,
+          "stock": 24,
           "inStock": true
         }
       ]
@@ -381,15 +381,6 @@
           "inStock": true
         }
       ]
-    },
-    {
-      "id": "19f19e13-b6de-4b47-8384-47c00db29ce4",
-      "slug": "26-inch-self-defense-stick",
-      "name": "26 Inch Self Defense Stick",
-      "price": 750,
-      "stock": 1,
-      "inStock": true,
-      "variants": []
     },
     {
       "id": "869e2a7b-1de1-4c2e-a892-6be9998e5ab6",
@@ -642,7 +633,7 @@
       "slug": "cordless-electric-screwdriver-tool-kit",
       "name": "Cordless Electric Screwdriver Tool Kit",
       "price": 1350,
-      "stock": 150,
+      "stock": 149,
       "inStock": true,
       "variants": []
     },
