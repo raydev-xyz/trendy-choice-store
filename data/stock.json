@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T03:21:45.178Z",
+  "generatedAt": "2026-11-19T04:29:26.149Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -230,15 +230,9 @@
       "inStock": true,
       "variants": [
         {
-          "color": "Yellow",
-          "size": null,
-          "stock": 53,
-          "inStock": true
-        },
-        {
           "color": "Black",
           "size": null,
-          "stock": 30,
+          "stock": 29,
           "inStock": true
         },
         {
@@ -251,6 +245,12 @@
           "color": "Red",
           "size": null,
           "stock": 86,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 54,
           "inStock": true
         }
       ]
