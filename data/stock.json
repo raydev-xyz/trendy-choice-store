@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T08:39:34.069Z",
+  "generatedAt": "2026-11-19T09:54:57.102Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 170,
+      "stock": 171,
       "inStock": true,
       "variants": [
         {
@@ -242,15 +242,15 @@
           "inStock": true
         },
         {
-          "color": "Yellow",
-          "size": null,
-          "stock": 46,
-          "inStock": true
-        },
-        {
           "color": "Black",
           "size": null,
           "stock": 24,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 47,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 95,
+      "stock": 93,
       "inStock": true,
       "variants": []
     },
@@ -441,7 +441,7 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 121,
+      "stock": 120,
       "inStock": true,
       "variants": [
         {
@@ -451,15 +451,15 @@
           "inStock": true
         },
         {
-          "color": "Green",
-          "size": null,
-          "stock": 43,
-          "inStock": true
-        },
-        {
           "color": "Red",
           "size": null,
           "stock": 39,
+          "inStock": true
+        },
+        {
+          "color": "Green",
+          "size": null,
+          "stock": 42,
           "inStock": true
         }
       ]
@@ -570,7 +570,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 12,
+      "stock": 9,
       "inStock": true,
       "variants": []
     },
