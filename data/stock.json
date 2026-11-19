@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T04:29:26.149Z",
+  "generatedAt": "2026-11-19T05:34:16.706Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 55,
-  "sellable": 55,
+  "total": 56,
+  "sellable": 56,
   "outOfStock": 0,
   "products": [
     {
@@ -83,13 +83,13 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1888,
+      "stock": 1889,
       "inStock": true,
       "variants": [
         {
           "color": null,
           "size": "L",
-          "stock": 944,
+          "stock": 945,
           "inStock": true
         },
         {
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 191,
+      "stock": 184,
       "inStock": true,
       "variants": [
         {
@@ -236,21 +236,21 @@
           "inStock": true
         },
         {
+          "color": "Yellow",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        },
+        {
           "color": "White",
           "size": null,
-          "stock": 45,
+          "stock": 43,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
-          "stock": 86,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 54,
+          "stock": 85,
           "inStock": true
         }
       ]
@@ -305,7 +305,7 @@
       "slug": "a59-plus-watch-combo",
       "name": "A59 Plus Watch Combo",
       "price": 1500,
-      "stock": 101,
+      "stock": 100,
       "inStock": true,
       "variants": []
     },
@@ -517,6 +517,22 @@
       "stock": 457,
       "inStock": true,
       "variants": []
+    },
+    {
+      "id": "5d0cba61-8242-4058-bc3e-aeca594d6a0a",
+      "slug": "vintage-glasses-men-women",
+      "name": "vintage glasses men & Women",
+      "price": 320,
+      "stock": 1,
+      "inStock": true,
+      "variants": [
+        {
+          "color": "Purple",
+          "size": null,
+          "stock": 50,
+          "inStock": true
+        }
+      ]
     },
     {
       "id": "b0b6e6cc-1a32-467d-af62-6b52d260eb67",
