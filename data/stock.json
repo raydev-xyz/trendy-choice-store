@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T12:59:25.964Z",
+  "generatedAt": "2026-11-19T14:21:17.218Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1794,
+      "stock": 1793,
       "inStock": true,
       "variants": [
         {
@@ -32,6 +32,12 @@
           "inStock": true
         },
         {
+          "color": "Black",
+          "size": "XL",
+          "stock": 298,
+          "inStock": true
+        },
+        {
           "color": "Off-White",
           "size": "M",
           "stock": 300,
@@ -42,12 +48,6 @@
           "size": "M",
           "stock": 295,
           "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 299,
-          "inStock": true
         }
       ]
     },
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 242,
+      "stock": 240,
       "inStock": true,
       "variants": []
     },
@@ -74,7 +74,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 250,
+      "stock": 249,
       "inStock": true,
       "variants": []
     },
@@ -83,7 +83,7 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1889,
+      "stock": 1888,
       "inStock": true,
       "variants": [
         {
@@ -95,7 +95,7 @@
         {
           "color": null,
           "size": "XL",
-          "stock": 947,
+          "stock": 946,
           "inStock": true
         }
       ]
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2733,
+      "stock": 2729,
       "inStock": true,
       "variants": [
         {
@@ -121,9 +121,15 @@
           "inStock": true
         },
         {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 342,
+          "inStock": true
+        },
+        {
           "color": "Navy Blue",
           "size": "L",
-          "stock": 345,
+          "stock": 342,
           "inStock": true
         },
         {
@@ -142,12 +148,6 @@
           "color": "Navy Blue",
           "size": "XL",
           "stock": 345,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 343,
           "inStock": true
         },
         {
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 350,
+      "stock": 348,
       "inStock": true,
       "variants": []
     },
@@ -226,31 +226,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 155,
+      "stock": 150,
       "inStock": true,
       "variants": [
         {
+          "color": "White",
+          "size": null,
+          "stock": 34,
+          "inStock": true
+        },
+        {
           "color": "Yellow",
           "size": null,
-          "stock": 40,
+          "stock": 39,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 18,
+          "stock": 17,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
-          "stock": 84,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 36,
+          "stock": 83,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 92,
+      "stock": 91,
       "inStock": true,
       "variants": []
     },
@@ -359,13 +359,13 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 148,
+      "stock": 147,
       "inStock": true,
       "variants": [
         {
           "color": "blue",
           "size": null,
-          "stock": 49,
+          "stock": 48,
           "inStock": true
         },
         {
@@ -588,7 +588,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 78,
+      "stock": 76,
       "inStock": true,
       "variants": []
     },
@@ -597,7 +597,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 588,
+      "stock": 587,
       "inStock": true,
       "variants": []
     },
@@ -660,13 +660,13 @@
       "slug": "mini-body-massage-gun-sl-720-original-version",
       "name": "Mini Body Massage Gun SL-720 (original Version)",
       "price": 950,
-      "stock": 66,
+      "stock": 65,
       "inStock": true,
       "variants": [
         {
           "color": "Silver",
           "size": null,
-          "stock": 71,
+          "stock": 70,
           "inStock": true
         }
       ]
