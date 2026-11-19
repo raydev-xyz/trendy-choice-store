@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T17:49:46.837Z",
+  "generatedAt": "2026-11-19T18:51:33.108Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1793,
+      "stock": 1792,
       "inStock": true,
       "variants": [
         {
@@ -46,7 +46,7 @@
         {
           "color": "Black",
           "size": "M",
-          "stock": 295,
+          "stock": 294,
           "inStock": true
         }
       ]
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 240,
+      "stock": 239,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 141,
+      "stock": 138,
       "inStock": true,
       "variants": [
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 33,
+          "inStock": true
+        },
         {
           "color": "White",
           "size": null,
@@ -239,12 +245,6 @@
           "color": "Black",
           "size": null,
           "stock": 16,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 36,
           "inStock": true
         },
         {
@@ -597,7 +597,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 587,
+      "stock": 586,
       "inStock": true,
       "variants": []
     },
