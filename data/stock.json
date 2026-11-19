@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T23:42:36.877Z",
+  "generatedAt": "2026-11-19T02:08:59.278Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -572,7 +572,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 90,
+      "stock": 91,
       "inStock": true,
       "variants": []
     },
