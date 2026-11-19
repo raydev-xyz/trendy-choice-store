@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:54:05.236Z",
+  "generatedAt": "2026-11-19T11:51:41.926Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 243,
+      "stock": 242,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 167,
+      "stock": 162,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 37,
+          "inStock": true
+        },
         {
           "color": "Red",
           "size": null,
@@ -238,19 +244,13 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 24,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 37,
+          "stock": 21,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 45,
+          "stock": 43,
           "inStock": true
         }
       ]
@@ -359,17 +359,17 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 149,
+      "stock": 148,
       "inStock": true,
       "variants": [
         {
-          "color": "Pink",
+          "color": "blue",
           "size": null,
-          "stock": 50,
+          "stock": 49,
           "inStock": true
         },
         {
-          "color": "blue",
+          "color": "Pink",
           "size": null,
           "stock": 50,
           "inStock": true
@@ -423,7 +423,7 @@
       "slug": "chest-strap-mount",
       "name": "Chest Strap Mount",
       "price": 850,
-      "stock": 177,
+      "stock": 176,
       "inStock": true,
       "variants": []
     },
@@ -676,7 +676,7 @@
       "slug": "f11-2-dual-wireless-microphone-set",
       "name": "F11-2 Dual Wireless Microphone Set",
       "price": 1150,
-      "stock": 126,
+      "stock": 125,
       "inStock": true,
       "variants": []
     },
