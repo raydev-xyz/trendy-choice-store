@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:52:57.077Z",
+  "generatedAt": "2026-11-20T05:55:40.898Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1792,
+      "stock": 1793,
       "inStock": true,
       "variants": [
         {
@@ -32,15 +32,15 @@
           "inStock": true
         },
         {
-          "color": "Black",
-          "size": "XL",
-          "stock": 298,
-          "inStock": true
-        },
-        {
           "color": "Off-White",
           "size": "M",
           "stock": 300,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 299,
           "inStock": true
         },
         {
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2726,
+      "stock": 2727,
       "inStock": true,
       "variants": [
         {
@@ -127,6 +127,12 @@
           "inStock": true
         },
         {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 342,
+          "inStock": true
+        },
+        {
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
@@ -142,12 +148,6 @@
           "color": "Off-White",
           "size": "L",
           "stock": 343,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 341,
           "inStock": true
         },
         {
@@ -226,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 129,
+      "stock": 116,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
           "stock": 13,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 29,
           "inStock": true
         },
         {
@@ -245,12 +251,6 @@
           "color": "White",
           "size": null,
           "stock": 28,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 30,
           "inStock": true
         }
       ]
@@ -685,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 33,
+      "stock": 32,
       "inStock": true,
       "variants": []
     }
