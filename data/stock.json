@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T08:20:38.783Z",
+  "generatedAt": "2026-11-20T09:29:55.805Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 239,
+      "stock": 238,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 112,
+      "stock": 105,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 26,
+          "inStock": true
+        },
         {
           "color": "Red",
           "size": null,
@@ -236,21 +242,15 @@
           "inStock": true
         },
         {
-          "color": "White",
-          "size": null,
-          "stock": 28,
-          "inStock": true
-        },
-        {
           "color": "Yellow",
           "size": null,
-          "stock": 28,
+          "stock": 26,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 10,
+          "stock": 7,
           "inStock": true
         }
       ]
@@ -505,7 +505,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 456,
+      "stock": 455,
       "inStock": true,
       "variants": []
     },
@@ -685,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 31,
+      "stock": 29,
       "inStock": true,
       "variants": []
     }
