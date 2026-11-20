@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T14:12:33.058Z",
+  "generatedAt": "2026-11-20T15:21:59.114Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,15 +105,9 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2724,
+      "stock": 2723,
       "inStock": true,
       "variants": [
-        {
-          "color": "Cofee",
-          "size": "L",
-          "stock": 349,
-          "inStock": true
-        },
         {
           "color": "Off-White",
           "size": "L",
@@ -124,6 +118,12 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 340,
+          "inStock": true
+        },
+        {
+          "color": "Cofee",
+          "size": "L",
+          "stock": 348,
           "inStock": true
         },
         {
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 89,
+      "stock": 87,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Yellow",
           "size": null,
-          "stock": 25,
+          "stock": 18,
           "inStock": true
         },
         {
@@ -242,16 +242,16 @@
           "inStock": true
         },
         {
-          "color": "Yellow",
-          "size": null,
-          "stock": 19,
-          "inStock": true
-        },
-        {
           "color": "Black",
           "size": null,
           "stock": 0,
           "inStock": false
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 24,
+          "inStock": true
         }
       ]
     },
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 87,
+      "stock": 86,
       "inStock": true,
       "variants": []
     },
@@ -441,9 +441,15 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 119,
+      "stock": 118,
       "inStock": true,
       "variants": [
+        {
+          "color": "Green",
+          "size": null,
+          "stock": 41,
+          "inStock": true
+        },
         {
           "color": "orange",
           "size": null,
@@ -454,12 +460,6 @@
           "color": "Red",
           "size": null,
           "stock": 39,
-          "inStock": true
-        },
-        {
-          "color": "Green",
-          "size": null,
-          "stock": 42,
           "inStock": true
         }
       ]
