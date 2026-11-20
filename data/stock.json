@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T03:46:32.353Z",
+  "generatedAt": "2026-11-20T04:52:57.077Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2725,
+      "stock": 2726,
       "inStock": true,
       "variants": [
         {
@@ -118,6 +118,12 @@
           "color": "Navy Blue",
           "size": "L",
           "stock": 341,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 345,
           "inStock": true
         },
         {
@@ -142,12 +148,6 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 341,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "XL",
-          "stock": 344,
           "inStock": true
         },
         {
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 131,
+      "stock": 129,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 15,
+          "stock": 13,
           "inStock": true
         },
         {
@@ -505,7 +505,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 457,
+      "stock": 456,
       "inStock": true,
       "variants": []
     },
@@ -685,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 34,
+      "stock": 33,
       "inStock": true,
       "variants": []
     }
