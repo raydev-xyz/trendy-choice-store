@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T10:31:21.187Z",
+  "generatedAt": "2026-11-20T11:50:33.688Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 102,
+      "stock": 100,
       "inStock": true,
       "variants": [
         {
@@ -236,21 +236,21 @@
           "inStock": true
         },
         {
-          "color": "White",
-          "size": null,
-          "stock": 26,
-          "inStock": true
-        },
-        {
           "color": "Black",
           "size": null,
-          "stock": 7,
+          "stock": 6,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 24,
+          "stock": 22,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 27,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 88,
+      "stock": 87,
       "inStock": true,
       "variants": []
     },
