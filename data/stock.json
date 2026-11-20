@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T16:24:03.511Z",
+  "generatedAt": "2026-11-20T17:24:42.257Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,9 +226,21 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 83,
+      "stock": 81,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 21,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 78,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": null,
@@ -240,18 +252,6 @@
           "size": null,
           "stock": 17,
           "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 22,
-          "inStock": true
-        },
-        {
-          "color": "Red",
-          "size": null,
-          "stock": 79,
-          "inStock": true
         }
       ]
     },
@@ -260,7 +260,7 @@
       "slug": "ven-dens-50000mah-vd-pb063-22-5w-fast-charging-power-bank-with-digital-display-built-in-cables",
       "name": "Ven-Dens 50000mAh VD-PB063 22.5W Fast Charging Power Bank with Digital Display & Built-in Cables",
       "price": 2600,
-      "stock": 124,
+      "stock": 123,
       "inStock": true,
       "variants": []
     },
@@ -685,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 27,
+      "stock": 26,
       "inStock": true,
       "variants": []
     }
