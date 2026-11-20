@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:59:56.698Z",
+  "generatedAt": "2026-11-20T02:51:45.400Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -74,7 +74,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 248,
+      "stock": 247,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 136,
+      "stock": 133,
       "inStock": true,
       "variants": [
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 32,
-          "inStock": true
-        },
         {
           "color": "Black",
           "size": null,
           "stock": 15,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 81,
           "inStock": true
         },
         {
@@ -248,9 +248,9 @@
           "inStock": true
         },
         {
-          "color": "Red",
+          "color": "Yellow",
           "size": null,
-          "stock": 82,
+          "stock": 30,
           "inStock": true
         }
       ]
