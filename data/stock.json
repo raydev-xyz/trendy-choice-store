@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T09:29:55.805Z",
+  "generatedAt": "2026-11-20T10:31:21.187Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1792,
+      "stock": 1793,
       "inStock": true,
       "variants": [
         {
@@ -32,15 +32,15 @@
           "inStock": true
         },
         {
-          "color": "Off-White",
+          "color": "Black",
           "size": "M",
-          "stock": 300,
+          "stock": 295,
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Off-White",
           "size": "M",
-          "stock": 294,
+          "stock": 300,
           "inStock": true
         },
         {
@@ -83,13 +83,13 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1888,
+      "stock": 1887,
       "inStock": true,
       "variants": [
         {
           "color": null,
           "size": "L",
-          "stock": 945,
+          "stock": 944,
           "inStock": true
         },
         {
@@ -226,23 +226,17 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 105,
+      "stock": 102,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
-          "size": null,
-          "stock": 26,
-          "inStock": true
-        },
-        {
           "color": "Red",
           "size": null,
-          "stock": 81,
+          "stock": 80,
           "inStock": true
         },
         {
-          "color": "Yellow",
+          "color": "White",
           "size": null,
           "stock": 26,
           "inStock": true
@@ -251,6 +245,12 @@
           "color": "Black",
           "size": null,
           "stock": 7,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 24,
           "inStock": true
         }
       ]
@@ -287,7 +287,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 89,
+      "stock": 88,
       "inStock": true,
       "variants": []
     },
