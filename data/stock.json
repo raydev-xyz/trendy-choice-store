@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T12:55:54.971Z",
+  "generatedAt": "2026-11-20T14:12:33.058Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 239,
+      "stock": 238,
       "inStock": true,
       "variants": []
     },
@@ -105,19 +105,25 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2726,
+      "stock": 2724,
       "inStock": true,
       "variants": [
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 341,
-          "inStock": true
-        },
         {
           "color": "Cofee",
           "size": "L",
           "stock": 349,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 342,
+          "inStock": true
+        },
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 340,
           "inStock": true
         },
         {
@@ -141,12 +147,6 @@
         {
           "color": "Jet Black",
           "size": "XL",
-          "stock": 343,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "L",
           "stock": 343,
           "inStock": true
         },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 94,
+      "stock": 89,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 25,
+          "inStock": true
+        },
         {
           "color": "Red",
           "size": null,
@@ -238,20 +244,14 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 21,
+          "stock": 19,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 2,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 26,
-          "inStock": true
+          "stock": 0,
+          "inStock": false
         }
       ]
     },
@@ -469,7 +469,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 299,
+      "stock": 298,
       "inStock": true,
       "variants": []
     },
@@ -505,7 +505,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 455,
+      "stock": 454,
       "inStock": true,
       "variants": []
     },
@@ -579,7 +579,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 90,
+      "stock": 89,
       "inStock": true,
       "variants": []
     },
