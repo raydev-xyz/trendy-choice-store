@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T11:38:46.008Z",
+  "generatedAt": "2026-11-21T12:43:18.284Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -232,7 +232,7 @@
         {
           "color": "Red",
           "size": null,
-          "stock": 69,
+          "stock": 68,
           "inStock": true
         }
       ]
@@ -487,7 +487,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 454,
+      "stock": 455,
       "inStock": true,
       "variants": []
     },
@@ -561,7 +561,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 89,
+      "stock": 88,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 8,
+      "stock": 7,
       "inStock": true,
       "variants": []
     }
