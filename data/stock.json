@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T15:37:36.986Z",
+  "generatedAt": "2026-11-21T16:37:44.668Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 238,
+      "stock": 237,
       "inStock": true,
       "variants": []
     },
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 346,
+      "stock": 345,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 64,
+      "stock": 61,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 63,
+          "stock": 60,
           "inStock": true
         }
       ]
@@ -269,7 +269,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 82,
+      "stock": 81,
       "inStock": true,
       "variants": []
     },
@@ -305,7 +305,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 92,
+      "stock": 91,
       "inStock": true,
       "variants": []
     },
@@ -414,7 +414,7 @@
       "slug": "mili-mitag-android-device-compatible-with-google-s-find-my-device",
       "name": "MiLi MiTag Android and iphone Device – Compatible with Google’s Find My Device",
       "price": 1050,
-      "stock": 261,
+      "stock": 259,
       "inStock": true,
       "variants": []
     },
@@ -451,7 +451,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 291,
+      "stock": 290,
       "inStock": true,
       "variants": []
     },
