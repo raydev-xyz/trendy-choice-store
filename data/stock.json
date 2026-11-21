@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T16:37:44.668Z",
+  "generatedAt": "2026-11-21T17:35:23.943Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,19 +105,19 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2721,
+      "stock": 2720,
       "inStock": true,
       "variants": [
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 339,
+          "inStock": true
+        },
         {
           "color": "Off-White",
           "size": "L",
           "stock": 342,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 340,
           "inStock": true
         },
         {
@@ -269,7 +269,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 81,
+      "stock": 80,
       "inStock": true,
       "variants": []
     },
@@ -552,7 +552,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 5,
+      "stock": 4,
       "inStock": true,
       "variants": []
     },
