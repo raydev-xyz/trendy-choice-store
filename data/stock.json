@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T04:23:48.459Z",
+  "generatedAt": "2026-11-21T05:25:16.775Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,25 +226,25 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 100,
+      "stock": 93,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Yellow",
           "size": null,
-          "stock": 16,
+          "stock": 5,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
-          "stock": 76,
+          "stock": 75,
           "inStock": true
         },
         {
-          "color": "Yellow",
+          "color": "White",
           "size": null,
-          "stock": 8,
+          "stock": 13,
           "inStock": true
         }
       ]
@@ -281,7 +281,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 85,
+      "stock": 84,
       "inStock": true,
       "variants": []
     },
@@ -591,7 +591,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 584,
+      "stock": 583,
       "inStock": true,
       "variants": []
     },
@@ -679,7 +679,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 26,
+      "stock": 24,
       "inStock": true,
       "variants": []
     }
