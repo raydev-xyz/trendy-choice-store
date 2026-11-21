@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T08:43:24.557Z",
+  "generatedAt": "2026-11-21T09:41:02.560Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,19 +10,13 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1790,
+      "stock": 1789,
       "inStock": true,
       "variants": [
         {
           "color": "Off-White",
           "size": "L",
           "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 296,
           "inStock": true
         },
         {
@@ -47,6 +41,12 @@
           "color": "Black",
           "size": "L",
           "stock": 299,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 295,
           "inStock": true
         }
       ]
@@ -217,7 +217,7 @@
       "slug": "10m-argb-neon-rope-light-app-remote-control-original",
       "name": "10M ARGB Neon Rope Light – App & Remote Control(original)",
       "price": 2950,
-      "stock": 125,
+      "stock": 124,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 76,
+      "stock": 72,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 0,
+          "inStock": false
+        },
         {
           "color": "Red",
           "size": null,
           "stock": 70,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 4,
           "inStock": true
         },
         {
@@ -308,7 +308,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 307,
+      "stock": 305,
       "inStock": true,
       "variants": []
     },
@@ -463,7 +463,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 293,
+      "stock": 292,
       "inStock": true,
       "variants": []
     },
@@ -582,7 +582,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 76,
+      "stock": 74,
       "inStock": true,
       "variants": []
     },
@@ -679,7 +679,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 16,
+      "stock": 10,
       "inStock": true,
       "variants": []
     }
