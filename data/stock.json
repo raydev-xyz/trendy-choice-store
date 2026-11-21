@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T03:14:54.424Z",
+  "generatedAt": "2026-11-21T04:23:48.459Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1793,
+      "stock": 1792,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 297,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": "L",
@@ -41,12 +47,6 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 298,
           "inStock": true
         }
       ]
@@ -226,20 +226,14 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 66,
+      "stock": 100,
       "inStock": true,
       "variants": [
         {
           "color": "White",
           "size": null,
-          "stock": 17,
+          "stock": 16,
           "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 0,
-          "inStock": false
         },
         {
           "color": "Red",
@@ -469,7 +463,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 297,
+      "stock": 296,
       "inStock": true,
       "variants": []
     },
