@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T07:41:54.724Z",
+  "generatedAt": "2026-11-21T08:43:24.557Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -226,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 84,
+      "stock": 76,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 72,
+          "stock": 70,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 4,
           "inStock": true
         },
         {
@@ -240,12 +246,6 @@
           "size": null,
           "stock": 0,
           "inStock": false
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 10,
-          "inStock": true
         }
       ]
     },
@@ -564,7 +564,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 9,
+      "stock": 6,
       "inStock": true,
       "variants": []
     },
@@ -679,7 +679,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 17,
+      "stock": 16,
       "inStock": true,
       "variants": []
     }
