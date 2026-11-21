@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T17:35:23.943Z",
+  "generatedAt": "2026-11-21T18:35:27.441Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,15 +10,9 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1787,
+      "stock": 1784,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 294,
-          "inStock": true
-        },
         {
           "color": "Off-White",
           "size": "L",
@@ -41,6 +35,12 @@
           "color": "Black",
           "size": "L",
           "stock": 299,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 291,
           "inStock": true
         },
         {
@@ -451,7 +451,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 290,
+      "stock": 289,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 7,
+      "stock": 6,
       "inStock": true,
       "variants": []
     }
