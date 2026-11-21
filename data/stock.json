@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:51:48.226Z",
+  "generatedAt": "2026-11-21T14:43:04.016Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 347,
+      "stock": 346,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 68,
+      "stock": 66,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 67,
+          "stock": 65,
           "inStock": true
         }
       ]
@@ -451,7 +451,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 292,
+      "stock": 291,
       "inStock": true,
       "variants": []
     },
