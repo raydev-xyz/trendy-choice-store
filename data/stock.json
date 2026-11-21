@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:43:18.284Z",
+  "generatedAt": "2026-11-21T13:51:48.226Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1788,
+      "stock": 1787,
       "inStock": true,
       "variants": [
         {
@@ -39,14 +39,14 @@
         },
         {
           "color": "Black",
-          "size": "M",
-          "stock": 295,
+          "size": "L",
+          "stock": 299,
           "inStock": true
         },
         {
           "color": "Black",
-          "size": "L",
-          "stock": 299,
+          "size": "M",
+          "stock": 294,
           "inStock": true
         }
       ]
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 69,
+      "stock": 68,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 68,
+          "stock": 67,
           "inStock": true
         }
       ]
@@ -369,7 +369,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 147,
+      "stock": 146,
       "inStock": true,
       "variants": []
     },
