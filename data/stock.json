@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:41:02.560Z",
+  "generatedAt": "2026-11-21T10:40:38.174Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1789,
+      "stock": 1788,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 294,
+          "inStock": true
+        },
         {
           "color": "Off-White",
           "size": "L",
@@ -41,12 +47,6 @@
           "color": "Black",
           "size": "L",
           "stock": 299,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 295,
           "inStock": true
         }
       ]
@@ -226,26 +226,14 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 72,
+      "stock": 70,
       "inStock": true,
       "variants": [
-        {
-          "color": "White",
-          "size": null,
-          "stock": 0,
-          "inStock": false
-        },
         {
           "color": "Red",
           "size": null,
           "stock": 70,
           "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 0,
-          "inStock": false
         }
       ]
     },
@@ -281,7 +269,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 83,
+      "stock": 82,
       "inStock": true,
       "variants": []
     },
@@ -591,7 +579,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 582,
+      "stock": 581,
       "inStock": true,
       "variants": []
     },
@@ -679,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 10,
+      "stock": 9,
       "inStock": true,
       "variants": []
     }
