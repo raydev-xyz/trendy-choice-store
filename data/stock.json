@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T10:40:38.174Z",
+  "generatedAt": "2026-11-21T11:38:46.008Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2722,
+      "stock": 2721,
       "inStock": true,
       "variants": [
         {
@@ -118,12 +118,6 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 340,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "L",
-          "stock": 341,
           "inStock": true
         },
         {
@@ -154,6 +148,12 @@
           "color": "Off-White",
           "size": "XL",
           "stock": 346,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "L",
+          "stock": 340,
           "inStock": true
         }
       ]
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 348,
+      "stock": 347,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 70,
+      "stock": 69,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 70,
+          "stock": 69,
           "inStock": true
         }
       ]
@@ -552,7 +552,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 6,
+      "stock": 5,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 9,
+      "stock": 8,
       "inStock": true,
       "variants": []
     }
