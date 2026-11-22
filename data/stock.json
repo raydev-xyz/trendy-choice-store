@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T16:13:37.247Z",
+  "generatedAt": "2026-11-22T17:13:18.657Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1783,
+      "stock": 1782,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "L",
+          "stock": 298,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": "M",
@@ -35,12 +41,6 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "L",
-          "stock": 299,
           "inStock": true
         },
         {
@@ -217,9 +217,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 261,
+      "stock": 260,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 172,
+          "inStock": true
+        },
         {
           "color": "White",
           "size": null,
@@ -236,12 +242,6 @@
           "color": "Yellow",
           "size": null,
           "stock": 20,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 173,
           "inStock": true
         }
       ]
