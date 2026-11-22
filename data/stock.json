@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T03:46:59.902Z",
+  "generatedAt": "2026-11-22T04:51:18.948Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -269,7 +269,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 80,
+      "stock": 79,
       "inStock": true,
       "variants": []
     },
@@ -369,7 +369,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 146,
+      "stock": 145,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 6,
+      "stock": 5,
       "inStock": true,
       "variants": []
     }
