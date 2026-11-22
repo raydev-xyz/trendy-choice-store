@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T10:15:25.520Z",
+  "generatedAt": "2026-11-22T11:11:41.458Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 343,
+      "stock": 341,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 56,
+      "stock": 284,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 20,
+          "inStock": true
+        },
         {
           "color": "Red",
           "size": null,
           "stock": 55,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 26,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 183,
           "inStock": true
         }
       ]
@@ -667,7 +685,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 180,
+      "stock": 178,
       "inStock": true,
       "variants": []
     }
