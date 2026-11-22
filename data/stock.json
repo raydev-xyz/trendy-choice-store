@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:28:35.975Z",
+  "generatedAt": "2026-11-22T14:23:22.465Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -217,13 +217,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 275,
+      "stock": 263,
       "inStock": true,
       "variants": [
         {
-          "color": "Yellow",
+          "color": "White",
           "size": null,
-          "stock": 23,
+          "stock": 14,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 175,
           "inStock": true
         },
         {
@@ -233,15 +239,9 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Yellow",
           "size": null,
-          "stock": 181,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 17,
+          "stock": 20,
           "inStock": true
         }
       ]
@@ -278,7 +278,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 80,
+      "stock": 79,
       "inStock": true,
       "variants": []
     },
@@ -496,7 +496,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 454,
+      "stock": 453,
       "inStock": true,
       "variants": []
     },
