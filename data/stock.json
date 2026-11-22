@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T12:09:57.522Z",
+  "generatedAt": "2026-11-22T13:28:35.975Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1785,
+      "stock": 1784,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 293,
+          "inStock": true
+        },
         {
           "color": "Off-White",
           "size": "L",
@@ -41,12 +47,6 @@
           "color": "Black",
           "size": "XL",
           "stock": 291,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 294,
           "inStock": true
         }
       ]
@@ -96,7 +96,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2720,
+      "stock": 2719,
       "inStock": true,
       "variants": [
         {
@@ -109,12 +109,6 @@
           "color": "Off-White",
           "size": "L",
           "stock": 342,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "XL",
-          "stock": 345,
           "inStock": true
         },
         {
@@ -145,6 +139,12 @@
           "color": "Navy Blue",
           "size": "L",
           "stock": 340,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 344,
           "inStock": true
         }
       ]
@@ -217,19 +217,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 282,
+      "stock": 275,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
-          "size": null,
-          "stock": 20,
-          "inStock": true
-        },
-        {
           "color": "Yellow",
           "size": null,
-          "stock": 25,
+          "stock": 23,
           "inStock": true
         },
         {
@@ -241,7 +235,13 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 183,
+          "stock": 181,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 17,
           "inStock": true
         }
       ]
