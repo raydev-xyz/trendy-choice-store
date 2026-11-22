@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-22T11:11:41.458Z",
+  "generatedAt": "2026-11-22T12:09:57.522Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 55,
-  "sellable": 55,
+  "total": 53,
+  "sellable": 53,
   "outOfStock": 0,
   "products": [
     {
@@ -66,15 +66,6 @@
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
       "stock": 238,
-      "inStock": true,
-      "variants": []
-    },
-    {
-      "id": "242e68a9-0786-4b30-8c7f-a016f505c970",
-      "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
-      "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
-      "price": 850,
-      "stock": 244,
       "inStock": true,
       "variants": []
     },
@@ -226,7 +217,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 284,
+      "stock": 282,
       "inStock": true,
       "variants": [
         {
@@ -236,15 +227,15 @@
           "inStock": true
         },
         {
-          "color": "Red",
+          "color": "Yellow",
           "size": null,
-          "stock": 55,
+          "stock": 25,
           "inStock": true
         },
         {
-          "color": "Yellow",
+          "color": "Red",
           "size": null,
-          "stock": 26,
+          "stock": 55,
           "inStock": true
         },
         {
@@ -478,7 +469,7 @@
       "slug": "jio-4g-lte-mobile-wifi-hotspot-portable-router",
       "name": "JIO 4G LTE  Mobile WiFi Hotspot Portable Router",
       "price": 1900,
-      "stock": 100,
+      "stock": 99,
       "inStock": true,
       "variants": []
     },
@@ -566,15 +557,6 @@
       "variants": []
     },
     {
-      "id": "ab4f6153-46f3-4823-a07f-b7afc2543992",
-      "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
-      "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
-      "price": 1080,
-      "stock": 1,
-      "inStock": true,
-      "variants": []
-    },
-    {
       "id": "2abd3e46-5020-4a5a-ba59-35f47da4ea1e",
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
@@ -597,7 +579,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 580,
+      "stock": 579,
       "inStock": true,
       "variants": []
     },
@@ -685,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 178,
+      "stock": 179,
       "inStock": true,
       "variants": []
     }
