@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T09:14:22.343Z",
+  "generatedAt": "2026-11-22T10:15:25.520Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 55,
   "sellable": 55,
@@ -74,7 +74,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 245,
+      "stock": 244,
       "inStock": true,
       "variants": []
     },
@@ -83,19 +83,19 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1887,
+      "stock": 1886,
       "inStock": true,
       "variants": [
         {
           "color": null,
-          "size": "L",
-          "stock": 944,
+          "size": "XL",
+          "stock": 945,
           "inStock": true
         },
         {
           "color": null,
-          "size": "XL",
-          "stock": 946,
+          "size": "L",
+          "stock": 944,
           "inStock": true
         }
       ]
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 345,
+      "stock": 343,
       "inStock": true,
       "variants": []
     },
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 57,
+      "stock": 56,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 56,
+          "stock": 55,
           "inStock": true
         }
       ]
@@ -552,7 +552,7 @@
       "slug": "eq34-plus-rima-anc-enc-tws-earbud-app-supported-long-7-hour-playtime-bluetooth-5-4",
       "name": "EQ34 Plus Rima ANC+ENC TWS Earbud (App Supported) | Long 7-Hour Playtime & Bluetooth 5.4",
       "price": 1080,
-      "stock": 3,
+      "stock": 1,
       "inStock": true,
       "variants": []
     },
@@ -561,7 +561,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 87,
+      "stock": 85,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 200,
+      "stock": 180,
       "inStock": true,
       "variants": []
     }
