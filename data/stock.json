@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T09:51:06.996Z",
+  "generatedAt": "2026-11-23T10:58:23.340Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 52,
+  "sellable": 52,
   "outOfStock": 0,
   "products": [
     {
@@ -226,21 +226,9 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 251,
+      "stock": 248,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 170,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 10,
-          "inStock": true
-        },
         {
           "color": "Red",
           "size": null,
@@ -251,6 +239,18 @@
           "color": "Yellow",
           "size": null,
           "stock": 16,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 169,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 8,
           "inStock": true
         }
       ]
@@ -652,15 +652,6 @@
           "inStock": true
         }
       ]
-    },
-    {
-      "id": "cc90fd6a-3773-47fd-884c-7650692adebe",
-      "slug": "f11-2-dual-wireless-microphone-set",
-      "name": "F11-2 Dual Wireless Microphone Set",
-      "price": 1150,
-      "stock": 124,
-      "inStock": true,
-      "variants": []
     },
     {
       "id": "bbbacf87-a611-4cd6-9679-b27122548df7",
