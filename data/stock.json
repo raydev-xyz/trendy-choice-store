@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:58:23.340Z",
+  "generatedAt": "2026-11-23T11:53:35.334Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -172,7 +172,7 @@
       "slug": "x9-handhole-game-console-black-hawk",
       "name": "X9 Handhole Game Console black hawk",
       "price": 4500,
-      "stock": 326,
+      "stock": 324,
       "inStock": true,
       "variants": []
     },
@@ -226,9 +226,15 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 248,
+      "stock": 244,
       "inStock": true,
       "variants": [
+        {
+          "color": "White",
+          "size": null,
+          "stock": 7,
+          "inStock": true
+        },
         {
           "color": "Red",
           "size": null,
@@ -238,19 +244,13 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 16,
+          "stock": 15,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 169,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 8,
+          "stock": 167,
           "inStock": true
         }
       ]
