@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T11:53:35.334Z",
+  "generatedAt": "2026-11-23T13:00:13.062Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,15 +10,9 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1780,
+      "stock": 1777,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": "L",
-          "stock": 298,
-          "inStock": true
-        },
         {
           "color": "Black",
           "size": "XL",
@@ -46,7 +40,13 @@
         {
           "color": "Black",
           "size": "M",
-          "stock": 292,
+          "stock": 291,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "L",
+          "stock": 296,
           "inStock": true
         }
       ]
@@ -226,31 +226,31 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 244,
+      "stock": 239,
       "inStock": true,
       "variants": [
         {
-          "color": "White",
+          "color": "Red",
           "size": null,
-          "stock": 7,
+          "stock": 53,
           "inStock": true
         },
         {
-          "color": "Red",
+          "color": "White",
           "size": null,
-          "stock": 54,
+          "stock": 5,
           "inStock": true
         },
         {
           "color": "Yellow",
           "size": null,
-          "stock": 15,
+          "stock": 14,
           "inStock": true
         },
         {
           "color": "Black",
           "size": null,
-          "stock": 167,
+          "stock": 166,
           "inStock": true
         }
       ]
@@ -387,7 +387,7 @@
       "slug": "siren-alarm-lock-for-security",
       "name": "Siren Alarm Lock For Security",
       "price": 700,
-      "stock": 92,
+      "stock": 91,
       "inStock": true,
       "variants": []
     },
@@ -396,7 +396,7 @@
       "slug": "yuoto-explorer-16000-puffs-50mg-nic-disposable-type-c-rechargeable",
       "name": "Yuoto Explorer 16000 Puffs | 50mg Nic Disposable | Type C Rechargeable",
       "price": 1600,
-      "stock": 55,
+      "stock": 54,
       "inStock": true,
       "variants": []
     },
@@ -658,7 +658,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 178,
+      "stock": 177,
       "inStock": true,
       "variants": []
     }
