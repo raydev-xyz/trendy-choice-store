@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T08:27:21.064Z",
+  "generatedAt": "2026-11-23T09:51:06.996Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 52,
-  "sellable": 52,
+  "total": 53,
+  "sellable": 53,
   "outOfStock": 0,
   "products": [
     {
@@ -66,6 +66,15 @@
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
       "stock": 238,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "242e68a9-0786-4b30-8c7f-a016f505c970",
+      "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
+      "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
+      "price": 850,
+      "stock": 200,
       "inStock": true,
       "variants": []
     },
@@ -217,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 255,
+      "stock": 251,
       "inStock": true,
       "variants": [
         {
+          "color": "Black",
+          "size": null,
+          "stock": 170,
+          "inStock": true
+        },
+        {
           "color": "White",
           "size": null,
-          "stock": 11,
+          "stock": 10,
           "inStock": true
         },
         {
@@ -233,15 +248,9 @@
           "inStock": true
         },
         {
-          "color": "Black",
-          "size": null,
-          "stock": 172,
-          "inStock": true
-        },
-        {
           "color": "Yellow",
           "size": null,
-          "stock": 17,
+          "stock": 16,
           "inStock": true
         }
       ]
@@ -649,7 +658,7 @@
       "slug": "f11-2-dual-wireless-microphone-set",
       "name": "F11-2 Dual Wireless Microphone Set",
       "price": 1150,
-      "stock": 125,
+      "stock": 124,
       "inStock": true,
       "variants": []
     },
@@ -658,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 179,
+      "stock": 178,
       "inStock": true,
       "variants": []
     }
