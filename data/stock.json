@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-23T06:37:06.623Z",
+  "generatedAt": "2026-11-23T08:27:21.064Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 52,
+  "sellable": 52,
   "outOfStock": 0,
   "products": [
     {
@@ -10,13 +10,19 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1781,
+      "stock": 1780,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": "L",
           "stock": 298,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "XL",
+          "stock": 289,
           "inStock": true
         },
         {
@@ -41,12 +47,6 @@
           "color": "Black",
           "size": "M",
           "stock": 292,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "XL",
-          "stock": 290,
           "inStock": true
         }
       ]
@@ -227,15 +227,15 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Red",
           "size": null,
-          "stock": 172,
+          "stock": 54,
           "inStock": true
         },
         {
-          "color": "Red",
+          "color": "Black",
           "size": null,
-          "stock": 55,
+          "stock": 172,
           "inStock": true
         },
         {
@@ -252,15 +252,6 @@
       "name": "Ven-Dens 50000mAh VD-PB063 22.5W Fast Charging Power Bank with Digital Display & Built-in Cables",
       "price": 2600,
       "stock": 122,
-      "inStock": true,
-      "variants": []
-    },
-    {
-      "id": "2e355a6b-de46-4d95-bd9d-a7ff35be928f",
-      "slug": "shoe-cleaner-foam-white-shoe-cleaning-kit-with-brush-towel",
-      "name": "Shoe Cleaner Foam White Shoe Cleaning Kit with Brush & Towel",
-      "price": 700,
-      "stock": 1,
       "inStock": true,
       "variants": []
     },
@@ -658,7 +649,7 @@
       "slug": "f11-2-dual-wireless-microphone-set",
       "name": "F11-2 Dual Wireless Microphone Set",
       "price": 1150,
-      "stock": 126,
+      "stock": 125,
       "inStock": true,
       "variants": []
     },
