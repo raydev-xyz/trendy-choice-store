@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T05:08:27.376Z",
+  "generatedAt": "2026-11-23T06:37:06.623Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -96,7 +96,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2719,
+      "stock": 2720,
       "inStock": true,
       "variants": [
         {
@@ -112,15 +112,15 @@
           "inStock": true
         },
         {
-          "color": "Cofee",
+          "color": "Jet Black",
           "size": "XL",
           "stock": 344,
           "inStock": true
         },
         {
-          "color": "Jet Black",
+          "color": "Cofee",
           "size": "XL",
-          "stock": 343,
+          "stock": 344,
           "inStock": true
         },
         {
@@ -181,7 +181,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 341,
+      "stock": 340,
       "inStock": true,
       "variants": []
     },
@@ -221,6 +221,12 @@
       "inStock": true,
       "variants": [
         {
+          "color": "White",
+          "size": null,
+          "stock": 11,
+          "inStock": true
+        },
+        {
           "color": "Black",
           "size": null,
           "stock": 172,
@@ -236,12 +242,6 @@
           "color": "Yellow",
           "size": null,
           "stock": 17,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 12,
           "inStock": true
         }
       ]
@@ -305,7 +305,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 305,
+      "stock": 306,
       "inStock": true,
       "variants": []
     },
@@ -667,7 +667,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 178,
+      "stock": 179,
       "inStock": true,
       "variants": []
     }
