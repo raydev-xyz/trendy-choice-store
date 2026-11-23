@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:00:13.062Z",
+  "generatedAt": "2026-11-23T14:38:28.690Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 340,
+      "stock": 339,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 239,
+      "stock": 231,
       "inStock": true,
       "variants": [
         {
-          "color": "Red",
+          "color": "Black",
           "size": null,
-          "stock": 53,
-          "inStock": true
-        },
-        {
-          "color": "White",
-          "size": null,
-          "stock": 5,
+          "stock": 160,
           "inStock": true
         },
         {
@@ -248,9 +242,15 @@
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Red",
           "size": null,
-          "stock": 166,
+          "stock": 52,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 4,
           "inStock": true
         }
       ]
@@ -278,7 +278,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 79,
+      "stock": 78,
       "inStock": true,
       "variants": []
     },
@@ -341,7 +341,7 @@
       "slug": "solar-interaction-wall-lamp",
       "name": "Solar Interaction Wall Lamp",
       "price": 480,
-      "stock": 105,
+      "stock": 104,
       "inStock": true,
       "variants": []
     },
@@ -561,7 +561,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 85,
+      "stock": 84,
       "inStock": true,
       "variants": []
     },
@@ -658,7 +658,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 177,
+      "stock": 176,
       "inStock": true,
       "variants": []
     }
