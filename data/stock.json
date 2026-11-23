@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T19:23:23.354Z",
+  "generatedAt": "2026-11-23T03:54:49.032Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -96,7 +96,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2718,
+      "stock": 2719,
       "inStock": true,
       "variants": [
         {
@@ -144,7 +144,7 @@
         {
           "color": "Navy Blue",
           "size": "L",
-          "stock": 339,
+          "stock": 340,
           "inStock": true
         }
       ]
@@ -217,19 +217,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 257,
+      "stock": 256,
       "inStock": true,
       "variants": [
         {
           "color": "White",
           "size": null,
           "stock": 13,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 18,
           "inStock": true
         },
         {
@@ -242,6 +236,12 @@
           "color": "Red",
           "size": null,
           "stock": 55,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 17,
           "inStock": true
         }
       ]
