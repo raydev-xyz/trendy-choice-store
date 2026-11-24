@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T18:49:53.927Z",
+  "generatedAt": "2026-11-24T19:56:12.730Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 236,
+      "stock": 235,
       "inStock": true,
       "variants": []
     },
@@ -105,15 +105,9 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2713,
+      "stock": 2712,
       "inStock": true,
       "variants": [
-        {
-          "color": "Navy Blue",
-          "size": "L",
-          "stock": 338,
-          "inStock": true
-        },
         {
           "color": "Jet Black",
           "size": "XL",
@@ -154,6 +148,12 @@
           "color": "Navy Blue",
           "size": "XL",
           "stock": 344,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "L",
+          "stock": 337,
           "inStock": true
         }
       ]
