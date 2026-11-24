@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T18:51:36.037Z",
+  "generatedAt": "2026-11-24T00:52:35.374Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -105,21 +105,9 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2720,
+      "stock": 2718,
       "inStock": true,
       "variants": [
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 339,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "L",
-          "stock": 342,
-          "inStock": true
-        },
         {
           "color": "Jet Black",
           "size": "XL",
@@ -151,9 +139,21 @@
           "inStock": true
         },
         {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 338,
+          "inStock": true
+        },
+        {
           "color": "Navy Blue",
           "size": "L",
           "stock": 340,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 341,
           "inStock": true
         }
       ]
@@ -278,7 +278,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 78,
+      "stock": 77,
       "inStock": true,
       "variants": []
     },
