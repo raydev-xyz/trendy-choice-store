@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:57:31.977Z",
+  "generatedAt": "2026-11-24T16:59:57.394Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 237,
+      "stock": 236,
       "inStock": true,
       "variants": []
     },
@@ -83,7 +83,7 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1887,
+      "stock": 1886,
       "inStock": true,
       "variants": [
         {
@@ -95,7 +95,7 @@
         {
           "color": null,
           "size": "XL",
-          "stock": 946,
+          "stock": 945,
           "inStock": true
         }
       ]
@@ -190,7 +190,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 339,
+      "stock": 338,
       "inStock": true,
       "variants": []
     },
@@ -226,25 +226,25 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 201,
+      "stock": 197,
       "inStock": true,
       "variants": [
         {
+          "color": "Black",
+          "size": null,
+          "stock": 147,
+          "inStock": true
+        },
+        {
           "color": "Yellow",
           "size": null,
-          "stock": 3,
+          "stock": 1,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
           "stock": 49,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 149,
           "inStock": true
         }
       ]
@@ -390,7 +390,7 @@
       "slug": "yuoto-explorer-16000-puffs-50mg-nic-disposable-type-c-rechargeable",
       "name": "Yuoto Explorer 16000 Puffs | 50mg Nic Disposable | Type C Rechargeable",
       "price": 1600,
-      "stock": 54,
+      "stock": 52,
       "inStock": true,
       "variants": []
     },
