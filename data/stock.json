@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:34:52.841Z",
+  "generatedAt": "2026-11-24T15:57:31.977Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1775,
+      "stock": 1774,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "L",
+          "stock": 295,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": "M",
@@ -35,12 +41,6 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "L",
-          "stock": 296,
           "inStock": true
         },
         {
@@ -226,25 +226,25 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 203,
+      "stock": 201,
       "inStock": true,
       "variants": [
         {
-          "color": "Black",
-          "size": null,
-          "stock": 150,
-          "inStock": true
-        },
-        {
           "color": "Yellow",
           "size": null,
-          "stock": 4,
+          "stock": 3,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
           "stock": 49,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 149,
           "inStock": true
         }
       ]
@@ -564,7 +564,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 74,
+      "stock": 73,
       "inStock": true,
       "variants": []
     },
@@ -573,7 +573,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 577,
+      "stock": 576,
       "inStock": true,
       "variants": []
     },
@@ -636,13 +636,13 @@
       "slug": "mini-body-massage-gun-sl-720-original-version",
       "name": "Mini Body Massage Gun SL-720 (original Version)",
       "price": 950,
-      "stock": 62,
+      "stock": 61,
       "inStock": true,
       "variants": [
         {
           "color": "Silver",
           "size": null,
-          "stock": 67,
+          "stock": 66,
           "inStock": true
         }
       ]
