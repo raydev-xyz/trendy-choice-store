@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:55:17.262Z",
+  "generatedAt": "2026-11-24T11:51:20.528Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 210,
+      "stock": 208,
       "inStock": true,
       "variants": [
         {
@@ -238,14 +238,14 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 8,
+          "stock": 7,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 1,
-          "inStock": true
+          "stock": 0,
+          "inStock": false
         },
         {
           "color": "Black",
@@ -314,7 +314,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 90,
+      "stock": 89,
       "inStock": true,
       "variants": []
     },
