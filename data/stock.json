@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T04:32:45.270Z",
+  "generatedAt": "2026-11-24T05:53:37.889Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -105,9 +105,21 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2716,
+      "stock": 2714,
       "inStock": true,
       "variants": [
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 337,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "L",
+          "stock": 338,
+          "inStock": true
+        },
         {
           "color": "Jet Black",
           "size": "XL",
@@ -118,12 +130,6 @@
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "L",
-          "stock": 339,
           "inStock": true
         },
         {
@@ -148,12 +154,6 @@
           "color": "Navy Blue",
           "size": "XL",
           "stock": 344,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 338,
           "inStock": true
         }
       ]
@@ -226,19 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 224,
+      "stock": 220,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
           "stock": 51,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 156,
           "inStock": true
         },
         {
@@ -250,7 +244,13 @@
         {
           "color": "Yellow",
           "size": null,
-          "stock": 13,
+          "stock": 11,
+          "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": null,
+          "stock": 154,
           "inStock": true
         }
       ]
@@ -579,7 +579,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 579,
+      "stock": 578,
       "inStock": true,
       "variants": []
     },
@@ -658,7 +658,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 175,
+      "stock": 171,
       "inStock": true,
       "variants": []
     }
