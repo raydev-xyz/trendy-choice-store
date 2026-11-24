@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T09:58:57.663Z",
+  "generatedAt": "2026-11-24T10:55:17.262Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,9 +10,15 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1777,
+      "stock": 1776,
       "inStock": true,
       "variants": [
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 290,
+          "inStock": true
+        },
         {
           "color": "Black",
           "size": "XL",
@@ -35,12 +41,6 @@
           "color": "Off-White",
           "size": "M",
           "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 291,
           "inStock": true
         },
         {
@@ -226,13 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 215,
+      "stock": 210,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 50,
+          "stock": 49,
+          "inStock": true
+        },
+        {
+          "color": "Yellow",
+          "size": null,
+          "stock": 8,
           "inStock": true
         },
         {
@@ -242,15 +248,9 @@
           "inStock": true
         },
         {
-          "color": "Yellow",
-          "size": null,
-          "stock": 10,
-          "inStock": true
-        },
-        {
           "color": "Black",
           "size": null,
-          "stock": 153,
+          "stock": 151,
           "inStock": true
         }
       ]
@@ -378,7 +378,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 143,
+      "stock": 142,
       "inStock": true,
       "variants": []
     },
