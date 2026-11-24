@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:52:35.374Z",
+  "generatedAt": "2026-11-24T03:22:29.904Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -642,13 +642,13 @@
       "slug": "mini-body-massage-gun-sl-720-original-version",
       "name": "Mini Body Massage Gun SL-720 (original Version)",
       "price": 950,
-      "stock": 63,
+      "stock": 62,
       "inStock": true,
       "variants": [
         {
           "color": "Silver",
           "size": null,
-          "stock": 68,
+          "stock": 67,
           "inStock": true
         }
       ]
