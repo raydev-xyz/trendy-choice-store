@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T17:53:35.734Z",
+  "generatedAt": "2026-11-24T18:49:53.927Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -290,7 +290,7 @@
       "slug": "a59-plus-watch-combo",
       "name": "A59 Plus Watch Combo",
       "price": 1500,
-      "stock": 99,
+      "stock": 98,
       "inStock": true,
       "variants": []
     },
@@ -515,7 +515,7 @@
       "slug": "polygonal-men-women-sunglasses",
       "name": "Polygonal Men & Women Sunglasses",
       "price": 990,
-      "stock": 50,
+      "stock": 49,
       "inStock": true,
       "variants": [
         {
@@ -527,7 +527,7 @@
         {
           "color": "Purple",
           "size": null,
-          "stock": 50,
+          "stock": 49,
           "inStock": true
         }
       ]
@@ -573,7 +573,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 576,
+      "stock": 575,
       "inStock": true,
       "variants": []
     },
