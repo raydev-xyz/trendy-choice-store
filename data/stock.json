@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T03:22:29.904Z",
+  "generatedAt": "2026-11-24T04:32:45.270Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -105,7 +105,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2718,
+      "stock": 2716,
       "inStock": true,
       "variants": [
         {
@@ -121,6 +121,12 @@
           "inStock": true
         },
         {
+          "color": "Navy Blue",
+          "size": "L",
+          "stock": 339,
+          "inStock": true
+        },
+        {
           "color": "Cofee",
           "size": "L",
           "stock": 347,
@@ -133,6 +139,12 @@
           "inStock": true
         },
         {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 340,
+          "inStock": true
+        },
+        {
           "color": "Navy Blue",
           "size": "XL",
           "stock": 344,
@@ -142,18 +154,6 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 338,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "L",
-          "stock": 340,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "L",
-          "stock": 341,
           "inStock": true
         }
       ]
@@ -460,7 +460,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 286,
+      "stock": 285,
       "inStock": true,
       "variants": []
     },
