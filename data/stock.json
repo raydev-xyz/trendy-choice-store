@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T08:30:29.530Z",
+  "generatedAt": "2026-11-24T09:58:57.663Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -83,19 +83,19 @@
       "slug": "black-paisley-hoodie-dropsoulder-combo",
       "name": "Black Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1886,
+      "stock": 1887,
       "inStock": true,
       "variants": [
         {
           "color": null,
-          "size": "XL",
-          "stock": 945,
+          "size": "L",
+          "stock": 944,
           "inStock": true
         },
         {
           "color": null,
-          "size": "L",
-          "stock": 944,
+          "size": "XL",
+          "stock": 946,
           "inStock": true
         }
       ]
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 216,
+      "stock": 215,
       "inStock": true,
       "variants": [
         {
@@ -250,7 +250,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 154,
+          "stock": 153,
           "inStock": true
         }
       ]
@@ -278,7 +278,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 77,
+      "stock": 78,
       "inStock": true,
       "variants": []
     },
@@ -314,7 +314,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 91,
+      "stock": 90,
       "inStock": true,
       "variants": []
     },
