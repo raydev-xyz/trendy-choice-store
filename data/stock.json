@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:02:11.313Z",
+  "generatedAt": "2026-11-25T11:26:32.985Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -172,7 +172,7 @@
       "slug": "x9-handhole-game-console-black-hawk",
       "name": "X9 Handhole Game Console black hawk",
       "price": 4500,
-      "stock": 324,
+      "stock": 323,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 195,
+      "stock": 192,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 140,
+          "stock": 139,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 7,
+          "stock": 5,
           "inStock": true
         },
         {
@@ -317,7 +317,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 17,
+      "stock": 16,
       "inStock": true,
       "variants": []
     },
@@ -390,7 +390,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 140,
+      "stock": 139,
       "inStock": true,
       "variants": []
     },
