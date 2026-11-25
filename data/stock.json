@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T03:30:22.552Z",
+  "generatedAt": "2026-11-25T04:59:18.689Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,19 +10,13 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1774,
+      "stock": 1773,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": "L",
           "stock": 295,
-          "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 290,
           "inStock": true
         },
         {
@@ -48,6 +42,12 @@
           "size": "XL",
           "stock": 288,
           "inStock": true
+        },
+        {
+          "color": "Black",
+          "size": "M",
+          "stock": 289,
+          "inStock": true
         }
       ]
     },
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 235,
+      "stock": 234,
       "inStock": true,
       "variants": []
     },
@@ -226,25 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 197,
+      "stock": 195,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 147,
+          "stock": 146,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
           "stock": 49,
-          "inStock": true
-        },
-        {
-          "color": "Yellow",
-          "size": null,
-          "stock": 1,
           "inStock": true
         }
       ]
@@ -344,7 +338,7 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 147,
+      "stock": 146,
       "inStock": true,
       "variants": [
         {
@@ -362,7 +356,7 @@
         {
           "color": "White",
           "size": null,
-          "stock": 49,
+          "stock": 48,
           "inStock": true
         }
       ]
@@ -390,7 +384,7 @@
       "slug": "yuoto-explorer-16000-puffs-50mg-nic-disposable-type-c-rechargeable",
       "name": "Yuoto Explorer 16000 Puffs | 50mg Nic Disposable | Type C Rechargeable",
       "price": 1600,
-      "stock": 52,
+      "stock": 1,
       "inStock": true,
       "variants": []
     },
