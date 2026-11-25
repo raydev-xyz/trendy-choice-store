@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:57:51.494Z",
+  "generatedAt": "2026-11-25T17:47:58.303Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -65,7 +65,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 234,
+      "stock": 233,
       "inStock": true,
       "variants": []
     },
@@ -226,7 +226,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 188,
+      "stock": 187,
       "inStock": true,
       "variants": [
         {
@@ -238,7 +238,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 137,
+          "stock": 136,
           "inStock": true
         },
         {
@@ -560,7 +560,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 571,
+      "stock": 570,
       "inStock": true,
       "variants": []
     },
