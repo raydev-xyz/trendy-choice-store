@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T04:59:18.689Z",
+  "generatedAt": "2026-11-25T05:59:18.378Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 52,
-  "sellable": 52,
+  "total": 54,
+  "sellable": 54,
   "outOfStock": 0,
   "products": [
     {
@@ -226,19 +226,25 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 195,
+      "stock": 204,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 146,
+          "stock": 145,
+          "inStock": true
+        },
+        {
+          "color": "White",
+          "size": null,
+          "stock": 11,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
-          "stock": 49,
+          "stock": 48,
           "inStock": true
         }
       ]
@@ -294,6 +300,24 @@
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
       "stock": 306,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "4b2a1773-5ad6-4fb7-9691-c96dda205d92",
+      "slug": "ven-dens-20000mah-power-bank",
+      "name": "VEN-DENS 20000mAh Power Bank",
+      "price": 1450,
+      "stock": 11,
+      "inStock": true,
+      "variants": []
+    },
+    {
+      "id": "6ebfa545-0faf-443a-897d-c599f38c38e7",
+      "slug": "ven-dens-10000mah-power-bank",
+      "name": "VEN-DENS 10000mAh Power Bank",
+      "price": 800,
+      "stock": 17,
       "inStock": true,
       "variants": []
     },
@@ -646,7 +670,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 171,
+      "stock": 169,
       "inStock": true,
       "variants": []
     }
