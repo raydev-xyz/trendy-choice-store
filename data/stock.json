@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T05:59:18.378Z",
+  "generatedAt": "2026-11-25T07:16:47.652Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 54,
   "sellable": 54,
@@ -226,25 +226,25 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 204,
+      "stock": 200,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 145,
+          "stock": 142,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 11,
+          "stock": 10,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
-          "stock": 48,
+          "stock": 47,
           "inStock": true
         }
       ]
@@ -299,7 +299,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 306,
+      "stock": 307,
       "inStock": true,
       "variants": []
     },
@@ -308,7 +308,7 @@
       "slug": "ven-dens-20000mah-power-bank",
       "name": "VEN-DENS 20000mAh Power Bank",
       "price": 1450,
-      "stock": 11,
+      "stock": 10,
       "inStock": true,
       "variants": []
     },
@@ -472,7 +472,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 285,
+      "stock": 284,
       "inStock": true,
       "variants": []
     },
@@ -670,7 +670,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 169,
+      "stock": 167,
       "inStock": true,
       "variants": []
     }
