@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T14:14:41.930Z",
+  "generatedAt": "2026-11-25T15:31:46.171Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 53,
-  "sellable": 53,
+  "total": 52,
+  "sellable": 52,
   "outOfStock": 0,
   "products": [
     {
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 189,
+      "stock": 188,
       "inStock": true,
       "variants": [
         {
           "color": "White",
           "size": null,
-          "stock": 4,
+          "stock": 3,
           "inStock": true
         },
         {
@@ -404,15 +404,6 @@
       "variants": []
     },
     {
-      "id": "ecd85dc4-10a4-4c1a-9e93-0a5a46c41532",
-      "slug": "yuoto-explorer-16000-puffs-50mg-nic-disposable-type-c-rechargeable",
-      "name": "Yuoto Explorer 16000 Puffs | 50mg Nic Disposable | Type C Rechargeable",
-      "price": 1600,
-      "stock": 1,
-      "inStock": true,
-      "variants": []
-    },
-    {
       "id": "f5ec0305-9aa9-4753-92c4-e54fe5980cc5",
       "slug": "kemei-kemei-km-026",
       "name": "Kemei Kemei KM-026",
@@ -569,7 +560,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 573,
+      "stock": 571,
       "inStock": true,
       "variants": []
     },
