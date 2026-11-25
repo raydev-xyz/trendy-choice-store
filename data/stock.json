@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T11:26:32.985Z",
+  "generatedAt": "2026-11-25T12:32:13.671Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -226,13 +226,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 192,
+      "stock": 191,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 139,
+          "stock": 138,
           "inStock": true
         },
         {
@@ -317,7 +317,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 16,
+      "stock": 15,
       "inStock": true,
       "variants": []
     },
