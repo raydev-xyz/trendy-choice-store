@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:32:13.671Z",
+  "generatedAt": "2026-11-25T14:14:41.930Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 53,
   "sellable": 53,
@@ -10,13 +10,19 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1773,
+      "stock": 1770,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
+          "size": "M",
+          "stock": 288,
+          "inStock": true
+        },
+        {
+          "color": "Black",
           "size": "L",
-          "stock": 295,
+          "stock": 293,
           "inStock": true
         },
         {
@@ -42,12 +48,6 @@
           "size": "XL",
           "stock": 288,
           "inStock": true
-        },
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 289,
-          "inStock": true
         }
       ]
     },
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 235,
+      "stock": 233,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 191,
+      "stock": 189,
       "inStock": true,
       "variants": [
         {
-          "color": "Black",
+          "color": "White",
           "size": null,
-          "stock": 138,
+          "stock": 4,
           "inStock": true
         },
         {
-          "color": "White",
+          "color": "Black",
           "size": null,
-          "stock": 5,
+          "stock": 137,
           "inStock": true
         },
         {
@@ -317,7 +317,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 15,
+      "stock": 14,
       "inStock": true,
       "variants": []
     },
@@ -481,7 +481,7 @@
       "slug": "jio-4g-lte-mobile-wifi-hotspot-portable-router",
       "name": "JIO 4G LTE  Mobile WiFi Hotspot Portable Router",
       "price": 1900,
-      "stock": 99,
+      "stock": 98,
       "inStock": true,
       "variants": []
     },
@@ -569,7 +569,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 575,
+      "stock": 573,
       "inStock": true,
       "variants": []
     },
