@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T07:16:47.652Z",
+  "generatedAt": "2026-11-25T10:02:11.313Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 54,
-  "sellable": 54,
+  "total": 53,
+  "sellable": 53,
   "outOfStock": 0,
   "products": [
     {
@@ -74,7 +74,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 200,
+      "stock": 198,
       "inStock": true,
       "variants": []
     },
@@ -105,9 +105,15 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2712,
+      "stock": 2711,
       "inStock": true,
       "variants": [
+        {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 343,
+          "inStock": true
+        },
         {
           "color": "Jet Black",
           "size": "XL",
@@ -142,12 +148,6 @@
           "color": "Jet Black",
           "size": "L",
           "stock": 336,
-          "inStock": true
-        },
-        {
-          "color": "Navy Blue",
-          "size": "XL",
-          "stock": 344,
           "inStock": true
         },
         {
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 200,
+      "stock": 195,
       "inStock": true,
       "variants": [
         {
           "color": "Black",
           "size": null,
-          "stock": 142,
+          "stock": 140,
           "inStock": true
         },
         {
           "color": "White",
           "size": null,
-          "stock": 10,
+          "stock": 7,
           "inStock": true
         },
         {
@@ -299,7 +299,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 307,
+      "stock": 306,
       "inStock": true,
       "variants": []
     },
@@ -529,28 +529,6 @@
       ]
     },
     {
-      "id": "b0b6e6cc-1a32-467d-af62-6b52d260eb67",
-      "slug": "polygonal-men-women-sunglasses",
-      "name": "Polygonal Men & Women Sunglasses",
-      "price": 990,
-      "stock": 49,
-      "inStock": true,
-      "variants": [
-        {
-          "color": "Black",
-          "size": null,
-          "stock": 0,
-          "inStock": false
-        },
-        {
-          "color": "Purple",
-          "size": null,
-          "stock": 49,
-          "inStock": true
-        }
-      ]
-    },
-    {
       "id": "70795826-a1d3-434f-8c86-f345595d8f18",
       "slug": "android-smart-projector-hy300-4k-original",
       "name": "Android Smart Projector HY300 4K (ORIGINAL)",
@@ -573,7 +551,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 84,
+      "stock": 83,
       "inStock": true,
       "variants": []
     },
@@ -670,7 +648,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 167,
+      "stock": 165,
       "inStock": true,
       "variants": []
     }
