@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:31:46.171Z",
+  "generatedAt": "2026-11-25T16:57:51.494Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -353,7 +353,7 @@
       "slug": "solar-interaction-wall-lamp",
       "name": "Solar Interaction Wall Lamp",
       "price": 480,
-      "stock": 103,
+      "stock": 102,
       "inStock": true,
       "variants": []
     },
