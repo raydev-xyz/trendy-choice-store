@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:54:05.412Z",
+  "generatedAt": "2026-11-26T16:58:39.108Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -87,13 +87,19 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2710,
+      "stock": 2709,
       "inStock": true,
       "variants": [
         {
           "color": "Navy Blue",
           "size": "XL",
           "stock": 343,
+          "inStock": true
+        },
+        {
+          "color": "Cofee",
+          "size": "L",
+          "stock": 346,
           "inStock": true
         },
         {
@@ -106,12 +112,6 @@
           "color": "Cofee",
           "size": "XL",
           "stock": 344,
-          "inStock": true
-        },
-        {
-          "color": "Cofee",
-          "size": "L",
-          "stock": 347,
           "inStock": true
         },
         {
@@ -266,7 +266,7 @@
       "slug": "a59-plus-watch-combo",
       "name": "A59 Plus Watch Combo",
       "price": 1500,
-      "stock": 98,
+      "stock": 97,
       "inStock": true,
       "variants": []
     },
@@ -284,7 +284,7 @@
       "slug": "ven-dens-20000mah-power-bank",
       "name": "VEN-DENS 20000mAh Power Bank",
       "price": 1450,
-      "stock": 9,
+      "stock": 8,
       "inStock": true,
       "variants": []
     },
@@ -366,7 +366,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 138,
+      "stock": 137,
       "inStock": true,
       "variants": []
     },
