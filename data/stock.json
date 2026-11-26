@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:58:28.841Z",
+  "generatedAt": "2026-11-26T11:58:16.529Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -56,7 +56,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 196,
+      "stock": 195,
       "inStock": true,
       "variants": []
     },
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 173,
+      "stock": 172,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 127,
+          "stock": 126,
           "inStock": true
         }
       ]
@@ -293,7 +293,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 14,
+      "stock": 12,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 162,
+      "stock": 161,
       "inStock": true,
       "variants": []
     }
