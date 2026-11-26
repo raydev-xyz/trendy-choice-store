@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T18:49:17.743Z",
+  "generatedAt": "2026-11-26T22:47:37.044Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -266,7 +266,7 @@
       "slug": "a59-plus-watch-combo",
       "name": "A59 Plus Watch Combo",
       "price": 1500,
-      "stock": 97,
+      "stock": 96,
       "inStock": true,
       "variants": []
     },
