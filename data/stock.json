@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:43:06.782Z",
+  "generatedAt": "2026-11-26T09:59:37.453Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -47,7 +47,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 234,
+      "stock": 233,
       "inStock": true,
       "variants": []
     },
@@ -56,7 +56,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 197,
+      "stock": 196,
       "inStock": true,
       "variants": []
     },
@@ -87,7 +87,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2711,
+      "stock": 2710,
       "inStock": true,
       "variants": [
         {
@@ -99,7 +99,7 @@
         {
           "color": "Jet Black",
           "size": "XL",
-          "stock": 344,
+          "stock": 343,
           "inStock": true
         },
         {
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 176,
+      "stock": 174,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 130,
+          "stock": 128,
           "inStock": true
         }
       ]
