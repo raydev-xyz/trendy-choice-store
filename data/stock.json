@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T04:39:13.918Z",
+  "generatedAt": "2026-11-26T05:54:28.139Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -56,7 +56,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 233,
+      "stock": 232,
       "inStock": true,
       "variants": []
     },
@@ -226,19 +226,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 179,
+      "stock": 178,
       "inStock": true,
       "variants": [
-        {
-          "color": "Red",
-          "size": null,
-          "stock": 47,
-          "inStock": true
-        },
         {
           "color": "Black",
           "size": null,
           "stock": 132,
+          "inStock": true
+        },
+        {
+          "color": "Red",
+          "size": null,
+          "stock": 46,
           "inStock": true
         }
       ]
@@ -248,7 +248,7 @@
       "slug": "ven-dens-50000mah-vd-pb063-22-5w-fast-charging-power-bank-with-digital-display-built-in-cables",
       "name": "Ven-Dens 50000mAh VD-PB063 22.5W Fast Charging Power Bank with Digital Display & Built-in Cables",
       "price": 2600,
-      "stock": 122,
+      "stock": 121,
       "inStock": true,
       "variants": []
     },
@@ -633,7 +633,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 165,
+      "stock": 163,
       "inStock": true,
       "variants": []
     }
