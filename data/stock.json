@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T07:01:53.654Z",
+  "generatedAt": "2026-11-26T08:43:06.782Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,15 +10,9 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 1770,
+      "stock": 869,
       "inStock": true,
       "variants": [
-        {
-          "color": "Black",
-          "size": "M",
-          "stock": 288,
-          "inStock": true
-        },
         {
           "color": "Black",
           "size": "L",
@@ -26,26 +20,14 @@
           "inStock": true
         },
         {
-          "color": "Off-White",
-          "size": "L",
-          "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
+          "color": "Black",
           "size": "XL",
-          "stock": 300,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "M",
-          "stock": 300,
+          "stock": 288,
           "inStock": true
         },
         {
           "color": "Black",
-          "size": "XL",
+          "size": "M",
           "stock": 288,
           "inStock": true
         }
@@ -74,28 +56,28 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 198,
+      "stock": 197,
       "inStock": true,
       "variants": []
     },
     {
       "id": "22fb3fe4-4c41-470f-b0e0-79c3e1bb95f8",
       "slug": "black-paisley-hoodie-dropsoulder-combo",
-      "name": "Black Paisley Hoodie & Dropsoulder Combo",
+      "name": "Paisley Hoodie & Dropsoulder Combo",
       "price": 1200,
-      "stock": 1886,
+      "stock": 1000,
       "inStock": true,
       "variants": [
         {
-          "color": null,
+          "color": "Black",
           "size": "L",
-          "stock": 944,
+          "stock": 500,
           "inStock": true
         },
         {
-          "color": null,
+          "color": "Black",
           "size": "XL",
-          "stock": 945,
+          "stock": 500,
           "inStock": true
         }
       ]
@@ -356,13 +338,13 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 146,
+      "stock": 145,
       "inStock": true,
       "variants": [
         {
           "color": "blue",
           "size": null,
-          "stock": 48,
+          "stock": 47,
           "inStock": true
         },
         {
@@ -402,7 +384,7 @@
       "slug": "kemei-kemei-km-026",
       "name": "Kemei Kemei KM-026",
       "price": 1500,
-      "stock": 114,
+      "stock": 112,
       "inStock": true,
       "variants": []
     },
@@ -633,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 164,
+      "stock": 163,
       "inStock": true,
       "variants": []
     }
