@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T11:58:16.529Z",
+  "generatedAt": "2026-11-26T13:14:09.782Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -56,7 +56,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 195,
+      "stock": 194,
       "inStock": true,
       "variants": []
     },
@@ -208,13 +208,13 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 172,
+      "stock": 169,
       "inStock": true,
       "variants": [
         {
           "color": "Red",
           "size": null,
-          "stock": 46,
+          "stock": 43,
           "inStock": true
         },
         {
@@ -248,7 +248,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 78,
+      "stock": 77,
       "inStock": true,
       "variants": []
     },
@@ -293,7 +293,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 12,
+      "stock": 11,
       "inStock": true,
       "variants": []
     },
@@ -366,7 +366,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 139,
+      "stock": 138,
       "inStock": true,
       "variants": []
     },
