@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T17:49:09.133Z",
+  "generatedAt": "2026-11-27T18:48:13.441Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -275,7 +275,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 306,
+      "stock": 305,
       "inStock": true,
       "variants": []
     },
