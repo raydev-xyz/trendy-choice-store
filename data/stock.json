@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T15:26:52.356Z",
+  "generatedAt": "2026-11-27T16:35:02.315Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -172,7 +172,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 333,
+      "stock": 332,
       "inStock": true,
       "variants": []
     },
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 161,
+      "stock": 160,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 119,
+          "stock": 118,
           "inStock": true
         }
       ]
@@ -284,7 +284,7 @@
       "slug": "ven-dens-20000mah-power-bank",
       "name": "VEN-DENS 20000mAh Power Bank",
       "price": 1450,
-      "stock": 4,
+      "stock": 3,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 151,
+      "stock": 150,
       "inStock": true,
       "variants": []
     }
