@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T04:57:43.336Z",
+  "generatedAt": "2026-11-27T05:59:14.932Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -248,7 +248,7 @@
       "slug": "928-type-heavy-duty-stun-gun-with-led-flashlight",
       "name": "928 Type Heavy Duty Stun Gun with LED Flashlight ",
       "price": 850,
-      "stock": 77,
+      "stock": 76,
       "inStock": true,
       "variants": []
     },
@@ -439,7 +439,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 284,
+      "stock": 283,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 158,
+      "stock": 155,
       "inStock": true,
       "variants": []
     }
