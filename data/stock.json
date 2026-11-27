@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T07:15:44.546Z",
+  "generatedAt": "2026-11-27T08:43:45.769Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -38,7 +38,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 230,
+      "stock": 229,
       "inStock": true,
       "variants": []
     },
@@ -284,7 +284,7 @@
       "slug": "ven-dens-20000mah-power-bank",
       "name": "VEN-DENS 20000mAh Power Bank",
       "price": 1450,
-      "stock": 7,
+      "stock": 5,
       "inStock": true,
       "variants": []
     },
@@ -475,7 +475,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 453,
+      "stock": 452,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 154,
+      "stock": 152,
       "inStock": true,
       "variants": []
     }
