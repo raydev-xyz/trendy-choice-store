@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:43:45.769Z",
+  "generatedAt": "2026-11-27T09:58:19.612Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 166,
+      "stock": 165,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 123,
+          "stock": 122,
           "inStock": true
         }
       ]
@@ -439,7 +439,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 283,
+      "stock": 282,
       "inStock": true,
       "variants": []
     },
@@ -475,7 +475,7 @@
       "slug": "apple-airpods-black-colour-special-edition-mastercopy",
       "name": "Apple Airpods Black Colour Special Edition MasterCopy",
       "price": 850,
-      "stock": 452,
+      "stock": 451,
       "inStock": true,
       "variants": []
     },
