@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T05:59:14.932Z",
+  "generatedAt": "2026-11-27T07:15:44.546Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -38,7 +38,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 231,
+      "stock": 230,
       "inStock": true,
       "variants": []
     },
@@ -47,7 +47,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 232,
+      "stock": 231,
       "inStock": true,
       "variants": []
     },
@@ -293,7 +293,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 11,
+      "stock": 10,
       "inStock": true,
       "variants": []
     },
@@ -518,7 +518,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 83,
+      "stock": 81,
       "inStock": true,
       "variants": []
     },
@@ -536,7 +536,7 @@
       "slug": "frb-n27-400-standby-time-wireless-neckband-bluetooth-5-3-earphone-5-voice-changer-mode-tf-card-slot-gaming-music-headset-by-by-exotix",
       "name": "FRB N27 [ 400 ঘন্টা ] Standby Time Wireless Neckband Bluetooth 5.3 Earphone 5 Voice Changer Mode TF Card Slot - Gaming & Music Headset By By EXOTIX",
       "price": 800,
-      "stock": 569,
+      "stock": 568,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 155,
+      "stock": 154,
       "inStock": true,
       "variants": []
     }
