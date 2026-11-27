@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T09:58:19.612Z",
+  "generatedAt": "2026-11-27T11:49:55.258Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -208,19 +208,19 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 165,
+      "stock": 162,
       "inStock": true,
       "variants": [
         {
-          "color": "Red",
+          "color": "Black",
           "size": null,
-          "stock": 43,
+          "stock": 120,
           "inStock": true
         },
         {
-          "color": "Black",
+          "color": "Red",
           "size": null,
-          "stock": 122,
+          "stock": 42,
           "inStock": true
         }
       ]
@@ -518,7 +518,7 @@
       "slug": "apple-airpods-pro-2nd-generation",
       "name": "Apple Airpods pro 2nd generation MasterCopy",
       "price": 550,
-      "stock": 81,
+      "stock": 80,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 152,
+      "stock": 151,
       "inStock": true,
       "variants": []
     }
