@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T03:30:59.336Z",
+  "generatedAt": "2026-11-27T04:57:43.336Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -38,7 +38,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 232,
+      "stock": 231,
       "inStock": true,
       "variants": []
     },
@@ -47,7 +47,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 233,
+      "stock": 232,
       "inStock": true,
       "variants": []
     },
@@ -87,25 +87,25 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2709,
+      "stock": 2707,
       "inStock": true,
       "variants": [
         {
-          "color": "Navy Blue",
-          "size": "XL",
-          "stock": 343,
-          "inStock": true
-        },
-        {
           "color": "Cofee",
           "size": "L",
-          "stock": 346,
+          "stock": 345,
           "inStock": true
         },
         {
           "color": "Jet Black",
           "size": "XL",
           "stock": 343,
+          "inStock": true
+        },
+        {
+          "color": "Navy Blue",
+          "size": "XL",
+          "stock": 342,
           "inStock": true
         },
         {
@@ -172,7 +172,7 @@
       "slug": "hoco-m105-sharp-wired-gaming-earphones-with-mic-original-base",
       "name": "Hoco M105 Sharp, wired gaming earphones with mic Original Base",
       "price": 650,
-      "stock": 336,
+      "stock": 335,
       "inStock": true,
       "variants": []
     },
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 167,
+      "stock": 166,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 124,
+          "stock": 123,
           "inStock": true
         }
       ]
@@ -338,13 +338,13 @@
       "slug": "portable-electric-kettle",
       "name": "Portable Electric Kettle",
       "price": 950,
-      "stock": 145,
+      "stock": 144,
       "inStock": true,
       "variants": [
         {
           "color": "blue",
           "size": null,
-          "stock": 47,
+          "stock": 46,
           "inStock": true
         },
         {
@@ -615,7 +615,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 160,
+      "stock": 158,
       "inStock": true,
       "variants": []
     }
