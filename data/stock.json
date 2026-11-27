@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T02:20:34.331Z",
+  "generatedAt": "2026-11-27T03:30:59.336Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 52,
   "sellable": 52,
@@ -10,7 +10,7 @@
       "slug": "venum-premium-3-in-1-combo-hoodie-drop-shoulder-t-shirt-high-neck",
       "name": "VENUM Premium 3-in-1 Combo – Hoodie, Drop Shoulder T-Shirt & High Neck",
       "price": 1800,
-      "stock": 869,
+      "stock": 868,
       "inStock": true,
       "variants": [
         {
@@ -28,7 +28,7 @@
         {
           "color": "Black",
           "size": "M",
-          "stock": 288,
+          "stock": 287,
           "inStock": true
         }
       ]
@@ -284,7 +284,7 @@
       "slug": "ven-dens-20000mah-power-bank",
       "name": "VEN-DENS 20000mAh Power Bank",
       "price": 1450,
-      "stock": 8,
+      "stock": 7,
       "inStock": true,
       "variants": []
     },
