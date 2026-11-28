@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T05:29:50.690Z",
+  "generatedAt": "2026-11-28T06:30:34.262Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -56,7 +56,7 @@
       "slug": "xg88-pro-wireless-bluetooth-smart-sunglasses-with-hands-free-calling-music-playback",
       "name": "XG88 Pro Wireless Bluetooth Smart Sunglasses with Hands-Free Calling & Music Playback",
       "price": 850,
-      "stock": 193,
+      "stock": 191,
       "inStock": true,
       "variants": []
     },
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 152,
+      "stock": 151,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 113,
+          "stock": 112,
           "inStock": true
         }
       ]
@@ -293,7 +293,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 8,
+      "stock": 6,
       "inStock": true,
       "variants": []
     },
@@ -302,7 +302,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 89,
+      "stock": 88,
       "inStock": true,
       "variants": []
     },
