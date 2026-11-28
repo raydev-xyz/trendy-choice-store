@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T12:14:09.229Z",
+  "generatedAt": "2026-11-28T13:33:01.898Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -38,7 +38,7 @@
       "slug": "bidya-sagor-intelligence-talking-book-100-educational-contents-rechargeable-interactive-learning-book-for-kids",
       "name": "Bidya Sagor Intelligence Talking Book – 100+ Educational Contents | Rechargeable Interactive Learning Book for Kids",
       "price": 850,
-      "stock": 229,
+      "stock": 228,
       "inStock": true,
       "variants": []
     },
@@ -87,7 +87,7 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2704,
+      "stock": 2703,
       "inStock": true,
       "variants": [
         {
@@ -109,6 +109,12 @@
           "inStock": true
         },
         {
+          "color": "Cofee",
+          "size": "XL",
+          "stock": 343,
+          "inStock": true
+        },
+        {
           "color": "Jet Black",
           "size": "XL",
           "stock": 343,
@@ -118,12 +124,6 @@
           "color": "Navy Blue",
           "size": "XL",
           "stock": 342,
-          "inStock": true
-        },
-        {
-          "color": "Cofee",
-          "size": "XL",
-          "stock": 344,
           "inStock": true
         },
         {
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 146,
+      "stock": 145,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 107,
+          "stock": 106,
           "inStock": true
         }
       ]
