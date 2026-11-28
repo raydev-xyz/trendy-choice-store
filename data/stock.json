@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T10:19:07.162Z",
+  "generatedAt": "2026-11-28T11:15:52.209Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -47,7 +47,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 233,
+      "stock": 232,
       "inStock": true,
       "variants": []
     },
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 148,
+      "stock": 146,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 109,
+          "stock": 107,
           "inStock": true
         }
       ]
@@ -275,7 +275,7 @@
       "slug": "ven-dens-vd-pb062-power-bank-30000mah",
       "name": "Ven-Dens VD-PB062 Power Bank – 30000mAh",
       "price": 1900,
-      "stock": 304,
+      "stock": 303,
       "inStock": true,
       "variants": []
     },
@@ -402,25 +402,25 @@
       "slug": "3d-led-digital-clock",
       "name": "3D LED Digital Clock",
       "price": 800,
-      "stock": 118,
+      "stock": 123,
       "inStock": true,
       "variants": [
         {
-          "color": "Green",
-          "size": null,
-          "stock": 41,
-          "inStock": true
-        },
-        {
           "color": "orange",
           "size": null,
-          "stock": 45,
+          "stock": 44,
           "inStock": true
         },
         {
           "color": "Red",
           "size": null,
           "stock": 39,
+          "inStock": true
+        },
+        {
+          "color": "blue",
+          "size": null,
+          "stock": 40,
           "inStock": true
         }
       ]
