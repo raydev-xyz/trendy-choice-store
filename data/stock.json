@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-28T04:29:04.305Z",
+  "generatedAt": "2026-11-28T05:29:50.690Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
-  "total": 52,
-  "sellable": 52,
+  "total": 51,
+  "sellable": 51,
   "outOfStock": 0,
   "products": [
     {
@@ -47,7 +47,7 @@
       "slug": "2-in-1-usb-starry-sky-galaxy-projector-night-light-360-flexible-led-projection-lamp-for-bedroom-home-decoration",
       "name": "2-in-1 USB Starry Sky Galaxy Projector Night Light – 360° Flexible LED Projection Lamp for Bedroom & Home Decoration",
       "price": 1500,
-      "stock": 231,
+      "stock": 233,
       "inStock": true,
       "variants": []
     },
@@ -214,7 +214,7 @@
         {
           "color": "Red",
           "size": null,
-          "stock": 39,
+          "stock": 38,
           "inStock": true
         },
         {
@@ -366,7 +366,7 @@
       "slug": "plextone-rx3-plus-wired-gaming-earphone",
       "name": "Plextone RX3 PLUS  Wired Gaming Earphone",
       "price": 1140,
-      "stock": 136,
+      "stock": 134,
       "inStock": true,
       "variants": []
     },
@@ -376,15 +376,6 @@
       "name": "Siren Alarm Lock For Security",
       "price": 700,
       "stock": 91,
-      "inStock": true,
-      "variants": []
-    },
-    {
-      "id": "f5ec0305-9aa9-4753-92c4-e54fe5980cc5",
-      "slug": "kemei-kemei-km-026",
-      "name": "Kemei Kemei KM-026",
-      "price": 1500,
-      "stock": 112,
       "inStock": true,
       "variants": []
     },
@@ -527,7 +518,7 @@
       "slug": "wgp-mini-ups-5-9-12v-upgraded-original-10-400mah",
       "name": "wgp Mini UPS 5/9/12V upgraded Original(10,400mAh)",
       "price": 1750,
-      "stock": 73,
+      "stock": 72,
       "inStock": true,
       "variants": []
     },
@@ -615,7 +606,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 150,
+      "stock": 149,
       "inStock": true,
       "variants": []
     }
