@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T08:10:25.471Z",
+  "generatedAt": "2026-11-28T09:18:01.549Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 150,
+      "stock": 149,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 111,
+          "stock": 110,
           "inStock": true
         }
       ]
@@ -430,7 +430,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 281,
+      "stock": 280,
       "inStock": true,
       "variants": []
     },
