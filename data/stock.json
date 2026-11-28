@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T11:15:52.209Z",
+  "generatedAt": "2026-11-28T12:14:09.229Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -87,9 +87,21 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2706,
+      "stock": 2704,
       "inStock": true,
       "variants": [
+        {
+          "color": "Jet Black",
+          "size": "L",
+          "stock": 335,
+          "inStock": true
+        },
+        {
+          "color": "Off-White",
+          "size": "L",
+          "stock": 339,
+          "inStock": true
+        },
         {
           "color": "Cofee",
           "size": "L",
@@ -118,18 +130,6 @@
           "color": "Off-White",
           "size": "XL",
           "stock": 346,
-          "inStock": true
-        },
-        {
-          "color": "Off-White",
-          "size": "L",
-          "stock": 340,
-          "inStock": true
-        },
-        {
-          "color": "Jet Black",
-          "size": "L",
-          "stock": 336,
           "inStock": true
         },
         {
@@ -293,7 +293,7 @@
       "slug": "ven-dens-10000mah-power-bank",
       "name": "VEN-DENS 10000mAh Power Bank",
       "price": 800,
-      "stock": 6,
+      "stock": 5,
       "inStock": true,
       "variants": []
     },
@@ -430,7 +430,7 @@
       "slug": "5m-waterproof-outdoor-usb-5v-rgb-neon-rope-light",
       "name": "5M Waterproof Outdoor USB 5V ARGB Neon Rope Light",
       "price": 1800,
-      "stock": 280,
+      "stock": 279,
       "inStock": true,
       "variants": []
     },
@@ -572,7 +572,7 @@
       "slug": "memo-cx07-magnetic-phone-cooler-fan",
       "name": "Memo CX07 Magnetic Phone Cooler Fan",
       "price": 1150,
-      "stock": 144,
+      "stock": 143,
       "inStock": true,
       "variants": []
     },
