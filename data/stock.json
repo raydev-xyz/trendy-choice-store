@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T06:30:34.262Z",
+  "generatedAt": "2026-11-28T08:10:25.471Z",
   "source": "https://trendy.r4ydevbd.workers.dev/products",
   "total": 51,
   "sellable": 51,
@@ -87,13 +87,13 @@
       "slug": "premium-solid-color-pullover-hoodie-for-men-without-print-solid-colour",
       "name": "Premium Solid Color Pullover Hoodie for Men Without Print Solid Colour",
       "price": 800,
-      "stock": 2707,
+      "stock": 2706,
       "inStock": true,
       "variants": [
         {
           "color": "Cofee",
           "size": "L",
-          "stock": 345,
+          "stock": 344,
           "inStock": true
         },
         {
@@ -208,7 +208,7 @@
       "slug": "k8-wireless-earbuds",
       "name": "K8 Wireless Earbuds",
       "price": 400,
-      "stock": 151,
+      "stock": 150,
       "inStock": true,
       "variants": [
         {
@@ -220,7 +220,7 @@
         {
           "color": "Black",
           "size": null,
-          "stock": 112,
+          "stock": 111,
           "inStock": true
         }
       ]
@@ -302,7 +302,7 @@
       "slug": "olax-m100-power-bank-wifi-router",
       "name": "OLAX M100 Power Bank WiFi Router ",
       "price": 3400,
-      "stock": 88,
+      "stock": 87,
       "inStock": true,
       "variants": []
     },
@@ -606,7 +606,7 @@
       "slug": "5-in-1-gaming-combo-pack",
       "name": "5 in 1 Gaming Combo Pack",
       "price": 1950,
-      "stock": 149,
+      "stock": 148,
       "inStock": true,
       "variants": []
     }
